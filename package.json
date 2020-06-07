@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "debug": "NODE_OPTIONS='--inspect' next dev"
