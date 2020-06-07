@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContenedorHeader,Grilla} from './styled';
+import {ContenedorHeader,Logo, Button_Prim, Button_Sec} from './styled';
 
 {/* importo el div que creo en styled*/}
 
@@ -11,11 +11,11 @@ class Header extends React.Component{
         return (
             <ContenedorHeader>
                  
-                     <Grilla>
-
-                        <a id="logo" href="#">
-                            Logito
-                        </a>
+                    <Logo>
+                    <img src="../assets/logo.png"/>
+                    </Logo>
+                        
+                   
 
                              <nav>
                                  <ul>
@@ -24,11 +24,13 @@ class Header extends React.Component{
                                          <a href="#">CALENDARIO</a>
                                          <a href="#">AYUDA</a>
                                          <a href="#">EL PROYECTO</a>
+
+                                         <Button_Sec href="#">INICIA SESION</Button_Sec>
+                                         <Button_Prim href="#">REGISTRATE</Button_Prim>
                                      </li>
                                  </ul>
                              </nav>
-                     </Grilla>
-                        
+                     
                  
                 
             </ContenedorHeader>

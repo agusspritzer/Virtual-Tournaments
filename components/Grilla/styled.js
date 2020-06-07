@@ -18,14 +18,15 @@ const ContenedorHeader = styled.div`
   display: flex;
   justify-content: space-between;
 
-
+  #logo {
+    width: 20%;
+  }
 
   nav {
     width: 50%;
   }
-  
-  
-  nav ul li{
+
+  nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -40,20 +41,22 @@ const ContenedorHeader = styled.div`
 
 `;
 
-const Logo = styled.div`
 
-    width: 20%;
+const Button_P = styled.a`
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-`
+  padding: 2%;
+  font-size: 1em;
+  background-color: #6418DC;
+  text-align: center;
+  color: black;
+  display: inline;
+  cursor: pointer;
+`;
 
-
-
-{
-  /* BOTONES */
-}
-
-
-{  /* Boton Relleno */}
 const Button_Prim = styled.a`
   * {
     padding: 0;
@@ -65,10 +68,10 @@ const Button_Prim = styled.a`
   background-color: #6418DC;
   text-align: center;
   color: black;
+  display: inline;
   cursor: pointer;
 `;
 
-{  /* Boton solo bordes*/}
 const Button_Sec = styled.a`
   * {
     padding: 0;
@@ -81,9 +84,10 @@ const Button_Sec = styled.a`
   border: 4px solid #6418DC;
   text-align: center;
   color: black;
+  display: inline;
   cursor: pointer;
 `;
 
 
 
-export { ContenedorHeader, Logo, Button_Prim, Button_Sec };
+export { ContenedorHeader, Button_Prim, Button_Sec };

@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Header } from 'components';
 
 export default function Layout() {
   return (
-    <>
-      <Header />
+    <> {/*Aca voy a traer todos los componentes*/}
+      <Header /> 
     </>
   );
 }
