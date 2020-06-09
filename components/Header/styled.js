@@ -14,10 +14,10 @@ const ContenedorHeader = styled.div`
   }
 
   background-color: #272727;
-  padding: 1% 3% 1% 3%;
+  padding: 0.5% 3% 0.5% 3%;
   display: flex;
   justify-content: space-between;
-
+align-items: center; 
 
 
   nav {
@@ -28,7 +28,7 @@ const ContenedorHeader = styled.div`
   nav ul li{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   nav ul li a {
@@ -38,14 +38,19 @@ const ContenedorHeader = styled.div`
     font-weight: 600;
   }
 
+  img{
+    height:100%;
+    width:100%
+  }
+
 `;
 
 const Logo = styled.div`
 
-    width: 20%;
+    width: 10%;
+
 
 `
-
 
 
 {

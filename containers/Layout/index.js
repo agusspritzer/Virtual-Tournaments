@@ -1,10 +1,19 @@
 import React from 'react';
 import { Header } from 'components';
+import { Main } from 'components';
+import { Footer } from 'components';
+
+
 
 export default function Layout() {
   return (
-    <> {/*Aca voy a traer todos los componentes*/}
-      <Header /> 
+    <>
+
+      <Header />
+      <Main />
+      <Footer />
+      
+
     </>
   );
 }
