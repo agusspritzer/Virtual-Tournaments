@@ -8,7 +8,7 @@ import { Footer } from 'components';
 export default function Layout() {
   return (
     <>
-
+    
       <Header />
       <Main />
       <Footer />

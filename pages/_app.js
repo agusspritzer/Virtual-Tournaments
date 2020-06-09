@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>My site</title>
+        <title>Virtual Tournaments</title>
       </Head>
       <Layout>
         <Component {...pageProps} />

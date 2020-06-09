@@ -14,14 +14,19 @@ const ContenedorHeader = styled.div`
   }
 
   background-color: #272727;
-  padding: 0.5% 3% 0.5% 3%;
+  padding: 1% 3% 1% 3%;
   display: flex;
   justify-content: space-between;
 align-items: center; 
 
+position: fixed;
+width:100%;
+
+box-shadow: 4px 8px 20px -6px rgba(0,0,0,0.75);
 
   nav {
-    width: 50%;
+    width: 45%;
+
   }
   
   
@@ -34,9 +39,11 @@ align-items: center;
   nav ul li a {
     text-decoration: none;
     color: #eeeeee;
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: 'TTOctosquares';
   }
+
 
   img{
     height:100%;
@@ -65,7 +72,7 @@ const Button_Prim = styled.a`
     margin: 0;
   }
 
-  padding: 2%;
+  padding: 2.2%;
   font-size: 1em;
   background-color: #6418DC;
   text-align: center;
@@ -83,7 +90,7 @@ const Button_Sec = styled.a`
   padding: 2%;
   font-size: 1em;
   background-color: none;
-  border: 4px solid #6418DC;
+  border: 3px solid #6418DC;
   text-align: center;
   color: black;
   cursor: pointer;

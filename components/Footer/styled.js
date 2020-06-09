@@ -19,9 +19,11 @@ background-color: #272727;
 
 h3{
     text-align: center;
-    font-size:2em;
-    font-weight:800;
+    font-size:1.6em;
+    font-weight:700;
     padding:3%;
+
+    font-family: 'TTOctosquares';
 }
 
 nav {
@@ -48,11 +50,13 @@ nav {
   p{
       text-align: center;
       color: #B4B4B4;
+      font-size: 0.9em;
       
   }
 
   p:nth-child(even){
       margin-bottom: 2%;
+      font-size: 0.7em;
   }
 
 `;
