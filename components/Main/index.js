@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import {Stream, H1 , H3, H4, H5,Titulo, Beneficios, Presentacion, Foto, ContenedorMain, Juegos, Card} from './styled';
+import {Stream, H1 , H3, H4, H5,Titulo, Beneficios, Presentacion, Foto, ContenedorMain, Juegos, Card_Juego, Card, TorneosActivos} from './styled';
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
   ssr: false,
@@ -76,12 +76,111 @@ no profesionales en E-Sports</p>
         <H3>Demostra ser el mejor en tu juegos favoritos</H3>
 
         <Juegos>
-          <Card> <img src="../assets/rainbow.jpg"/> </Card>
-          <Card> <img src="../assets/rainbow.jpg"/> </Card>
-          <Card> <img src="../assets/rainbow.jpg"/> </Card>
-          <Card> <img src="../assets/rainbow.jpg"/> </Card>
+          <Card_Juego> <img src="../assets/rainbow.jpg"/> </Card_Juego>
+          <Card_Juego> <img src="../assets/rainbow.jpg"/> </Card_Juego>
+          <Card_Juego> <img src="../assets/rainbow.jpg"/> </Card_Juego>
+          <Card_Juego> <img src="../assets/rainbow.jpg"/> </Card_Juego>
         </Juegos>
         <H5>TODOS LOS JUEGOS</H5>
+
+
+
+        <H3 style={{paddingTop: "10%"}}>Torneos activos</H3>
+        <TorneosActivos>
+        <Card>
+          <p>#PP210</p>
+          <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
+          <ul>
+            <li>
+              <H4>Juego</H4>
+              <H5>Mortal Kombat</H5>
+            </li>
+
+            <li>
+              <H4>Fase</H4>
+              <H5>8vos de final</H5>
+            </li>
+
+            <li>
+              <H4>Prox. Streaming</H4>
+              <H5>13/07 a las 16:00hs</H5>
+            </li>
+
+          </ul>
+
+        </Card>
+
+        <Card>
+          <p>#PP210</p>
+          <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
+          <ul>
+            <li>
+              <H4>Juego</H4>
+              <H5>Mortal Kombat</H5>
+            </li>
+
+            <li>
+              <H4>Fase</H4>
+              <H5>8vos de final</H5>
+            </li>
+
+            <li>
+              <H4>Prox. Streaming</H4>
+              <H5>13/07 a las 16:00hs</H5>
+            </li>
+
+          </ul>
+
+        </Card>
+
+        <Card>
+          <p>#PP210</p>
+          <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
+          <ul>
+            <li>
+              <H4>Juego</H4>
+              <H5>Mortal Kombat</H5>
+            </li>
+
+            <li>
+              <H4>Fase</H4>
+              <H5>8vos de final</H5>
+            </li>
+
+            <li>
+              <H4>Prox. Streaming</H4>
+              <H5>13/07 a las 16:00hs</H5>
+            </li>
+
+          </ul>
+
+        </Card>
+
+        <Card>
+          <p>#PP210</p>
+          <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
+          <ul>
+            <li>
+              <H4>Juego</H4>
+              <H5>Mortal Kombat</H5>
+            </li>
+
+            <li>
+              <H4>Fase</H4>
+              <H5>8vos de final</H5>
+            </li>
+
+            <li>
+              <H4>Prox. Streaming</H4>
+              <H5>13/07 a las 16:00hs</H5>
+            </li>
+
+          </ul>
+
+        </Card>
+
+        </TorneosActivos>
+
 
         </ContenedorMain>
 

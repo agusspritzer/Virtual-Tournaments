@@ -101,7 +101,7 @@ const Juegos = styled.div`
     padding-bottom: 3%;
 `
 
-const Card = styled.div`
+const Card_Juego = styled.div`
     width: 22%;
     height: 380px;
     border-radius: 20px;
@@ -112,6 +112,10 @@ const Card = styled.div`
         border-radius: 10px;
     }
 `
+
+
+
+
 
 const Beneficios = styled.div`
 
@@ -142,4 +146,59 @@ const Beneficios = styled.div`
     }
 `
 
-export { Stream, Presentacion, Titulo, Foto, Beneficios, Card, H1, H3, H4, H5, ContenedorMain, Juegos };
+const TorneosActivos = styled.div`
+    
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 15%;
+`
+
+const Card = styled.div`
+    width: 23%;
+    background-color: #EEEEEE;
+    padding: 3%;
+    
+
+    p{
+      color: #707070;
+      font-size: 0.8em;
+
+    }
+    h3{
+        font-size: 1.1em;
+        font-weight: 700;
+        padding-bottom: 5%;
+        color: #272727;
+    }
+
+    h4{
+        font-size: 1em;
+        color: #6418DC;
+        font-weight: 600;
+        padding-bottom: 0;
+    }
+
+    h5{
+        font-size: 1em;
+        color: #272727;
+        font-weight: 500;
+        text-align:left;
+        font-family: 'Maison Neue Extended';
+    }
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+    li{
+        line-height: 35px;
+        padding-bottom: 0;
+        margin-top: 8%;
+        text-align: left;
+    }
+
+`
+
+export { Stream, Presentacion, Titulo, Foto, Beneficios, Card_Juego, H1, H3, H4, H5, ContenedorMain, Juegos, TorneosActivos, Card };
