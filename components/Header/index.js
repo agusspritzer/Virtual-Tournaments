@@ -20,8 +20,8 @@ class Header extends React.Component{
                              <nav>
                                  <ul>
                                      <li>
-                                         <a href="#">TORNEOS</a>
-                                         <a href="#">CALENDARIO</a>
+                                         <a href="./_torneos">TORNEOS</a>
+                                         <a href="./_app">CALENDARIO</a>
                                          <a href="#">AYUDA</a>
                                          <a href="#">EL PROYECTO</a>
 

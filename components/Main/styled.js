@@ -157,8 +157,31 @@ const TorneosActivos = styled.div`
 const Card = styled.div`
     width: 23%;
     background-color: #EEEEEE;
-    padding: 3%;
+
+    figure{
+        height: 24%;
+        overflow: hidden;
+        border-bottom: 8px solid #6418DC;
+    }
+
+`
+const Card_Info = styled.div`
+
+    padding: 8% 8% 8% 8%;
+    height: 290px;
+
+    div{
+        display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
     
+    div img{
+        width: 8%;
+        height: 8%;
+        margin-right: 4%;
+
+    }
 
     p{
       color: #707070;
@@ -177,6 +200,7 @@ const Card = styled.div`
         color: #6418DC;
         font-weight: 600;
         padding-bottom: 0;
+        padding-top: 0.5%
     }
 
     h5{
@@ -195,10 +219,10 @@ ul{
     li{
         line-height: 35px;
         padding-bottom: 0;
-        margin-top: 8%;
+        margin-top: 4%;
         text-align: left;
     }
 
 `
 
-export { Stream, Presentacion, Titulo, Foto, Beneficios, Card_Juego, H1, H3, H4, H5, ContenedorMain, Juegos, TorneosActivos, Card };
+export { Stream, Presentacion, Titulo, Foto, Beneficios, Card_Juego, Card_Info, H1, H3, H4, H5, ContenedorMain, Juegos, TorneosActivos, Card };
