@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { TorneosContainer } from 'containers';
+
 function Torneos() {
-  return <p> Hola Virtual-Tournaments!</p>;
+  return <TorneosContainer />;
 }
 
 export default Torneos;

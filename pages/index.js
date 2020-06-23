@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { HomeContainer } from 'containers';
+
 function Home() {
-  return <p> Hola Virtual-Tournaments!</p>;
+  return <HomeContainer />;
 }
 
 export default Home;

@@ -1,19 +1,14 @@
 import React from 'react';
-import { Header } from 'components';
-import { Main } from 'components';
-import { Footer } from 'components';
+import { Header, Footer } from 'components';
 
+import { ContenedorMain } from './styled';
 
-
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <>
-    
       <Header />
-      <Main />
+      <ContenedorMain>{children}</ContenedorMain>
       <Footer />
-      
-
     </>
   );
 }
