@@ -6,7 +6,7 @@ import {
   H3,
   H4,
   H5,
-  Titulo,
+  Principal,
   Beneficios,
   Presentacion,
   Foto,
@@ -18,6 +18,7 @@ import {
   TorneosActivos,
 } from './styled';
 
+import { Titulo } from 'components';
 
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
@@ -29,7 +30,7 @@ class HomeContainer extends React.Component {
     return (
       <>
         <Presentacion>
-          <Titulo>
+          <Principal>
             <H1>ACTIVA TU MODO TRYHARD EN</H1>
             <H1 style={{ color: '#EA33BC' }}>VIRTUAL TOURNAMENTS</H1>
 
@@ -38,7 +39,7 @@ class HomeContainer extends React.Component {
               ofrece la posibilidad de inscribirte a torneos de tus juegos
               preferidos para demostrar que sos el mejor en ellos!
             </H4>
-          </Titulo>
+          </Principal>
 
           <Foto>
             <img src="../assets/presentacion.png" />

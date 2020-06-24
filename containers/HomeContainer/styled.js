@@ -24,7 +24,7 @@ const H1 = styled.h1`
   font-weight: 400;
 `;
 
-const Titulo = styled.div`
+const Principal = styled.div`
   width: 50%;
 `;
 const Foto = styled.div`
@@ -200,7 +200,7 @@ const Card_Info = styled.div`
 export {
   Stream,
   Presentacion,
-  Titulo,
+  Principal,
   Foto,
   Beneficios,
   Card_Juego,
