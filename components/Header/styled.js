@@ -57,7 +57,7 @@ const Logo = styled.div`
     width: 10%;
 
 
-`
+`;
 
 
 {
