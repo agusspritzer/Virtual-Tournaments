@@ -12,7 +12,9 @@ class Header extends React.Component{
             <ContenedorHeader>
                  
                     <Logo>
+                    <a href="./index">
                     <img src="../assets/logo.png"/>
+                    </a>
                     </Logo>
                         
                    
@@ -20,8 +22,8 @@ class Header extends React.Component{
                              <nav>
                                  <ul>
                                      <li>
-                                         <a href="./_torneos">TORNEOS</a>
-                                         <a href="./_app">CALENDARIO</a>
+                                         <a href="./torneos">TORNEOS</a>
+                                         <a href="./app">CALENDARIO</a>
                                          <a href="#">AYUDA</a>
                                          <a href="#">EL PROYECTO</a>
 

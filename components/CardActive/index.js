@@ -1,54 +1,48 @@
 import React from 'react';
-import {Card, Card_Info, H3, H4, H5} from './styled';
+import {Card, Card_Info} from './styled';
+import {Titulo} from 'components';
 
-{/* importo el div que creo en styled*/}
 
-{/* Este es el compoennte donde vos a poner el codigo delheader*/}
+export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, ProxFecha}) {
+  return(
+          <Card>
+          <figure>
+            <img src={`/assets/juegos/${GameImg}.jpg`} />
+          </figure>
+          <Card_Info>
+            <p>{TorneoId}</p>
+            <Titulo level={3}>{TorneoName}</Titulo>
+            <ul>
+              <li>
+                <div>
+                  <img src="../assets/card_icons/gamepad.png" />
+                  <Titulo level={4}>Juego</Titulo>
+                </div>
 
-{/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/}
-class Header extends React.Component{
-    render (){
-        return (
-        <Card>
-            <figure>
-              <img src="../assets/juegos/pummel.jpg" />
-            </figure>
-            <Card_Info>
-              <p>#PP210</p>
-              <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
-              <ul>
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/gamepad.png" />
-                    <H4>Juego</H4>
-                  </div>
+                <Titulo level={5}>{Game}</Titulo>
+              </li>
 
-                  <H5>Mortal Kombat</H5>
-                </li>
+              <li>
+                <div>
+                  <img src="../assets/card_icons/fase.png" />
+                  <Titulo level={4}>Fase</Titulo>
+                </div>
+                <Titulo level={5}>{Fase}</Titulo>
+              </li>
 
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fase.png" />
-                    <H4>Fase</H4>
-                  </div>
-                  <H5>8vos de final</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fecha.png" />
-                    <H4>Proxima Fecha</H4>
-                  </div>
-                  <H5>13 de Julio</H5>
-                </li>
-              </ul>
-            </Card_Info>
-</Card>
-
-        )
+              <li>
+                <div>
+                  <img src="../assets/card_icons/fecha.png" />
+                  <Titulo level={4} >Proxima Fecha</Titulo>
+                </div>
+                <Titulo level={5}>{ProxFecha}</Titulo>
+              </li>
+            </ul>
+          </Card_Info>
+        </Card>
+)
+        
     }
-}
 
-export default Header;
 
 

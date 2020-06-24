@@ -2,10 +2,6 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import {
   Stream,
-  H1,
-  H3,
-  H4,
-  H5,
   Principal,
   Beneficios,
   Presentacion,
@@ -13,13 +9,11 @@ import {
   ContenedorMain,
   Juegos,
   Card_Juego,
-  Card,
-  Card_Info,
   TorneosActivos,
 } from './styled';
 
 import { Titulo } from 'components';
-
+import { CardActive } from 'components';
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
   ssr: false,
@@ -31,14 +25,14 @@ class HomeContainer extends React.Component {
       <>
         <Presentacion>
           <Principal>
-            <H1>ACTIVA TU MODO TRYHARD EN</H1>
-            <H1 style={{ color: '#EA33BC' }}>VIRTUAL TOURNAMENTS</H1>
+            <Titulo level={0}>ACTIVA TU MODO TRYHARD EN</Titulo>
+            <Titulo level={0} style={{ color: '#EA33BC' }}>VIRTUAL TOURNAMENTS</Titulo>
 
-            <H4>
+            <Titulo level={4}>
               Virtual Tournaments es la plataforma amateur definitiva que te
               ofrece la posibilidad de inscribirte a torneos de tus juegos
               preferidos para demostrar que sos el mejor en ellos!
-            </H4>
+            </Titulo>
           </Principal>
 
           <Foto>
@@ -46,9 +40,9 @@ class HomeContainer extends React.Component {
           </Foto>
         </Presentacion>
 
-        <H3 style={{ textAlign: 'center' }}>
+        <Titulo level={3} style={{ textAlign: 'center' }} >
           ¡Competir desde casa nunca tuvo tantas ventajas!
-        </H3>
+        </Titulo>
 
         <Beneficios>
           <div>
@@ -75,8 +69,8 @@ class HomeContainer extends React.Component {
         </Beneficios>
 
         <Stream>
-          <H3>¡Estamos transmitiendo en vivo ahora!</H3>
-          <H4>Torneo MK 210 - Mortal Kombat - 8vos de Final</H4>
+          <Titulo level={3}>¡Estamos transmitiendo en vivo ahora!</Titulo>
+          <Titulo level={4}>Torneo MK 210 - Mortal Kombat - 8vos de Final</Titulo>
           <TwitchEmbedVideo
             autoplay
             height="480"
@@ -88,7 +82,7 @@ class HomeContainer extends React.Component {
           />
         </Stream>
 
-        <H3>Demostra ser el mejor en tu juegos favoritos</H3>
+        <Titulo level={3}>Demostra ser el mejor en tu juegos favoritos</Titulo>
 
         <Juegos>
           <Card_Juego>
@@ -108,153 +102,21 @@ class HomeContainer extends React.Component {
             <img src="../assets/rainbow.jpg" />{' '}
           </Card_Juego>
         </Juegos>
-        <H5>TODOS LOS JUEGOS</H5>
+        <Titulo level={5} >TODOS LOS JUEGOS</Titulo>
 
-        <H3 style={{ paddingTop: '10%' }}>Torneos activos</H3>
+
+        <Titulo level={3}  style={{ paddingTop: '10%' }}>Torneos activos</Titulo>
         <TorneosActivos>
-          <Card>
-            <figure>
-              <img src="../assets/juegos/pummel.jpg" />
-            </figure>
-            <Card_Info>
-              <p>#PP210</p>
-              <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
-              <ul>
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/gamepad.png" />
-                    <H4>Juego</H4>
-                  </div>
 
-                  <H5>Mortal Kombat</H5>
-                </li>
+          <CardActive
+          GameImg="pummel"
+          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+          TorneoId="#PP210"
+          Game="Pummel Party"
+          Fase="8vos de final"
+          ProxFecha="13 de Julio">           
+          </CardActive>
 
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fase.png" />
-                    <H4>Fase</H4>
-                  </div>
-                  <H5>8vos de final</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fecha.png" />
-                    <H4>Proxima Fecha</H4>
-                  </div>
-                  <H5>13 de Julio</H5>
-                </li>
-              </ul>
-            </Card_Info>
-          </Card>
-
-          <Card>
-            <figure>
-              <img src="../assets/juegos/counter.jpg" />
-            </figure>
-            <Card_Info>
-              <p>#PP210</p>
-              <H3>TORNEO COUNTER TERRORIST WIN</H3>
-              <ul>
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/gamepad.png" />
-                    <H4>Juego</H4>
-                  </div>
-
-                  <H5>Mortal Kombat</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fase.png" />
-                    <H4>Fase</H4>
-                  </div>
-                  <H5>8vos de final</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fecha.png" />
-                    <H4>Proxima Fecha</H4>
-                  </div>
-                  <H5>13 de Julio</H5>
-                </li>
-              </ul>
-            </Card_Info>
-          </Card>
-
-          <Card>
-            <figure>
-              <img src="../assets/juegos/mortal.jpg" />
-            </figure>
-            <Card_Info>
-              <p>#PP210</p>
-              <H3>TORNEO DE VERANO SCORPION</H3>
-              <ul>
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/gamepad.png" />
-                    <H4>Juego</H4>
-                  </div>
-
-                  <H5>Mortal Kombat</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fase.png" />
-                    <H4>Fase</H4>
-                  </div>
-                  <H5>8vos de final</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fecha.png" />
-                    <H4>Proxima Fecha</H4>
-                  </div>
-                  <H5>13 de Julio</H5>
-                </li>
-              </ul>
-            </Card_Info>
-          </Card>
-
-          <Card>
-            <figure>
-              <img src="../assets/juegos/paladins.jpg" />
-            </figure>
-            <Card_Info>
-              <p>#PP210</p>
-              <H3>TORNEO DE JULIO PUMMEL PARTY</H3>
-              <ul>
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/gamepad.png" />
-                    <H4>Juego</H4>
-                  </div>
-
-                  <H5>Mortal Kombat</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fase.png" />
-                    <H4>Fase</H4>
-                  </div>
-                  <H5>8vos de final</H5>
-                </li>
-
-                <li>
-                  <div>
-                    <img src="../assets/card_icons/fecha.png" />
-                    <H4>Proxima Fecha</H4>
-                  </div>
-                  <H5>13 de Julio</H5>
-                </li>
-              </ul>
-            </Card_Info>
-          </Card>
         </TorneosActivos>
       </>
     );

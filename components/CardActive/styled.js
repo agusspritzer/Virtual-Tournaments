@@ -1,6 +1,9 @@
+import styled from 'styled-components';
+
 const Card = styled.div`
   width: 23%;
   background-color: #eeeeee;
+  margin-bottom:5%;
 
   figure {
     height: 24%;
@@ -10,7 +13,7 @@ const Card = styled.div`
 `;
 
 const Card_Info = styled.div`
-  padding: 8% 8% 8% 8%;
+  padding: 8%;
   height: 290px;
 
   div {
@@ -29,10 +32,11 @@ const Card_Info = styled.div`
     color: #707070;
     font-size: 0.8em;
   }
+  
   h3 {
-    font-size: 1.1em;
-    font-weight: 700;
-    padding-bottom: 5%;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom:0;
     color: #272727;
   }
 
@@ -46,6 +50,7 @@ const Card_Info = styled.div`
 
   h5 {
     font-size: 1em;
+    margin:1% 0 1% 0;
     color: #272727;
     font-weight: 500;
     text-align: left;
@@ -55,29 +60,16 @@ const Card_Info = styled.div`
   ul {
     text-decoration: none;
     list-style-type: none;
+    padding: 0;
+
   }
   li {
-    line-height: 35px;
-    padding-bottom: 0;
-    margin-top: 4%;
     text-align: left;
+    margin-bottom: 8%;
   }
 `;
 
 export {
-  Stream,
-  Presentacion,
-  Titulo,
-  Foto,
-  Beneficios,
-  Card_Juego,
   Card_Info,
-  H1,
-  H3,
-  H4,
-  H5,
-  ContenedorMain,
-  Juegos,
-  TorneosActivos,
-  Card,
+  Card
 };
