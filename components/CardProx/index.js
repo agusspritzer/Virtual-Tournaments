@@ -1,16 +1,19 @@
 import React from 'react';
-import {Card, Card_Img, Card_Info} from './styled';
+import {Card, Card_Info, Card_Img} from './styled';
 import {Titulo} from 'components';
 
 
-export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, ProxFecha}) {
+export default function CardActive({GameImg,TorneoName, TorneoId, Game, Comienzo, Inscriptos}) {
   return(
-    <Card>
+      <Card>
           <Card_Img>
           <figure>
             <img src={`/assets/juegos/${GameImg}.jpg`} />
           </figure>
-          </Card_Img>
+            <div>
+                <p>INSCRIPCION DISPONIBLE</p>
+            </div>
+        </Card_Img>
 
           <Card_Info>
             <p>{TorneoId}</p>
@@ -18,7 +21,7 @@ export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, Pr
             <ul>
               <li>
                 <div>
-                  <img src="../assets/card_icons/gamepad.png" />
+                  <img src="/assets/card_icons/gamepad.png" />
                   <Titulo level={4}>Juego</Titulo>
                 </div>
 
@@ -27,23 +30,23 @@ export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, Pr
 
               <li>
                 <div>
-                  <img src="../assets/card_icons/fase.png" />
-                  <Titulo level={4}>Fase</Titulo>
+                  <img src="/assets/card_icons/fecha.png" />
+                  <Titulo level={4}>Comienzo</Titulo>
                 </div>
-                <Titulo level={5}>{Fase}</Titulo>
+                <Titulo level={5}>{Comienzo}</Titulo>
               </li>
 
               <li>
                 <div>
-                  <img src="../assets/card_icons/fecha.png" />
-                  <Titulo level={4} >Proxima Fecha</Titulo>
+                  <img src="/assets/card_icons/personas.png" />
+                  <Titulo level={4} >Inscriptos</Titulo>
                 </div>
-                <Titulo level={5}>{ProxFecha}</Titulo>
+                <Titulo level={5}>{Inscriptos}</Titulo>
               </li>
             </ul>
           </Card_Info>
-          </Card>
-        
+
+        </Card>
 )
         
     }

@@ -43,15 +43,18 @@ const Juegos = styled.div`
 `;
 
 const Card_Juego = styled.div`
-  width: 22%;
-  height: 380px;
-  border-radius: 20px;
+  width: 23%;
+  height: 400px;
 
-  img {
-    width: auto;
-    height: 100%;
-    border-radius: 10px;
-  }
+  figure{
+    overflow: hidden;
+    height: 70px;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
 `;
 
 const Beneficios = styled.div`
@@ -83,13 +86,12 @@ const Beneficios = styled.div`
 `;
 
 
-const TorneosActivos = styled.div`
+const TorneosCardContainer= styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 2.5%;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 `;
 
 
@@ -103,5 +105,5 @@ export {
   Beneficios,
   Card_Juego,
   Juegos,
-  TorneosActivos,
+  TorneosCardContainer,
 };

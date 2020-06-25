@@ -9,7 +9,7 @@ import {
   ContenedorMain,
   Juegos,
   Card_Juego,
-  TorneosActivos,
+  TorneosCardContainer,
 } from './styled';
 
 import { Titulo } from 'components';
@@ -86,8 +86,9 @@ class HomeContainer extends React.Component {
 
         <Juegos>
           <Card_Juego>
-            {' '}
-            <img src="../assets/rainbow.jpg" />{' '}
+            <figure>
+            <img src="../assets/rainbow.jpg" />
+            </figure>
           </Card_Juego>
           <Card_Juego>
             {' '}
@@ -106,7 +107,7 @@ class HomeContainer extends React.Component {
 
 
         <Titulo level={3}  style={{ paddingTop: '10%' }}>Torneos activos</Titulo>
-        <TorneosActivos>
+        <TorneosCardContainer>
 
           <CardActive
           GameImg="pummel"
@@ -117,7 +118,34 @@ class HomeContainer extends React.Component {
           ProxFecha="13 de Julio">           
           </CardActive>
 
-        </TorneosActivos>
+          <CardActive
+          GameImg="pummel"
+          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+          TorneoId="#PP210"
+          Game="Pummel Party"
+          Fase="8vos de final"
+          ProxFecha="13 de Julio">           
+          </CardActive>
+
+          <CardActive
+          GameImg="pummel"
+          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+          TorneoId="#PP210"
+          Game="Pummel Party"
+          Fase="8vos de final"
+          ProxFecha="13 de Julio">           
+          </CardActive>
+
+          <CardActive
+          GameImg="pummel"
+          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+          TorneoId="#PP210"
+          Game="Pummel Party"
+          Fase="8vos de final"
+          ProxFecha="13 de Julio">           
+          </CardActive>
+          
+        </TorneosCardContainer>
       </>
     );
   }

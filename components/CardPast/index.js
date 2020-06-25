@@ -3,7 +3,7 @@ import {Card, Card_Img, Card_Info} from './styled';
 import {Titulo} from 'components';
 
 
-export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, ProxFecha}) {
+export default function CardActive({GameImg,TorneoName, TorneoId, Game, Player, Prize}) {
   return(
     <Card>
           <Card_Img>
@@ -18,7 +18,7 @@ export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, Pr
             <ul>
               <li>
                 <div>
-                  <img src="../assets/card_icons/gamepad.png" />
+                  <img src="/assets/card_icons/pasados/gamepad.png" />
                   <Titulo level={4}>Juego</Titulo>
                 </div>
 
@@ -27,18 +27,18 @@ export default function CardActive({GameImg,TorneoName, TorneoId, Game, Fase, Pr
 
               <li>
                 <div>
-                  <img src="../assets/card_icons/fase.png" />
-                  <Titulo level={4}>Fase</Titulo>
+                  <img src="/assets/card_icons/pasados/trophy.png" />
+                  <Titulo level={4}>Ganador</Titulo>
                 </div>
-                <Titulo level={5}>{Fase}</Titulo>
+                <Titulo level={5}>{Player}</Titulo>
               </li>
 
               <li>
                 <div>
-                  <img src="../assets/card_icons/fecha.png" />
-                  <Titulo level={4} >Proxima Fecha</Titulo>
+                  <img src="/assets/card_icons/pasados/prize.png" />
+                  <Titulo level={4} >Premio</Titulo>
                 </div>
-                <Titulo level={5}>{ProxFecha}</Titulo>
+                <Titulo level={5}>{Prize}</Titulo>
               </li>
             </ul>
           </Card_Info>

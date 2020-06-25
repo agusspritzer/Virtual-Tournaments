@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const Card = styled.div`
   width: 23%;
-  background-color: #eeeeee;
+  background-color: #272727;
+  border: 5px solid #6418DC;
   margin-bottom:3%;
   margin-right: 2%;
 
@@ -13,7 +14,6 @@ const Card_Img = styled.div`
 figure{
     overflow: hidden;
     height: 85px;
-    border-bottom: 6px solid #6418DC
     }
 
 figure img{
@@ -39,7 +39,7 @@ div img {
 }
 
 p {
-  color: #707070;
+  color: #D6D6D6;
   font-size: 0.6em;
 }
 
@@ -47,12 +47,12 @@ h3 {
   font-size: 1em;
   font-weight: 600;
   padding-bottom:0;
-  color: #272727;
+  color: #EEEEEE;
 }
 
 h4 {
   font-size: 0.8em;
-  color: #6418dc;
+  color: #EA33BC;
   font-weight: 600;
   padding-bottom: 0;
   padding-top: 0.5%;
@@ -61,7 +61,7 @@ h4 {
 h5 {
   font-size: 0.8em;
   margin:0 0 1% 0;
-  color: #272727;
+  color: #D6D6D6;
   font-weight: 500;
   text-align: left;
   font-family: 'Maison Neue Extended';
