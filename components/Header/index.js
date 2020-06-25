@@ -25,7 +25,7 @@ class Header extends React.Component{
                                          <a href="./torneos">TORNEOS</a>
                                          <a href="./calendario">CALENDARIO</a>
                                          <a href="./ayuda">AYUDA</a>
-                                         <a href="#">EL PROYECTO</a>
+                                         <a href="./proyecto">EL PROYECTO</a>
 
                                          <Button_Sec href="#">INICIA SESION</Button_Sec>
                                          <ButtonFilled

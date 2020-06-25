@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+
 import {
   TorneosCardContainer,
   Buscador,
@@ -10,10 +11,12 @@ import { CardActive } from 'components';
 import { CardProx } from  'components';
 import { CardPast } from  'components';
 import { Titulo } from 'components';
+import { ContenedorMain } from 'components';
 
 export default function TorneosContainer() {
   return <>
 
+<ContenedorMain>
 <Buscador>
 
   <Titulo level={0}> TORNEOS </Titulo>
@@ -158,5 +161,6 @@ export default function TorneosContainer() {
                   Prize="$5600">           
               </CardPast>
     </TorneosCardContainer>
+    </ContenedorMain>
   </>;
 }

@@ -6,7 +6,6 @@ import {
   Beneficios,
   Presentacion,
   Foto,
-  ContenedorMain,
   Juegos,
   Card_Juego,
   TorneosCardContainer,
@@ -14,6 +13,7 @@ import {
 
 import { Titulo } from 'components';
 import { CardActive } from 'components';
+import { ContenedorMain } from 'components';
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
   ssr: false,
@@ -23,6 +23,7 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <>
+      <ContenedorMain>
         <Presentacion>
           <Principal>
             <Titulo level={0}>ACTIVA TU MODO TRYHARD EN</Titulo>
@@ -146,6 +147,7 @@ class HomeContainer extends React.Component {
           </CardActive>
           
         </TorneosCardContainer>
+        </ContenedorMain>
       </>
     );
   }

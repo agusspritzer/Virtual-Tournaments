@@ -11,10 +11,12 @@ MensajeArea,
 import { Titulo } from 'components';
 import { Faq } from 'components';
 import { ButtonFilled } from 'components';
+import { ContenedorMain } from 'components';
+import { FullWidthSection } from 'components';
 
 export default function AyudaContainer() {
   return <>
-
+<ContenedorMain>
 <SeccionAyuda>
 <Titulo level={5}>AYUDA</Titulo>
 <Titulo level={0}>¿EN QUE PODEMOS AYUDARTE?</Titulo>
@@ -89,6 +91,13 @@ Mensaje="ENVIAR">
 </MensajeArea>
 
 </MensajeContainer>
+</ContenedorMain>
+
+<FullWidthSection>
+  <p>dsadasdasd</p>
+
+</FullWidthSection>
+
 
   </>;
 }

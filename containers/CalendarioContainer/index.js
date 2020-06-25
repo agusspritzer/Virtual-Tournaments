@@ -9,11 +9,11 @@ CardsContainer,
 
 import { Titulo } from 'components';
 import { CardCalendario } from 'components';
-
+import { ContenedorMain } from 'components';
 
 export default function CalendarioContainer() {
   return <>
-
+<ContenedorMain>
 
 <Titulo level={3}> CALENDARIO DE TORNEOS</Titulo>
 
@@ -82,5 +82,7 @@ export default function CalendarioContainer() {
 
     </CardsContainer>
 </Itinerario>
+
+</ContenedorMain>
   </>;
 }
