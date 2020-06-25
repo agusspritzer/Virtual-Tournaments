@@ -38,6 +38,8 @@ div img {
   margin-right: 4%;
 }
 
+
+
 p {
   color: #D6D6D6;
   font-size: 0.6em;

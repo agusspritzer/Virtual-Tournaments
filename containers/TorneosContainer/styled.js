@@ -5,7 +5,7 @@ width: 70%;
 margin: 0 auto;
 padding-bottom: 10%;
 
-h1{
+h3{
   font-size: 3em;
   font-weight: 700;
   text-align: center;
@@ -15,7 +15,7 @@ h1{
 input{
   width: 100%;
   padding: 2% 3% 1.5% 3%;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
   color: #272727;
   outline: none;

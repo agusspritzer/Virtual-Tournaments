@@ -46,7 +46,7 @@ export default function TorneosContainer() {
           Inscriptos="14/32">           
   </CardProx>
   <CardProx
-          GameImg="mortal"
+          GameImg="counter"
           TorneoName="TORNEO INVERNAL SUBZERO"
           TorneoId="#PP210"
           Game="Mortal Kombat"
@@ -54,7 +54,7 @@ export default function TorneosContainer() {
           Inscriptos="14/32">           
   </CardProx>
   <CardProx
-          GameImg="mortal"
+          GameImg="pummel"
           TorneoName="TORNEO INVERNAL SUBZERO"
           TorneoId="#PP210"
           Game="Mortal Kombat"
@@ -62,7 +62,7 @@ export default function TorneosContainer() {
           Inscriptos="14/32">           
   </CardProx>
   <CardProx
-          GameImg="mortal"
+          GameImg="paladins"
           TorneoName="TORNEO INVERNAL SUBZERO"
           TorneoId="#PP210"
           Game="Mortal Kombat"
@@ -70,7 +70,7 @@ export default function TorneosContainer() {
           Inscriptos="14/32">           
   </CardProx>
   <CardProx
-          GameImg="mortal"
+          GameImg="rainbow"
           TorneoName="TORNEO INVERNAL SUBZERO"
           TorneoId="#PP210"
           Game="Mortal Kombat"
@@ -78,7 +78,7 @@ export default function TorneosContainer() {
           Inscriptos="14/32">           
   </CardProx>
   <CardProx
-          GameImg="mortal"
+          GameImg="lol"
           TorneoName="TORNEO INVERNAL SUBZERO"
           TorneoId="#PP210"
           Game="Mortal Kombat"
@@ -91,7 +91,7 @@ export default function TorneosContainer() {
   <Titulo level={3}  style={{ paddingBottom: '0' }}>Activos</Titulo>
   <TorneosCardContainer>
             <CardActive
-                  GameImg="pummel"
+                  GameImg="brawl"
                   TorneoName="TORNEO DE JULIO PUMMEL PARTY"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -100,7 +100,7 @@ export default function TorneosContainer() {
               </CardActive>
 
               <CardActive
-                  GameImg="pummel"
+                  GameImg="mortal"
                   TorneoName="TORNEO DE JULIO PUMMEL PARTY"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -109,7 +109,7 @@ export default function TorneosContainer() {
               </CardActive>
 
               <CardActive
-                  GameImg="pummel"
+                  GameImg="rainbow"
                   TorneoName="TORNEO DE JULIO PUMMEL PARTY"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -118,7 +118,7 @@ export default function TorneosContainer() {
               </CardActive>
 
               <CardActive
-                  GameImg="pummel"
+                  GameImg="counter"
                   TorneoName="TORNEO DE JULIO PUMMEL PARTY"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -132,7 +132,7 @@ export default function TorneosContainer() {
     <Titulo level={3}  style={{ paddingBottom: '0' }}>Pasados</Titulo>
   <TorneosCardContainer>
             <CardPast
-                  GameImg="rainbow"
+                  GameImg="pummel"
                   TorneoName="TORNEO BANK / BORDER / CHALET"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -141,7 +141,7 @@ export default function TorneosContainer() {
               </CardPast>
 
               <CardPast
-                  GameImg="rainbow"
+                  GameImg="mortal"
                   TorneoName="TORNEO BANK / BORDER / CHALET"
                   TorneoId="#PP210"
                   Game="Pummel Party"
@@ -150,7 +150,7 @@ export default function TorneosContainer() {
               </CardPast>
 
               <CardPast
-                  GameImg="rainbow"
+                  GameImg="lol"
                   TorneoName="TORNEO BANK / BORDER / CHALET"
                   TorneoId="#PP210"
                   Game="Pummel Party"

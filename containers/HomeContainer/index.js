@@ -110,7 +110,7 @@ class HomeContainer extends React.Component {
         <TorneosCardContainer>
 
           <CardActive
-          GameImg="pummel"
+          GameImg="counter"
           TorneoName="TORNEO DE JULIO PUMMEL PARTY"
           TorneoId="#PP210"
           Game="Pummel Party"
@@ -119,7 +119,7 @@ class HomeContainer extends React.Component {
           </CardActive>
 
           <CardActive
-          GameImg="pummel"
+          GameImg="lol"
           TorneoName="TORNEO DE JULIO PUMMEL PARTY"
           TorneoId="#PP210"
           Game="Pummel Party"
@@ -128,7 +128,7 @@ class HomeContainer extends React.Component {
           </CardActive>
 
           <CardActive
-          GameImg="pummel"
+          GameImg="rainbow"
           TorneoName="TORNEO DE JULIO PUMMEL PARTY"
           TorneoId="#PP210"
           Game="Pummel Party"
@@ -137,7 +137,7 @@ class HomeContainer extends React.Component {
           </CardActive>
 
           <CardActive
-          GameImg="pummel"
+          GameImg="mortal"
           TorneoName="TORNEO DE JULIO PUMMEL PARTY"
           TorneoId="#PP210"
           Game="Pummel Party"

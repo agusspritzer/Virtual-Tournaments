@@ -4,15 +4,15 @@ import {ContenedorFooter, Logo} from './styled';
 {/* importo el div que creo en styled*/}
 
 {/* Este es el compoennte donde vos a poner el codigo delheader*/}
+import { Titulo } from 'components';
 
 {/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/}
 class Footer extends React.Component{
     render (){
         return (
             <ContenedorFooter>
-                 <h3>
-                     ¡SEGUINOS EN LAS REDES!
-                 </h3>
+
+                 <Titulo level={3}>¡SEGUINOS EN LAS REDES!</Titulo>
                              <nav>
                                  <ul>
                                      <li>

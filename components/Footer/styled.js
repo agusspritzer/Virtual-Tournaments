@@ -20,12 +20,9 @@ padding-bottom: 5%;
 
 
 h3{
-    text-align: center;
-    font-size:1.6em;
-    font-weight:700;
+  text-align: center;
+    font-size:1.2em;
     padding:3%;
-
-    font-family: 'TTOctosquares';
 }
 
 nav {

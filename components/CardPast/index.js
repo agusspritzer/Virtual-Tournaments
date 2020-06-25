@@ -24,13 +24,15 @@ export default function CardActive({GameImg,TorneoName, TorneoId, Game, Player, 
 
                 <Titulo level={5}>{Game}</Titulo>
               </li>
-
               <li>
                 <div>
                   <img src="/assets/card_icons/pasados/trophy.png" />
                   <Titulo level={4}>Ganador</Titulo>
                 </div>
-                <Titulo level={5}>{Player}</Titulo>
+                <div>
+                <img style={{ width: '10%', borderRadius: '10px'  }} src="/assets/players/prueba.jpg" /> <Titulo level={5}>{Player}</Titulo>
+                </div>
+                
               </li>
 
               <li>

@@ -3,10 +3,10 @@ import { H1, H2, H3, H4, H5 } from './styled';
 
 export default function Titulo({ level, children }) {
   switch (level) {
-    case 0:
+    case 1:
       return <H1>{children}</H1>;
 
-    case 1:
+    case 2:
       return <H2>{children}</H2>;
 
     case 3:
