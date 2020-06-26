@@ -3,9 +3,9 @@ import {Button} from './styled';
 
 
 
-export default function CardActive({Mensaje}) {
+export default function ButtonFilled({Mensaje,ButtonMode,ButtonSize}) {
   return(
-    <Button href="#">{Mensaje}</Button>
+    <Button modo={ButtonMode} size={ButtonSize} href="#">{Mensaje}</Button>
 )
         
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContenedorHeader,Logo, Button_Prim, Button_Sec} from './styled';
+import {ContenedorHeader,Logo,} from './styled';
 
 {/* importo el div que creo en styled*/}
 
@@ -27,9 +27,8 @@ class Header extends React.Component{
                                          <a href="./ayuda">AYUDA</a>
                                          <a href="./proyecto">EL PROYECTO</a>
 
-                                         <Button_Sec href="#">INICIA SESION</Button_Sec>
-                                         <ButtonFilled
-                                        Mensaje="REGISTRATE"></ButtonFilled>
+                                         <ButtonFilled ButtonMode="" Mensaje="INICIA SESION"></ButtonFilled>
+                                         <ButtonFilled ButtonMode="relleno" Mensaje="REGISTRATE"></ButtonFilled>
                                      </li>
                                  </ul>
                              </nav>

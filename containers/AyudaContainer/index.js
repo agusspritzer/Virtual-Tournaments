@@ -8,11 +8,9 @@ MensajeContainer,
 MensajeArea,
   } from './styled';
 
-import { Titulo } from 'components';
-import { Faq } from 'components';
-import { ButtonFilled } from 'components';
-import { ContenedorMain } from 'components';
-import { FullWidthSection } from 'components';
+import { Titulo, Faq, ButtonFilled, ContenedorMain } from 'components';
+
+
 
 export default function AyudaContainer() {
   return <>
@@ -84,7 +82,6 @@ export default function AyudaContainer() {
 
 <ButtonFilled
 Mensaje="ENVIAR">
-
 </ButtonFilled>
 
 
@@ -92,11 +89,6 @@ Mensaje="ENVIAR">
 
 </MensajeContainer>
 </ContenedorMain>
-
-<FullWidthSection>
-  <p>dsadasdasd</p>
-
-</FullWidthSection>
 
 
   </>;

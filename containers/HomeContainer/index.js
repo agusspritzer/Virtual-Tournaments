@@ -77,7 +77,7 @@ class HomeContainer extends React.Component {
             height="480"
             muted
             targetId="twitch-embed"
-            channel="virtualtournaments_"
+            channel="brunenger"
             layout="video"
             width="800"
           />
