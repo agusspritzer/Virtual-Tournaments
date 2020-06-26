@@ -26,9 +26,7 @@ class HomeContainer extends React.Component {
       <ContenedorMain>
         <Presentacion>
           <Principal>
-            <Titulo level={0}>ACTIVA TU MODO TRYHARD EN</Titulo>
-            <Titulo level={0} style={{ color: '#EA33BC' }}>VIRTUAL TOURNAMENTS</Titulo>
-
+            <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
             <Titulo level={4}>
               Virtual Tournaments es la plataforma amateur definitiva que te
               ofrece la posibilidad de inscribirte a torneos de tus juegos

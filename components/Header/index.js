@@ -4,7 +4,7 @@ import {ContenedorHeader,Logo,} from './styled';
 {/* importo el div que creo en styled*/}
 
 {/* Este es el compoennte donde vos a poner el codigo delheader*/}
-import { ButtonFilled } from 'components';
+import { Button } from 'components';
 {/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/}
 class Header extends React.Component{
     render (){
@@ -27,8 +27,8 @@ class Header extends React.Component{
                                          <a href="./ayuda">AYUDA</a>
                                          <a href="./proyecto">EL PROYECTO</a>
 
-                                         <ButtonFilled ButtonMode="" Mensaje="INICIA SESION"></ButtonFilled>
-                                         <ButtonFilled ButtonMode="relleno" Mensaje="REGISTRATE"></ButtonFilled>
+                                         <Button ButtonMode="outline" Mensaje="INICIA SESION"></Button>
+                                         <Button  Mensaje="REGISTRATE"></Button>
                                      </li>
                                  </ul>
                              </nav>

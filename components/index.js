@@ -10,4 +10,5 @@ export { default as CardCalendario} from './CardCalendario';
 export { default as ContenedorMain} from './ContenedorMain';
 export { default as FullWidthSection} from './FullWidthSection';
 export { default as Faq } from './Faq';
-export { default as ButtonFilled } from './ButtonFilled';
+export { default as Button} from './Button';
+export { default as Quote} from './Quote';

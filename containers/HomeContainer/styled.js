@@ -4,6 +4,24 @@ import styled from 'styled-components';
 
 const Principal = styled.div`
   width: 50%;
+  h3{
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.2em;
+    padding-bottom:4%;
+  }
+
+  h4{
+    letter-spacing: 0.8px;
+  }
+ 
+  span{
+    font-weight: 700;
+    color: #EA33BC;
+  }
+
+
+
 `;
 const Foto = styled.div`
   width: 50%;

@@ -8,7 +8,7 @@ MensajeContainer,
 MensajeArea,
   } from './styled';
 
-import { Titulo, Faq, ButtonFilled, ContenedorMain } from 'components';
+import { Titulo, Faq, Button, ContenedorMain } from 'components';
 
 
 
@@ -80,9 +80,9 @@ export default function AyudaContainer() {
 <MensajeArea>
 <textarea name="comment" form="usrform" placeholder="Escribi tu consulta aca..." autoComplete="off" ></textarea>
 
-<ButtonFilled
+<Button
 Mensaje="ENVIAR">
-</ButtonFilled>
+</Button>
 
 
 </MensajeArea>
