@@ -13,6 +13,7 @@ const ContenedorHeader = styled.div`
     margin: 0;
   }
 
+  z-index: 99;
   background-color: #272727;
   padding: 1% 3% 1% 3%;
   display: flex;

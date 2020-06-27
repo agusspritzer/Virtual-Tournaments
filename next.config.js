@@ -1,4 +1,3 @@
-const withPlugins = require('next-compose-plugins');
 const withFonts = require('next-fonts');
 const withCSS = require('@zeit/next-css');
 

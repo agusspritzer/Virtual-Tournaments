@@ -27,7 +27,8 @@ h4{
     margin-top: 2%;
 }
 
-  figure img {
+  img {
+    display: block;
     height: 30%;
     width: 50%;
     margin:0 auto;
@@ -64,10 +65,91 @@ h5{
 `;
 
 
+const LogosContainer = styled.div`
+  text-align:center;
+  margin-top: 10%;
+
+h5{
+    font-family: 'Maison Neue Extended';
+    color: #EEEEEE;
+    letter-spacing: 1px;
+    margin:0% 0% 8% 0;
+    font-weight: 600;
+}
+
+
+`;
+
+const Logos = styled.div`
+
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: baseline;
+
+figure{
+  margin: 0 4% 8% 4%;
+}
+img{
+  width:70%;
+  margin: 0 auto;
+  
+}
+`;
+
+const VTpoints = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  p{
+    line-height: 2em;
+     }
+`;
+
+
+
+const VT_Img = styled.div`
+  width: 40%;
+  padding:2% 2% 2% 2%;
+  
+  img {
+    display: block;
+    height: 30%;
+    width: 50%;
+    margin:0 auto;
+
+  }
+
+  p{
+    text-align:center;
+    color: #EEEEEE;
+  }
+`;
+
+
+const VT_Info = styled.div`
+  width: 60%;
+
+p{
+  margin-top: 2%;
+  width: 90%; 
+}
+`;
+
+
 export {
     Presentacion,
     Principal,
     PresentacionPersona,
     Testimonios,
+    LogosContainer,
+    Logos,
+    VTpoints,
+    VT_Info,
+    VT_Img,
   };
   
