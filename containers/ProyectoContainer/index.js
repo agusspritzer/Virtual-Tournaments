@@ -1,9 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
-=======
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
->>>>>>> ffa4354cc3bc514cb9ae503d53f287feb09fcca5
+
 
 import {
   Principal,
