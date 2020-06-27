@@ -12,3 +12,4 @@ export { default as FullWidthSection} from './FullWidthSection';
 export { default as Faq } from './Faq';
 export { default as Button} from './Button';
 export { default as Quote} from './Quote';
+export { default as Slider} from './Slider';

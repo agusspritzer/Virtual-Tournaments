@@ -1,4 +1,6 @@
 import React from 'react';
+import "~slick-carousel/slick/slick.css"; 
+import "~slick-carousel/slick/slick-theme.css";
 
 import {
   Principal,
@@ -13,6 +15,7 @@ import { ContenedorMain } from 'components';
 import { FullWidthSection } from 'components';
 import { Titulo } from 'components';
 import { Quote } from 'components';
+import { Slider } from 'components';
 
 export default function ProyectoContainer() {
   return <>
@@ -46,13 +49,7 @@ export default function ProyectoContainer() {
 
   <Testimonios>
     <Titulo level={5}>TESTIMONIOS</Titulo>
-    <Quote
-    Frase="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo, tortor eget congue consectetur,
-    mauris mi tincidunt nunc, vel posuere ex velit quis eros. Vivamus eros leo, finibus a rutrum sit amet, pretium a lectus.
-     Cras laoreet porttitor libero sed tincidunt. Sed dignissim ex eget justo scelerisque, a suscipit tellus cursus."
-    Autor="Javier Kunsa"
-    Descripcion="Jugador profesional de Mortal Kombat"
-    ></Quote>
+    <Slider></Slider>
   </Testimonios>
 
 
