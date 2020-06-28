@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
 
 const Card = styled.div`
-  width: 23%;
+
+  @media ${media.mediumDevice} {
+    width: 23%;
   background-color: #eeeeee;
   margin-bottom:3%;
   margin-right: 2%;
+}
+
+
 
 `;
 
@@ -25,6 +31,19 @@ figure img{
 
 const Card_Info = styled.div`
    padding: 8% 8% 2% 10%;
+   
+p {
+  color: #707070;
+  font-size: 0.6em;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+
+}
+
 
 div {
   display: flex;
@@ -38,10 +57,6 @@ div img {
   margin-right: 4%;
 }
 
-p {
-  color: #707070;
-  font-size: 0.6em;
-}
 
 h3 {
   font-size: 1em;
@@ -67,16 +82,7 @@ h5 {
   font-family: 'Maison Neue Extended';
 }
 
-ul {
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0;
 
-}
-li {
-  text-align: left;
-  margin-bottom: 4%;
-}
 `;
 
 export {

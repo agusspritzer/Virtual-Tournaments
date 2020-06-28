@@ -7,8 +7,7 @@ import {ContenedorFooter, Logo} from './styled';
 import { Titulo } from 'components';
 
 {/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/}
-class Footer extends React.Component{
-    render (){
+export default function Footer (){
         return (
             <ContenedorFooter>
 
@@ -34,6 +33,3 @@ class Footer extends React.Component{
 
         )
     }
-}
-
-export default Footer;

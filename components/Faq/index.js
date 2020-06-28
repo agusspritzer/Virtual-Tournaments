@@ -2,7 +2,6 @@ import React from 'react';
 import {PreguntaContainer} from './styled';
 import {Titulo} from 'components';
 
-import { media } from 'lib/constants/media';
 
 export default function Faq({Pregunta,Respuesta}) {
   return(

@@ -2,7 +2,6 @@ import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
 import {
   Principal,
   Presentacion,
@@ -26,8 +25,7 @@ export default function ProyectoContainer() {
       <ContenedorMain>
         <Presentacion>
           <PresentacionPersona>
-
-              <img src="/assets/players/prueba.jpg" />
+            <img src="/assets/players/prueba.jpg" />
 
             <Titulo level={4}>Agustín Spritzer</Titulo>
             <p>Fundador de Virtual Tournaments</p>
@@ -56,25 +54,41 @@ export default function ProyectoContainer() {
 
       <ContenedorMain>
         <LogosContainer>
-          <Titulo level={5}> Las empresas mas reconocidas del gaming ya colaboraron con nosotros </Titulo>
+          <Titulo level={4}>
+            {' '}
+            Las empresas mas reconocidas del gaming ya colaboraron con nosotros{' '}
+          </Titulo>
           <Logos>
-            <figure><img src="/assets/logos/nvidia.png"/></figure>
-            <figure>  <img src="/assets/logos/razer.png"/></figure>
-            <figure><img src="/assets/logos/hyper.png"/></figure>
-            <figure>  <img src="/assets/logos/predator.png"/></figure>
-            <figure> <img src="/assets/logos/logi.png"/></figure>
-            <figure> <img src="/assets/logos/msi.png"/></figure>
-            <figure>  <img src="/assets/logos/steel.png"/></figure>
-        
-
+            <figure>
+              <img src="/assets/logos/nvidia.png" />
+            </figure>
+            <figure>
+              {' '}
+              <img src="/assets/logos/razer.png" />
+            </figure>
+            <figure>
+              <img src="/assets/logos/hyper.png" />
+            </figure>
+            <figure>
+              {' '}
+              <img src="/assets/logos/predator.png" />
+            </figure>
+            <figure>
+              {' '}
+              <img src="/assets/logos/logi.png" />
+            </figure>
+            <figure>
+              <img src="/assets/logos/msi.png" />
+            </figure>
+            <figure>
+              <img src="/assets/logos/steel.png" />
+            </figure>
           </Logos>
         </LogosContainer>
 
         <VTpoints>
           <VT_Info>
-            <Titulo level={1}>
-            QUE TODAS TUS VICTORIAS VALGAN LA PENA
-            </Titulo>
+            <Titulo level={1}>QUE TODAS TUS VICTORIAS VALGAN LA PENA</Titulo>
             <p>
               El principal objetivo fue crear una plataforma que unifique los
               torneos amateurs que se juegan todos los dias. Era darle una
@@ -84,12 +98,10 @@ export default function ProyectoContainer() {
           </VT_Info>
 
           <VT_Img>
-          <img src="/assets/vtpoints.png" />
-          <p>VT Points</p>
+            <img src="/assets/vtpoints.png" />
+            <p>VT Points</p>
           </VT_Img>
-
         </VTpoints>
-
       </ContenedorMain>
     </>
   );

@@ -1,14 +1,15 @@
 import React from 'react';
-import {ButtonType} from './styled';
+import { ButtonSubmit } from './styled';
 
 
 
-export default function Button({Mensaje,ButtonMode}) {
-  return(
-    <ButtonType modo={ButtonMode}  href="#">{Mensaje}</ButtonType>
+const Button = React.forwardRef(({ mensaje, ancho, onClick, href }, ref) => {
+    return (
+        <ButtonSubmit onClick={onClick} href={href} ref={ref} width={ancho}>{mensaje} </ButtonSubmit>
+    )
+
+}
 )
-        
-    }
 
 
-
+export default Button;

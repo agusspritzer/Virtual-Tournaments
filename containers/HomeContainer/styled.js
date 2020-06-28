@@ -104,7 +104,7 @@ const Beneficios = styled.div`
 `;
 
 
-const TorneosCardContainer= styled.div`
+const TorneosCardContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;

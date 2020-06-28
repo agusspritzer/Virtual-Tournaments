@@ -1,31 +1,29 @@
-import styled,{css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import media from 'lib/constants/media'
 
-const ButtonType= styled.a`
+const ButtonSubmit = styled.button`
 
 
 @media ${media.mediumDevice} {
+
+    width: ${(props) => props.width};
     text-decoration: none;
+    outline: inherit;
     color: #eeeeee;
     font-size: 0.8em;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'TTOctosquares';
-  padding: 2% 3% 2% 3%;
+  padding: 20px 15px 20px 15px;
   background-color: #6418DC;
   cursor: pointer;
 
-  ${props => props.modo === "outline"? css`
- 
-  background-color: #272727;
-      border: 2.5px solid #6418DC;
+border: 0px solid transparent;
 
-  `: css`
-  background-color: #6418DC;
- 
-  ` }
+
+
 }
 `;
 
 export {
-ButtonType
+    ButtonSubmit,
 };

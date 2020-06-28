@@ -1,40 +1,58 @@
 import React from 'react';
-import {ContenedorHeader,Logo,} from './styled';
+import { ContenedorHeader, Logo } from './styled';
+import Link from 'next/link';
 
-{/* importo el div que creo en styled*/}
+{/* importo el div que creo en styled*/ }
 
-{/* Este es el compoennte donde vos a poner el codigo delheader*/}
-import { Button } from 'components';
-{/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/}
-class Header extends React.Component{
-    render (){
+{/* Este es el compoennte donde vos a poner el codigo delheader*/ }
+import { Ext_Link } from 'components';
+{/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/ }
+class Header extends React.Component {
+    render() {
         return (
             <ContenedorHeader>
-                 
-                    <Logo>
+
+                <Logo>
                     <a href="./index">
-                    <img src="../assets/logo.png"/>
+                        <img src="../assets/logo.png" />
                     </a>
-                    </Logo>
-                        
-                   
+                </Logo>
 
-                             <nav>
-                                 <ul>
-                                     <li>
-                                         <a href="./torneos">TORNEOS</a>
-                                         <a href="./calendario">CALENDARIO</a>
-                                         <a href="./ayuda">AYUDA</a>
-                                         <a href="./proyecto">EL PROYECTO</a>
 
-                                         <Button ButtonMode="outline" Mensaje="INICIA SESION"></Button>
-                                         <Button  Mensaje="REGISTRATE"></Button>
-                                     </li>
-                                 </ul>
-                             </nav>
-                     
-                 
-                
+
+                <nav>
+                    <ul>
+                        <li>
+                            <Link href="/torneos">
+                                <a>TORNEOS</a>
+                            </Link>
+
+                            <Link href="/calendario">
+                                <a>CALENDARIO</a>
+                            </Link>
+
+                            <Link href="/ayuda">
+                                <a>AYUDA</a>
+                            </Link>
+
+                            <Link href="/proyecto">
+                                <a>EL PROYECTO</a>
+                            </Link>
+
+                            <Link href="/login" passHref >
+                                <Ext_Link ButtonMode="outline" Mensaje="INICIA SESION"></Ext_Link>
+                            </Link>
+
+                            <Link href="/registro" passHref >
+                                <Ext_Link Mensaje="REGISTRATE"></Ext_Link>
+                            </Link>
+
+                        </li>
+                    </ul>
+                </nav>
+
+
+
             </ContenedorHeader>
 
         )

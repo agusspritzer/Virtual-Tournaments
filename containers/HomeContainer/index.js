@@ -23,128 +23,131 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <>
-      <ContenedorMain>
-        <Presentacion>
-          <Principal>
-            <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
-            <Titulo level={4}>
-              Virtual Tournaments es la plataforma amateur definitiva que te
-              ofrece la posibilidad de inscribirte a torneos de tus juegos
-              preferidos para demostrar que sos el mejor en ellos!
+        <ContenedorMain>
+
+          <Presentacion>
+            <Principal>
+              <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
+              <Titulo level={4}>
+                Virtual Tournaments es la plataforma amateur definitiva que te
+                ofrece la posibilidad de inscribirte a torneos de tus juegos
+                preferidos para demostrar que sos el mejor en ellos!
             </Titulo>
-          </Principal>
+            </Principal>
 
-          <Foto>
-            <img src="../assets/presentacion.png" />
-          </Foto>
-        </Presentacion>
+            <Foto>
+              <img src="../assets/presentacion.png" />
+            </Foto>
 
-        <Titulo level={3} style={{ textAlign: 'center' }} >
-          ¡Competir desde casa nunca tuvo tantas ventajas!
+          </Presentacion>
+
+
+          <Titulo level={3} style={{ textAlign: 'center' }} >
+            ¡Competir desde casa nunca tuvo tantas ventajas!
         </Titulo>
 
-        <Beneficios>
-          <div>
-            <img src="../assets/beneficios/trofeo.png" />
-            <p>
-              Podrás acceder a grandes premios monetarios por ganar torneos de
-              tus juegos favoritos
+          <Beneficios>
+            <div>
+              <img src="../assets/beneficios/trofeo.png" />
+              <p>
+                Podrás acceder a grandes premios monetarios por ganar torneos de
+                tus juegos favoritos
             </p>
-          </div>
-          <div>
-            <img src="../assets/beneficios/twitch.png" />
-            <p>
-              Contar con la posibilidad de que tus partidas sean vistas por
-              miles de jugadores a través de Twitch
+            </div>
+            <div>
+              <img src="../assets/beneficios/twitch.png" />
+              <p>
+                Contar con la posibilidad de que tus partidas sean vistas por
+                miles de jugadores a través de Twitch
             </p>
-          </div>
-          <div>
-            <img src="../assets/beneficios/personas.png" />
-            <p>
-              Formar parte de una comunidad que apoya la escena local de
-              jugadores no profesionales en E-Sports
+            </div>
+            <div>
+              <img src="../assets/beneficios/personas.png" />
+              <p>
+                Formar parte de una comunidad que apoya la escena local de
+                jugadores no profesionales en E-Sports
             </p>
-          </div>
-        </Beneficios>
+            </div>
+          </Beneficios>
 
-        <Stream>
-          <Titulo level={3}>¡Estamos transmitiendo en vivo ahora!</Titulo>
-          <Titulo level={4}>Torneo MK 210 - Mortal Kombat - 8vos de Final</Titulo>
-          <TwitchEmbedVideo
-            autoplay
-            height="480"
-            muted
-            targetId="twitch-embed"
-            channel="brunenger"
-            layout="video"
-            width="800"
-          />
-        </Stream>
+          <Stream>
+            <Titulo level={3}>¡Estamos transmitiendo en vivo ahora!</Titulo>
+            <Titulo level={4}>Torneo MK 210 - Mortal Kombat - 8vos de Final</Titulo>
+            <TwitchEmbedVideo
+              autoplay
+              height="480"
+              muted
+              targetId="twitch-embed"
+              channel="brunenger"
+              layout="video"
+              width="800"
+            />
+          </Stream>
 
-        <Titulo level={3}>Demostra ser el mejor en tu juegos favoritos</Titulo>
+          <Titulo level={3}>Demostra ser el mejor en tu juegos favoritos</Titulo>
 
-        <Juegos>
-          <Card_Juego>
-            <figure>
-            <img src="../assets/rainbow.jpg" />
-            </figure>
-          </Card_Juego>
-          <Card_Juego>
-            {' '}
-            <img src="../assets/rainbow.jpg" />{' '}
-          </Card_Juego>
-          <Card_Juego>
-            {' '}
-            <img src="../assets/rainbow.jpg" />{' '}
-          </Card_Juego>
-          <Card_Juego>
-            {' '}
-            <img src="../assets/rainbow.jpg" />{' '}
-          </Card_Juego>
-        </Juegos>
-        <Titulo level={5} >TODOS LOS JUEGOS</Titulo>
+          <Juegos>
+            <Card_Juego>
+              <figure>
+                <img src="../assets/rainbow.jpg" />
+              </figure>
+            </Card_Juego>
+            <Card_Juego>
+              {' '}
+              <img src="../assets/rainbow.jpg" />{' '}
+            </Card_Juego>
+            <Card_Juego>
+              {' '}
+              <img src="../assets/rainbow.jpg" />{' '}
+            </Card_Juego>
+            <Card_Juego>
+              {' '}
+              <img src="../assets/rainbow.jpg" />{' '}
+            </Card_Juego>
+          </Juegos>
+          <Titulo level={5} >TODOS LOS JUEGOS</Titulo>
 
 
-        <Titulo level={3}  style={{ paddingTop: '10%' }}>Torneos activos</Titulo>
-        <TorneosCardContainer>
+          <Titulo level={3} style={{ paddingTop: '10%' }}>Torneos activos</Titulo>
+          <TorneosCardContainer>
 
-          <CardActive
-          GameImg="counter"
-          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-          TorneoId="#PP210"
-          Game="Pummel Party"
-          Fase="8vos de final"
-          ProxFecha="13 de Julio">           
-          </CardActive>
+            <CardActive
+              GameImg="counter"
+              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+              TorneoId="#PP210"
+              Game="Pummel Party"
+              Fase="8vos de final"
+              ProxFecha="13 de Julio">
+            </CardActive>
 
-          <CardActive
-          GameImg="lol"
-          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-          TorneoId="#PP210"
-          Game="Pummel Party"
-          Fase="8vos de final"
-          ProxFecha="13 de Julio">           
-          </CardActive>
+            <CardActive
+              GameImg="lol"
+              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+              TorneoId="#PP210"
+              Game="Pummel Party"
+              Fase="8vos de final"
+              ProxFecha="13 de Julio">
+            </CardActive>
 
-          <CardActive
-          GameImg="rainbow"
-          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-          TorneoId="#PP210"
-          Game="Pummel Party"
-          Fase="8vos de final"
-          ProxFecha="13 de Julio">           
-          </CardActive>
+            <CardActive
+              GameImg="rainbow"
+              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+              TorneoId="#PP210"
+              Game="Pummel Party"
+              Fase="8vos de final"
+              ProxFecha="13 de Julio">
+            </CardActive>
 
-          <CardActive
-          GameImg="mortal"
-          TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-          TorneoId="#PP210"
-          Game="Pummel Party"
-          Fase="8vos de final"
-          ProxFecha="13 de Julio">           
-          </CardActive>
-          
-        </TorneosCardContainer>
+            <CardActive
+              GameImg="mortal"
+              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+              TorneoId="#PP210"
+              Game="Pummel Party"
+              Fase="8vos de final"
+              ProxFecha="13 de Julio">
+            </CardActive>
+
+          </TorneosCardContainer>
         </ContenedorMain>
       </>
     );

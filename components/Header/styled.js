@@ -62,42 +62,4 @@ const Logo = styled.div`
 `;
 
 
-{
-  /* BOTONES */
-}
-
-
-{  /* Boton Relleno */}
-const Button_Prim = styled.a`
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
-  padding: 2.2%;
-  font-size: 1em;
-  background-color: #6418DC;
-  text-align: center;
-  color: black;
-  cursor: pointer;
-`;
-
-{  /* Boton solo bordes*/}
-const Button_Sec = styled.a`
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
-  padding: 2%;
-  font-size: 1em;
-  background-color: none;
-  border: 3px solid #6418DC;
-  text-align: center;
-  color: black;
-  cursor: pointer;
-`;
-
-
-
-export { ContenedorHeader, Logo, Button_Prim, Button_Sec };
+export { ContenedorHeader, Logo };

@@ -25,7 +25,6 @@ const CardsContainer = styled.div`
 
 
 
-
 export {
     Itinerario,
     Mes,

@@ -68,13 +68,15 @@ h5{
 const LogosContainer = styled.div`
   text-align:center;
   margin-top: 10%;
+ 
 
-h5{
-    font-family: 'Maison Neue Extended';
+
+h4{
     color: #EEEEEE;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
     margin:0% 0% 8% 0;
-    font-weight: 600;
+    font-weight: 500;
+   
 }
 
 
@@ -136,20 +138,20 @@ const VT_Info = styled.div`
 
 p{
   margin-top: 2%;
-  width: 90%; 
+  width: 90%;
+  color: #B4B4B4; 
 }
 `;
 
 
 export {
-    Presentacion,
-    Principal,
-    PresentacionPersona,
-    Testimonios,
-    LogosContainer,
-    Logos,
-    VTpoints,
-    VT_Info,
-    VT_Img,
-  };
-  
+  Presentacion,
+  Principal,
+  PresentacionPersona,
+  Testimonios,
+  LogosContainer,
+  Logos,
+  VTpoints,
+  VT_Info,
+  VT_Img,
+};
