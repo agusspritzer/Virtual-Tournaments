@@ -66,12 +66,12 @@ const Card_Juego = styled.div`
 
   figure{
     overflow: hidden;
-    height: 70px;
+    height: 350px;
 }
 
 figure img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 `;
 

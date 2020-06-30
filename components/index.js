@@ -15,3 +15,5 @@ export { default as Quote } from './Quote';
 export { default as Slider } from './Slider';
 export { default as DataBox } from './DataBox';
 export { default as Button } from './Button';   // Button es de tipo submit y puedo editar su width a traves de props
+export { default as TorneoImg } from './TorneoImg';  //La parte de arriba cuando entras a la pagina de un torneo, que tiene la imagen
+export { default as TorneoInfo } from './TorneoInfo';

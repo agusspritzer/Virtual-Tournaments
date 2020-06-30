@@ -8,6 +8,10 @@ const Card = styled.div`
   margin-right: 2%;
 
   
+:hover {
+  transition: all .4s ease-in-out;
+		cursor: pointer;
+	}
 `;
 
 const Card_Img = styled.div`

@@ -8,3 +8,4 @@ export { default as CalendarioContainer } from './CalendarioContainer';
 export { default as ProyectoContainer } from './ProyectoContainer';
 export { default as RegistroContainer } from './RegistroContainer';
 export { default as LoginContainer } from './LoginContainer';
+export { default as InfoTorneoContainer } from './InfoTorneoContainer';

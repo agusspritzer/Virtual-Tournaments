@@ -7,8 +7,10 @@ export const Main = styled.main`
     margin: 0 auto;
     padding-top: 10%;
     
+    
 @media ${media.mediumDevice} {
   width: 65%;
+
 }
 
 

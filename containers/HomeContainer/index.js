@@ -89,20 +89,23 @@ class HomeContainer extends React.Component {
           <Juegos>
             <Card_Juego>
               <figure>
-                <img src="../assets/rainbow.jpg" />
+                <img src="../assets/juegos/rainbow.jpg" />
               </figure>
             </Card_Juego>
             <Card_Juego>
-              {' '}
-              <img src="../assets/rainbow.jpg" />{' '}
+              <figure>
+                <img src="../assets/juegos/lol.jpg" />
+              </figure>
             </Card_Juego>
             <Card_Juego>
-              {' '}
-              <img src="../assets/rainbow.jpg" />{' '}
+              <figure>
+                <img src="../assets/juegos/mortal.jpg" />
+              </figure>
             </Card_Juego>
             <Card_Juego>
-              {' '}
-              <img src="../assets/rainbow.jpg" />{' '}
+              <figure>
+                <img src="../assets/juegos/paladins.jpg" />
+              </figure>
             </Card_Juego>
           </Juegos>
           <Titulo level={5} >TODOS LOS JUEGOS</Titulo>

@@ -6,6 +6,5 @@ export const SectionFullWidth = styled.main`
 
   width: 100%;
   margin: 0 auto;
-  margin-top: 10%;
-  text-align:center;
+ 
 `;
