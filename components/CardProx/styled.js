@@ -6,11 +6,12 @@ const Card = styled.div`
   background-color: #eeeeee;
   margin-bottom:3%;
   margin-right: 2%;
+  transition: ease 0s, transform 0.4s ease 0s;
 
   
 :hover {
-  transition: all .4s ease-in-out;
-		cursor: pointer;
+  transform: scale(1.08);
+  cursor: pointer;
 	}
 `;
 

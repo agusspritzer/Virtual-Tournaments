@@ -42,11 +42,12 @@ select{
   padding: 3% 5% 3% 5%;
   font-size: 1.2em;
 }
+
 `
 
 
 
-const TorneosCardContainer= styled.div`
+const TorneosCardContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -56,6 +57,6 @@ const TorneosCardContainer= styled.div`
 
 export {
   TorneosCardContainer,
-    Buscador,
-    Filtros
+  Buscador,
+  Filtros
 };

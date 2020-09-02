@@ -39,9 +39,14 @@ flex-direction: column;
 }
 `;
 
+const IniciarSesion = styled.div`
+
+padding-top: 6%;
+`;
 
 
 export {
     DataCont,
     FormLogin,
+    IniciarSesion
 };

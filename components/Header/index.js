@@ -24,27 +24,27 @@ class Header extends React.Component {
                     <ul>
                         <li>
                             <Link href="/torneos">
-                                <a>TORNEOS</a>
+                                Torneos
                             </Link>
 
                             <Link href="/calendario">
-                                <a>CALENDARIO</a>
+                                Calendario
                             </Link>
 
                             <Link href="/ayuda">
-                                <a>AYUDA</a>
+                                Ayuda
                             </Link>
 
                             <Link href="/proyecto">
-                                <a>EL PROYECTO</a>
+                                El Proyecto
                             </Link>
 
                             <Link href="/login" passHref >
-                                <Ext_Link ButtonMode="outline" Mensaje="INICIA SESION"></Ext_Link>
+                                <Ext_Link ButtonMode="outline" Mensaje="Inicia Sesion"></Ext_Link>
                             </Link>
 
                             <Link href="/registro" passHref >
-                                <Ext_Link Mensaje="REGISTRATE"></Ext_Link>
+                                <Ext_Link Mensaje="Registrate"></Ext_Link>
                             </Link>
 
                         </li>

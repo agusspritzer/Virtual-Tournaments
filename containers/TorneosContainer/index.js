@@ -26,9 +26,11 @@ export default function TorneosContainer() {
 
                                 <Filtros>
                                         <select>
-                                                <option value="select">Todos</option>
-                                                <option value="select">TodoSs</option>
-                                                <option value="select">TodoDAS</option>
+                                                <option value="select">Mortal Kombat</option>
+                                                <option value="select">Rainbow Six</option>
+                                                <option value="select">Counter Strike:GO</option>
+                                                <option value="select">Paladins</option>
+                                                <option value="select">League of Legends</option>
                                         </select>
 
                                         <Titulo level={4}> TORNEOS </Titulo>

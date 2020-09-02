@@ -7,6 +7,7 @@ import Link from 'next/link';
 import {
     DataContainer,
     FormRow,
+    CrearCuenta
 } from './styled';
 
 import { ContenedorMain, Titulo, DataBox, Button } from 'components';
@@ -57,14 +58,15 @@ export default function RegistroContainer() {
                         />
                     </FormRow>
 
-                    <Link href="/index" passHref >
-                        <Button ancho="100%" mensaje="CREAR CUENTA" />
-                    </Link>
+                    <CrearCuenta>
+                        <Link href="/index" passHref >
+                            <Button ancho="100%" mensaje="CREAR CUENTA" />
+                        </Link>
 
-                    <Link href="/login" passHref >
-                        <p><a>¿Ya tenés cuenta? <span>Inicia sesion</span></a></p>
-                    </Link>
-
+                        <Link href="/login" passHref >
+                            <p><a>¿Ya tenés cuenta? <span>Inicia sesion</span></a></p>
+                        </Link>
+                    </CrearCuenta>
 
                 </DataContainer>
             </ContenedorMain>

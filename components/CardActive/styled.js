@@ -8,9 +8,14 @@ const Card = styled.div`
   background-color: #eeeeee;
   margin-bottom:3%;
   margin-right: 2%;
+  transition: ease 0s, transform 0.4s ease 0s;
+
 }
 
-
+:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+	}
 
 `;
 

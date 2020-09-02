@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SectionFullWidth = styled.main`
 
-  background-color: #6418DC;
+background-color: ${(props) => props.color};
 
   width: 100%;
   margin: 0 auto;

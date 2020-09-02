@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const Box = styled.div`
     width:100%;
-    margin: 10px 0 10px 0;
+    margin: 4px 0 4px 0;
 
 
 
@@ -19,7 +19,7 @@ const Box = styled.div`
 
   input{
   width:100%;
-  margin-top: 5px;
+  margin-top: 3px;
   padding: 20px 15px 20px 15px;
   font-size: 1em;
   letter-spacing: 0.2px;

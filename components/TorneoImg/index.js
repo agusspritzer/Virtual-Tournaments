@@ -1,8 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { Titulo } from 'components';
 
 import {
+    Pe,
     ImgTorneoContainer,
     ImgTorneo,
     Codigo,
@@ -17,6 +19,10 @@ export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible
     return (
         <ImgTorneoContainer>
             <ImgTorneo>
+                <Link href="/torneos">
+                    <Pe>Volver</Pe>
+                </Link>
+
                 <Codigo>{idTorneo}</Codigo>
                 <Titulo level={1}>{nameTorneo}</Titulo>
                 <ExtraInfo>
@@ -25,8 +31,6 @@ export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible
                 </ExtraInfo>
             </ImgTorneo>
         </ImgTorneoContainer>
-
-
     )
 
 }

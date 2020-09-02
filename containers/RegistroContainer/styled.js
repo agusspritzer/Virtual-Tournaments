@@ -38,9 +38,13 @@ flex-direction: column;
 }
 `;
 
+const CrearCuenta = styled.form`
+padding-top: 4%;
+`;
 
 
 export {
     DataContainer,
     FormRow,
+    CrearCuenta,
 };

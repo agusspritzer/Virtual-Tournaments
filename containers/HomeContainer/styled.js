@@ -22,6 +22,8 @@ const Principal = styled.div`
 
 
 
+
+
 `;
 const Foto = styled.div`
   width: 50%;
@@ -39,8 +41,13 @@ const Presentacion = styled.div`
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 15%;
-  padding-top: 2%;
+  margin-bottom: 18%;
+  margin-top: 8%;
+
+  h4{
+    font-size: 1em;
+    letter-spacing: 0.2px;
+  }
 `;
 
 
@@ -50,36 +57,61 @@ const Stream = styled.div`
   text-align: center;
   background-color: #272727;
   padding-top: 8%;
-  padding-bottom: 8%;
+  margin-bottom: 18%;
+
+  h4{
+    font-size: 1em;
+    margin-bottom:4%;
+  }
 `;
+
+const Ganadores = styled.div`
+  padding:4% 0 6% 0;
+  width: 65%;
+  margin:0 auto;
+`;
+
+const GanadoresTitulo = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  align-items:flex-end;
+  align-content: flex-end;
+  
+
+  padding: 0 0 8% 0;
+
+  h1{
+    width:44%;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #6418DC;
+  }
+
+  h5{
+    margin: 0;
+    font-size: 1em;
+    width: 36%;
+    color: #272727;
+    
+  }
+`
 
 const Juegos = styled.div`
   width: 100%;
   display: flex;
+  margin-bottom: 4%;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 3%;
 `;
 
-const Card_Juego = styled.div`
-  width: 23%;
-  height: 400px;
-
-  figure{
-    overflow: hidden;
-    height: 350px;
-}
-
-figure img{
-    width: 100%;
-    height: 100%;
-}
-`;
 
 const Beneficios = styled.div`
   text-align: center;
   background-color: #272727;
   padding-top: 5%;
-  padding-bottom: 8%;
+  margin-bottom: 20%;
   display: flex;
   justify-content: space-around;
 
@@ -104,12 +136,49 @@ const Beneficios = styled.div`
 `;
 
 
+const SeccionTorneos = styled.div`
+padding-top: 20%;
+`
+
+
 const TorneosCardContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 8%;
+`;
+
+const Align = styled.div`
+text-align: center;
+
+a{
+  text-decoration: none;
+  color: #EEEEEE;
+  position: relative;
+  transition: 0.2s ease 0s;
+}
+a:after{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: #6418DC;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    transform: translateY(8.5px);
+    cursor: pointer;
+}
+
+a:hover:after{
+    opacity: 1;
+    transform: translateY(4.5px);
+    background-color: #6418DC;
+  }
+
+
 `;
 
 
@@ -121,7 +190,10 @@ export {
   Principal,
   Foto,
   Beneficios,
-  Card_Juego,
+  Ganadores,
+  GanadoresTitulo,
   Juegos,
+  SeccionTorneos,
   TorneosCardContainer,
+  Align,
 };

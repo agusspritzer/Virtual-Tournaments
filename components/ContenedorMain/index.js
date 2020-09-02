@@ -3,9 +3,9 @@ import { Main } from './styled';
 
 
 
-export default function ContenedorMain({ children }) {
+export default function ContenedorMain({ children, sintop }) {
   return (
-    <Main >{children}</Main>
+    <Main modo={sintop}>{children}</Main>
   )
 }
 

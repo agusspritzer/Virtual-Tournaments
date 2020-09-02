@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import {
   Stream,
   Principal,
@@ -7,13 +8,20 @@ import {
   Presentacion,
   Foto,
   Juegos,
-  Card_Juego,
+  Ganadores,
+  GanadoresTitulo,
   TorneosCardContainer,
+  Align,
+  SeccionTorneos
 } from './styled';
+
 
 import { Titulo } from 'components';
 import { CardActive } from 'components';
+import { CardJuego } from 'components';
 import { ContenedorMain } from 'components';
+import { FullWidthSection } from 'components';
+import { Campeones_Slider } from 'components';
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
   ssr: false,
@@ -42,11 +50,14 @@ class HomeContainer extends React.Component {
           </Presentacion>
 
 
-          <Titulo level={3} style={{ textAlign: 'center' }} >
-            ¡Competir desde casa nunca tuvo tantas ventajas!
-        </Titulo>
+          <Align>
+            <Titulo level={3} style={{ textAlign: "center" }} >
+              ¡Competir desde casa nunca tuvo tantas ventajas!
+           </Titulo>
+          </Align>
 
           <Beneficios>
+
             <div>
               <img src="../assets/beneficios/trofeo.png" />
               <p>
@@ -75,82 +86,94 @@ class HomeContainer extends React.Component {
             <Titulo level={4}>Torneo MK 210 - Mortal Kombat - 8vos de Final</Titulo>
             <TwitchEmbedVideo
               autoplay
-              height="480"
+              height="450"
               muted
               targetId="twitch-embed"
-              channel="brunenger"
+              channel="phobyac"
               layout="video"
               width="800"
+
             />
           </Stream>
+
+        </ContenedorMain>
+
+        <FullWidthSection color="#EEEEEE">
+          <Ganadores>
+            <GanadoresTitulo>
+              <Titulo level={1}>CON ANSIAS DE COMPETIR Y GANAR EN LAS VENAS</Titulo>
+              <Titulo level={5}>Usuarios de todo el país ya están haciendo su nombre en Virtual Tournaments
+            ganando grandes premios</Titulo>
+            </GanadoresTitulo>
+
+            <Campeones_Slider></Campeones_Slider>
+          </Ganadores>
+        </FullWidthSection>
+
+        <ContenedorMain>
 
           <Titulo level={3}>Demostra ser el mejor en tu juegos favoritos</Titulo>
 
           <Juegos>
-            <Card_Juego>
-              <figure>
-                <img src="../assets/juegos/rainbow.jpg" />
-              </figure>
-            </Card_Juego>
-            <Card_Juego>
-              <figure>
-                <img src="../assets/juegos/lol.jpg" />
-              </figure>
-            </Card_Juego>
-            <Card_Juego>
-              <figure>
-                <img src="../assets/juegos/mortal.jpg" />
-              </figure>
-            </Card_Juego>
-            <Card_Juego>
-              <figure>
-                <img src="../assets/juegos/paladins.jpg" />
-              </figure>
-            </Card_Juego>
+            <CardJuego juego="counter.jpg" GameName="Counter Strike: GO"></CardJuego>
+            <CardJuego juego="brawl.jpg" GameName="Brawlhalla"></CardJuego>
+            <CardJuego juego="lol.jpg" GameName="League of Legends"></CardJuego>
+            <CardJuego juego="rainbow.jpg" GameName="Rainbow Six Siege"></CardJuego>
+            <CardJuego juego="mortal.jpg" GameName="Mortal Kombat 11"></CardJuego>
+            <CardJuego juego="paladins.jpg" GameName="Paladins"></CardJuego>
           </Juegos>
-          <Titulo level={5} >TODOS LOS JUEGOS</Titulo>
 
 
-          <Titulo level={3} style={{ paddingTop: '10%' }}>Torneos activos</Titulo>
-          <TorneosCardContainer>
+          <Align>
+            <Link href="/perfil">
+              TODOS LOS JUEGOS
+            </Link>
+          </Align>
 
-            <CardActive
-              GameImg="counter"
-              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-              TorneoId="#PP210"
-              Game="Pummel Party"
-              Fase="8vos de final"
-              ProxFecha="13 de Julio">
-            </CardActive>
 
-            <CardActive
-              GameImg="lol"
-              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-              TorneoId="#PP210"
-              Game="Pummel Party"
-              Fase="8vos de final"
-              ProxFecha="13 de Julio">
-            </CardActive>
 
-            <CardActive
-              GameImg="rainbow"
-              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-              TorneoId="#PP210"
-              Game="Pummel Party"
-              Fase="8vos de final"
-              ProxFecha="13 de Julio">
-            </CardActive>
 
-            <CardActive
-              GameImg="mortal"
-              TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-              TorneoId="#PP210"
-              Game="Pummel Party"
-              Fase="8vos de final"
-              ProxFecha="13 de Julio">
-            </CardActive>
+          <SeccionTorneos>
+            <Titulo level={3}>Torneos activos</Titulo>
+            <TorneosCardContainer>
 
-          </TorneosCardContainer>
+              <CardActive
+                GameImg="counter"
+                TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+                TorneoId="#PP210"
+                Game="Pummel Party"
+                Fase="8vos de final"
+                ProxFecha="13 de Julio">
+              </CardActive>
+
+              <CardActive
+                GameImg="lol"
+                TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+                TorneoId="#PP210"
+                Game="Pummel Party"
+                Fase="8vos de final"
+                ProxFecha="13 de Julio">
+              </CardActive>
+
+              <CardActive
+                GameImg="rainbow"
+                TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+                TorneoId="#PP210"
+                Game="Pummel Party"
+                Fase="8vos de final"
+                ProxFecha="13 de Julio">
+              </CardActive>
+
+              <CardActive
+                GameImg="mortal"
+                TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+                TorneoId="#PP210"
+                Game="Pummel Party"
+                Fase="8vos de final"
+                ProxFecha="13 de Julio">
+              </CardActive>
+            </TorneosCardContainer>
+          </SeccionTorneos>
         </ContenedorMain>
       </>
     );

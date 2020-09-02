@@ -1,13 +1,13 @@
 import React from 'react';
-import {SectionFullWidth} from './styled';
+import { SectionFullWidth } from './styled';
 
 
 
-export default function FullWidthSection({children}) {
-  return(
-    <SectionFullWidth>{children}</SectionFullWidth>
-)
-    }
+export default function FullWidthSection({ color, children }) {
+  return (
+    <SectionFullWidth color={color}>{children}</SectionFullWidth>
+  )
+}
 
 
 

@@ -45,7 +45,7 @@ export default function ProyectoContainer() {
         </Presentacion>
       </ContenedorMain>
 
-      <FullWidthSection>
+      <FullWidthSection color="#6418DC">
         <Testimonios>
           <Titulo level={5}>TESTIMONIOS</Titulo>
           <Slider></Slider>

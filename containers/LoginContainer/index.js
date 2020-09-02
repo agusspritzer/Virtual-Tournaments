@@ -7,6 +7,7 @@ import Link from 'next/link';
 import {
     DataCont,
     FormLogin,
+    IniciarSesion
 } from './styled';
 
 import { ContenedorMain, Titulo, DataBox, Button } from 'components';
@@ -35,14 +36,15 @@ export default function LoginContainer() {
                         />
                     </FormLogin>
 
-                    <Link href="/index" passHref >
-                        <Button ancho="100%" mensaje="INICIAR SESION" />
-                    </Link>
+                    <IniciarSesion>
+                        <Link href="/perfil" passHref >
+                            <Button ancho="100%" mensaje="INICIAR SESION" />
+                        </Link>
 
-                    <Link href="/registro" passHref >
-                        <p><a>Crea tu cuenta en Virtual Tournaments <span>GRATIS</span></a></p>
-                    </Link>
-
+                        <Link href="/registro" passHref >
+                            <p><a>Crea tu cuenta en Virtual Tournaments <span>GRATIS</span></a></p>
+                        </Link>
+                    </IniciarSesion>
 
                 </DataCont>
             </ContenedorMain>

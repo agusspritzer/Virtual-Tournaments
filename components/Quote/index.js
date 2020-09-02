@@ -8,16 +8,15 @@ import {
 
 } from './styled';
 
-export default function Quote({Frase,Autor,Descripcion}) {
-  return(
+export default function Quote({ Frase, Autor, Descripcion }) {
+  return (
     <QuoteContainer>
-          <Phrase>{Frase}</Phrase>
-          <Author>{Autor}</Author>
-          <Description>{Descripcion}</Description>
+      <Phrase>{Frase}</Phrase>
+      <Author>{Autor}</Author>
+      <Description>{Descripcion}</Description>
     </QuoteContainer>
-)
-        
-    }
+  )
+}
 
 
 

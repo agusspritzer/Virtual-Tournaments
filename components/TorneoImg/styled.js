@@ -6,13 +6,18 @@ background-image: url('assets/counter.png');
 
 `;
 
+const Pe = styled.p`
+margin-bottom: 150px;
+cursor: pointer;
+`;
+
 
 const ImgTorneo = styled.div`
 
 width: 65%;
 margin: 0 auto;
 height:560px;
-padding-top: 350px;
+padding-top: 150px;
 
 h1{
     width: 20%;
@@ -20,6 +25,9 @@ h1{
     line-height: 1.2em;
     margin-bottom: 20px;
 }
+
+
+
 `;
 
 const Codigo = styled.p`
@@ -63,6 +71,7 @@ font-size: 1em;
 
 
 export {
+    Pe,
     ImgTorneoContainer,
     ImgTorneo,
     Codigo,

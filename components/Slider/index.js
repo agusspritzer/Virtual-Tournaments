@@ -22,7 +22,8 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
           <div>
             <Quote
-              Frase="'Una de las comunidades virtuales más queridas por el público, ha llegado para quedarse y ser mas que una comunidad'"           Autor="Javier Kunsa"
+              Frase="'Una de las comunidades virtuales más queridas por el público, ha llegado para quedarse y ser mas que una comunidad'"
+              Autor="Javier Kunsa"
               Descripcion="Jugador profesional de Mortal Kombat"
             ></Quote>
           </div>
