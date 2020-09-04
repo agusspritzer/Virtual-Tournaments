@@ -22,6 +22,7 @@ import { CardJuego } from 'components';
 import { ContenedorMain } from 'components';
 import { FullWidthSection } from 'components';
 import { Campeones_Slider } from 'components';
+import { Footer } from 'components';
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
   ssr: false,
@@ -35,6 +36,8 @@ class HomeContainer extends React.Component {
 
           <Presentacion>
             <Principal>
+
+
               <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
               <Titulo level={4}>
                 Virtual Tournaments es la plataforma amateur definitiva que te

@@ -21,6 +21,10 @@ const ButtonType = styled.a`
   background-color: #272727;
   border: 2.5px solid #6418DC;
 
+  :hover{
+    background-color: #6418DC;
+  }
+
   `: css`
   background-color: #6418DC;
  

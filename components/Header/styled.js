@@ -38,12 +38,13 @@ box-shadow: 4px 8px 20px -6px rgba(0,0,0,0.75);
   nav ul li a {
     text-decoration: none;
     color: #eeeeee;
-    font-size: 0.9em;
-    font-weight: 400;
+    font-size: 0.8em;
+    font-weight: 500;
    letter-spacing: 0.4px;
    position: relative;
   transition: 0.2s ease 0s;
     font-family: 'Maison Neue Extended';
+    font-family: 'TTOctosquares';
   }
 
 a:after{

@@ -49,6 +49,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-inlinesvg": "^1.2.0",
+    "react-select-search": "^2.0.6",
     "react-sizes": "^2.0.0",
     "react-slick": "^0.26.1",
     "react-twitch-embed-video": "^2.0.3",

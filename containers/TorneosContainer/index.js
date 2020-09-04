@@ -1,6 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
+
 import {
         TorneosCardContainer,
         Buscador,
@@ -12,7 +13,10 @@ import { CardProx } from 'components';
 import { CardPast } from 'components';
 import { Titulo } from 'components';
 import { ContenedorMain } from 'components';
+import { SelectFilter } from 'components';
+import { FilterStyleContainer } from 'components';
 
+/*LEER ESTO IMPORANTEEE, al perecer el el componente select filter no funciona dentro del filter style container*/
 export default function TorneosContainer() {
         return <>
 
@@ -25,17 +29,10 @@ export default function TorneosContainer() {
                                 </form>
 
                                 <Filtros>
-                                        <select>
-                                                <option value="select">Mortal Kombat</option>
-                                                <option value="select">Rainbow Six</option>
-                                                <option value="select">Counter Strike:GO</option>
-                                                <option value="select">Paladins</option>
-                                                <option value="select">League of Legends</option>
-                                        </select>
+                                        <SelectFilter></SelectFilter>
 
-                                        <Titulo level={4}> TORNEOS </Titulo>
-                                        <Titulo level={4}> BROTHERS </Titulo>
-                                        <Titulo level={4}> ASSASSINS </Titulo>
+                                        <FilterStyleContainer>
+                                        </FilterStyleContainer>
                                 </Filtros>
 
                         </Buscador>

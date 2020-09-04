@@ -29,11 +29,11 @@ input::placeholder {
 
 
 const Filtros = styled.div`
-width: 50%;
+width: 70%;
 margin: 0 auto;
 display: flex;
 justify-content: space-between;
-padding-top: 5%;
+padding-top: 10%;
 
 select{
   outline: none;

@@ -7,10 +7,9 @@ import { ContenedorFooter, Logo } from './styled';
 import { Titulo } from 'components';
 
 {/* la clase tiene tiene que llamarse igual a la carpeta que conitene todo, osea, header*/ }
-export default function Footer() {
+export default function Footer(formato) {
     return (
-        <ContenedorFooter>
-
+        <ContenedorFooter tipo={formato}>
             <Titulo level={3}>¡SEGUINOS EN LAS REDES!</Titulo>
             <nav>
                 <ul>

@@ -10,3 +10,4 @@ export { default as RegistroContainer } from './RegistroContainer';
 export { default as LoginContainer } from './LoginContainer';
 export { default as InfoTorneoContainer } from './InfoTorneoContainer';
 export { default as PerfilContainer } from './PerfilContainer';
+export { default as PagoContainer } from './PagoContainer';

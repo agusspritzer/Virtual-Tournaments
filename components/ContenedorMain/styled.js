@@ -8,12 +8,9 @@ export const Main = styled.main`
     padding-top: 10%;
     width: 65%;
     
-    ${props => props.modo === "0" ? css`
- 
+${props => props.modo === "0" ? css`
     padding-top: 1% !important;
-
  `: css`
-
-
  ` }
+
 `;

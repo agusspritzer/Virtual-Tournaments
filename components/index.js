@@ -22,3 +22,8 @@ export { default as Campeones_Slider } from './Campeones_Slider';
 export { default as Ganadores } from './Ganadores';
 export { default as ProxPartida } from './ProxPartida';
 export { default as CardTorneos } from './CardTorneos';
+export { default as SelectFilter } from './SelectFilter';
+export { default as MetodoPago } from './MetodoPago';
+export { default as FilterStyleContainer } from './FilterStyleContainer';
+
+

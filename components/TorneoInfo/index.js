@@ -50,7 +50,7 @@ export default function TorneoInfo({ idTorneo, nameTorneo, gameTorneo, disponibl
                 </Prizes>
             </InfoTorneoContainer>
 
-            <Link href="/registro" passHref >
+            <Link href="/pago" passHref >
                 <Ext_Link Mensaje="INSCRIBIRME"></Ext_Link>
             </Link>
 

@@ -1,17 +1,21 @@
-import styled from 'styled-components';
-{
-  /* Aca traigo el styled para escribir el css*/
-}
+import styled, { css } from 'styled-components';
 
-{
-  /* Este es el styled el codigo delheader*/
-}
+
 
 const ContenedorFooter = styled.div`
   * {
     padding: 0;
     margin: 0;
   }
+
+  ${props => props.tipo === "0" ? css`
+p{
+color: red;
+}
+ `: css`
+ ` }
+
+ 
 width: 40%;
 margin: 0 auto;
 background-color: #272727;
@@ -58,18 +62,17 @@ nav {
       font-size: 0.7em;
   }
 
-`;
+`
 
 const Logo = styled.div`
 
     width: 30%;
     margin: 0 auto;
     padding: 4%;
-
 `
 
 
 
 
 
-export { ContenedorFooter, Logo,};
+export { ContenedorFooter, Logo, };
