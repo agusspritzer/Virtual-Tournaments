@@ -25,5 +25,5 @@ export { default as CardTorneos } from './CardTorneos';
 export { default as SelectFilter } from './SelectFilter';
 export { default as MetodoPago } from './MetodoPago';
 export { default as FilterStyleContainer } from './FilterStyleContainer';
-
+export { default as PerfilDatos } from './PerfilDatos';
 

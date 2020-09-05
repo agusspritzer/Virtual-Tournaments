@@ -10,8 +10,8 @@ import { Titulo } from 'components';
 export default function MetodoPago() {
     return (
         <PagoContainer>
+            <p>Elegí tu método de pago</p>
 
-            <Titulo level={4}>Elegí tu método de pago</Titulo>
             <Opciones>
 
 

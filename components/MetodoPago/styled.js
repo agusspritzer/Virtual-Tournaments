@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 const PagoContainer = styled.div`
-h4{
-    color: #B4B4B4;
-}
 
+p{
+    font-size: 1em;
+    color: #B4B4B4;
+    margin-bottom: 1%;
+}
 `;
 
 const Opciones = styled.div`
 h4{
     color: #272727;
     font-weight: 500;
+    font-size: 1em;
 }
 display: flex;
 justify-content: space-between;
@@ -18,7 +21,7 @@ align-items: center;
 margin-top: 2%;
 
 a{
-color: #272727;
+
 padding: 4% 3% 4% 3%;
 background-color: #FFFFFF;
 width: 48%;
@@ -44,7 +47,6 @@ transition: 0.2s ease-out 0s;
 
 
 const Monedas = styled.div`
-color: #272727;
 padding: 4% 3% 4% 3%;
 background-color: #FFFFFF;
 width: 48%;

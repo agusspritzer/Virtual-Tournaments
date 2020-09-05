@@ -1,22 +1,66 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { Titulo, ContenedorMain, ProxPartida, CardTorneos, PerfilDatos } from 'components';
+
 import {
-    SeccionAyuda,
     Navegador,
+    PerfilSeccion,
+    Jugador,
+    Redes,
+    Config,
+    IconosRedes,
 } from './styled';
 
-import { Titulo, ContenedorMain, ProxPartida, CardTorneos } from 'components';
 
+/*            <PerfilSeccion>
+                <Jugador>
+                    <img></img>
 
+                    <DatosPerfil>
+                        <h1></h1>
+                        <Estadisticas>
+                            Va a tener width 45 y space between y flex wrap
+                        </Estadisticas>
+                    </DatosPerfil>
+
+                </Jugador>
+                
+                <Redes>
+                </Redes>
+            
+                </PerfilSeccion>
+*/
 
 export default function AyudaContainer() {
     return <>
         <ContenedorMain>
-            <SeccionAyuda>
-                <Titulo level={0}>PAGINA PERFIL</Titulo>
-                <p>Pagina Perfil</p>
-            </SeccionAyuda>
+            <PerfilSeccion>
+                <Jugador>
+                    <figure>
+                        <img src={`/assets/players/prueba.jpg`} />
+                    </figure>
+                    <PerfilDatos
+                        Nombre="ROY522"
+                        NombreApellido="Roy Stevenson"
+                        Ganados="21"
+                        Perdidos="7"
+                        Fecha="04-01-2020"
+                        Victoria="G">
+                    </PerfilDatos>
+                </Jugador>
+
+                <Redes>
+                    <p>Redes sociales</p>
+                    <IconosRedes>
+                        <img src={`/assets/iconosRedes/steam.png`} />
+                        <img src={`/assets/iconosRedes/twitch.png`} />
+                        <img src={`/assets/iconosRedes/twitter.png`} />
+                        <img src={`/assets/iconosRedes/youtube.png`} />
+                    </IconosRedes>
+                </Redes>
+            </PerfilSeccion>
+
 
             <Navegador>
                 <nav>
@@ -24,6 +68,9 @@ export default function AyudaContainer() {
                         <li>
                             <a>MIS TORNEOS</a>
                             <a>PARTIDAS</a>
+                            <Config>
+                                <a><img src={`/assets/config.png`} />CONFIGURACION</a>
+                            </Config>
                         </li>
                     </ul>
                 </nav>

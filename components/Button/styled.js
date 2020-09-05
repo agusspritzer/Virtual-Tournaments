@@ -25,5 +25,5 @@ border: 0px solid transparent;
 `;
 
 export {
-    ButtonSubmit,
+  ButtonSubmit,
 };

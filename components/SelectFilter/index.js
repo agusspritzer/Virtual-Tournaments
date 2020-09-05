@@ -8,7 +8,7 @@ export default function SelectFilter() {
             closeOnSelect={false}
             printOptions="on-focus"
             multiple
-            placeholder="Juegos"
+            placeholder="JUEGOS"
             options={[
                 { value: 'counter', name: 'Counter Strike: GO' },
                 { value: 'lol', name: 'League of Legends' },

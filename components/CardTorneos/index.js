@@ -31,11 +31,14 @@ export default function CardActive({ IdTorneo, TorneoName, GameName, Posicion, F
                 </Resultado>
             </InfoPrincipal>
 
-
-
+            {/* Esta seccion de info resultados tiene que aparecer si se le hace click al componente*/}
             <InfoResultados>
 
-
+                <InfoFase>
+                    <Titulo level={4}>{Fase}</Titulo>
+                    <Jugador><Titulo level={3}>{Jugador1}</Titulo><Titulo level={3}>{Resultado1}</Titulo></Jugador>
+                    <Jugador><Titulo level={3}>{Jugador2}</Titulo><Titulo level={3}>{Resultado2}</Titulo></Jugador>
+                </InfoFase>
 
                 <InfoFase>
                     <Titulo level={4}>{Fase}</Titulo>

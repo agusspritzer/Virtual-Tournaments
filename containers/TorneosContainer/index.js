@@ -31,8 +31,7 @@ export default function TorneosContainer() {
                                 <Filtros>
                                         <SelectFilter></SelectFilter>
 
-                                        <FilterStyleContainer>
-                                        </FilterStyleContainer>
+
                                 </Filtros>
 
                         </Buscador>

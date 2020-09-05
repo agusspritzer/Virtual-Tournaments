@@ -21,10 +21,7 @@ h2{
     margin-bottom: 1%;
 }
 
-h4{
-    font-size: 1em;
-    color: #EA33BC;
-}
+
 `;
 
 const Pe = styled.div`
@@ -37,6 +34,10 @@ color: #EEEEEE;
 
 const TorneoContainer = styled.div`
 margin-bottom: 8%;
+h4{
+    font-size: 1em;
+    color: #EA33BC;
+}
 
 `
 
@@ -46,6 +47,10 @@ h2{
     margin-bottom: 1%;
 }
 margin-bottom: 8%;
+h4{
+    font-size: 1em;
+    color: #EA33BC;
+}
 
 `
 

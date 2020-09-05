@@ -5,7 +5,7 @@ const Card = styled.div`
 @media ${media.mediumDevice} {
 width: 100%;
 background-color: #eeeeee;
-padding: 3%;
+padding: 3% 3% 0 3%;
 font-family: 'Maison Neue Extended';
 }
 h5{
@@ -43,6 +43,7 @@ margin-right: 10%;
 h3{
     font-size: 1em;
     color: #707070;
+    margin-right: 10px;
 }
 span{
     color: #272727;
@@ -90,7 +91,8 @@ flex-wrap: wrap;
 `
 
 const InfoFase = styled.div`
-width: 20%;
+width: 26%;
+margin-bottom: 4%;
 h4{
     margin-bottom: 4%;
 font-family: 'Maison Neue Extended';
