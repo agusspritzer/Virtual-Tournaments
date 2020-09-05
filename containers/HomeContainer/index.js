@@ -12,7 +12,9 @@ import {
   GanadoresTitulo,
   TorneosCardContainer,
   Align,
-  SeccionTorneos
+  SeccionTorneos,
+  Reel,
+  Overlay,
 } from './styled';
 
 
@@ -32,8 +34,19 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <>
-        <ContenedorMain>
 
+
+        <FullWidthSection color="#6418DC">
+          <Reel>
+            <video width="100%" src="assets/reel2.mp4" autoplay="true" loop="true" muted="true"></video>
+          </Reel>
+          <Overlay>
+            <img src="../assets/fondo2.png" />
+          </Overlay>
+
+        </FullWidthSection>
+
+        <ContenedorMain>
           <Presentacion>
             <Principal>
 

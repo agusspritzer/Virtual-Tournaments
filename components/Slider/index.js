@@ -18,33 +18,31 @@ export default class SimpleSlider extends Component {
       autoplaySpeed: 5000,
     };
     return (
-      <div>
-        <Slider {...settings}>
-          <div>
-            <Quote
-              Frase="'Una de las comunidades virtuales más queridas por el público, ha llegado para quedarse y ser mas que una comunidad'"
-              Autor="Javier Kunsa"
-              Descripcion="Jugador profesional de Mortal Kombat"
-            ></Quote>
-          </div>
-          <div>
-            <Quote
-              Frase="'Hi Ken, Awesome plugin. Any chance for dots color setting? Tried to change it in the slick-active class with no luck'"
-              Autor="Ricardo Barreda"
-              Descripcion="Exterminador profesional"
-            ></Quote>
-          </div>
-          <div>
-            <Quote
-              Frase="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo, tortor eget congue consectetur,
+
+      <Slider {...settings}>
+
+        <Quote
+          Frase="'Una de las comunidades virtuales más queridas por el público, ha llegado para quedarse y ser mas que una comunidad'"
+          Autor="Javier Kunsa"
+          Descripcion="Jugador profesional de Mortal Kombat"
+        ></Quote>
+
+        <Quote
+          Frase="'Hi Ken, Awesome plugin. Any chance for dots color setting? Tried to change it in the slick-active class with no luck'"
+          Autor="Ricardo Barreda"
+          Descripcion="Exterminador profesional"
+        ></Quote>
+
+        <Quote
+          Frase="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo, tortor eget congue consectetur,
     mauris mi tincidunt nunc, vel posuere ex velit quis eros. Vivamus eros leo, finibus a rutrum sit amet, pretium a lectus.
      Cras laoreet porttitor libero sed tincidunt. Sed dignissim ex eget justo scelerisque, a suscipit tellus cursus'"
-              Autor="Lionel Messi"
-              Descripcion="Jugador profesional de Barcelona"
-            ></Quote>
-          </div>
-        </Slider>
-      </div>
+          Autor="Lionel Messi"
+          Descripcion="Jugador profesional de Barcelona"
+        ></Quote>
+
+      </Slider>
+
     );
   }
 }

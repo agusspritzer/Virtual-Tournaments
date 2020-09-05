@@ -19,12 +19,24 @@ const Principal = styled.div`
     font-weight: 700;
     color: #EA33BC;
   }
-
-
-
-
-
 `;
+
+const Reel = styled.div`
+  height: 100vh;
+  overflow: hidden;
+`;
+
+const Overlay = styled.div`
+height: 100vh;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+overflow: hidden;
+opacity: 0.75;
+`;
+
+
 const Foto = styled.div`
   width: 50%;
 
@@ -36,13 +48,17 @@ const Foto = styled.div`
 `;
 
 const Presentacion = styled.div`
-  width: 100%;
+  width: 65%;
+  margin: 0 auto;
   display: flex;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+    transform: translate(-50%, 0);
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 18%;
-  margin-top: 8%;
+
 
   h4{
     font-size: 1em;
@@ -186,6 +202,8 @@ a:hover:after{
 
 export {
   Stream,
+  Reel,
+  Overlay,
   Presentacion,
   Principal,
   Foto,
