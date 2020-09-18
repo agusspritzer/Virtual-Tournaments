@@ -13,4 +13,10 @@ ${props => props.modo === "0" ? css`
  `: css`
  ` }
 
+
+ @media ${media.largeDevice}{
+    width: 50%;
+}
+
+
 `;

@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import { media } from "constants";
 
 
 const Itinerario = styled.div`
 margin: 1% 0 1% 0;
+
+
 `
 
 
@@ -26,7 +29,7 @@ const CardsContainer = styled.div`
 
 
 export {
-    Itinerario,
-    Mes,
-    CardsContainer,
+  Itinerario,
+  Mes,
+  CardsContainer,
 };

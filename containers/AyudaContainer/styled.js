@@ -28,35 +28,6 @@ h1{
   font-weight: 400;
   font-size: 0.8em;
 }
-
-`
-
-const Navegador = styled.div`
-width: 100%;
-margin: 0 auto;
-margin-bottom: 1%;
-border-bottom: 1px solid #707070;
-text-align: center;
-
-nav {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  nav ul li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #9A9A9A;
-    font-size: 0.9em;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: 'TTOctosquares';
-  }
 `
 
 const FaqContainer = styled.div`
@@ -84,7 +55,7 @@ p{
 `
 
 
-const MensajeArea= styled.div`
+const MensajeArea = styled.div`
 width:60%;
 margin:0 auto;
 padding-bottom:10%;
@@ -122,9 +93,8 @@ a{
 `
 
 export {
-Navegador,
-SeccionAyuda,
-FaqContainer,
-MensajeContainer,
-MensajeArea,
+  SeccionAyuda,
+  FaqContainer,
+  MensajeContainer,
+  MensajeArea,
 };

@@ -3,13 +3,12 @@ import Link from 'next/link';
 
 import {
   SeccionAyuda,
-  Navegador,
   FaqContainer,
   MensajeContainer,
   MensajeArea,
 } from './styled';
 
-import { Titulo, Faq, ContenedorMain, Button } from 'components';
+import { Titulo, Faq, ContenedorMain, Button, Navegador } from 'components';
 
 
 
@@ -23,17 +22,9 @@ export default function AyudaContainer() {
       </SeccionAyuda>
 
       <Navegador>
-        <nav>
-          <ul>
-            <li>
-              <a>PARTIDAS</a>
-              <a>PAGOS</a>
-              <a>TORNEOS</a>
-              <a>INSCRIPCIONES</a>
-              <a>OTROS</a>
-            </li>
-          </ul>
-        </nav>
+        <a>HOLAS</a>
+        <a>EY</a>
+        <a>GAAA</a>
       </Navegador>
 
       <FaqContainer>

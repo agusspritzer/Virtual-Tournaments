@@ -16,14 +16,14 @@ const ImgTorneo = styled.div`
 
 width: 65%;
 margin: 0 auto;
-height:560px;
-padding-top: 150px;
+height:490px;
+padding-top: 130px;
 
 h1{
     width: 20%;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 
@@ -53,7 +53,7 @@ color: #EA33BC;
 font-weight: 400;
 letter-spacing: 0.2px;
  font-family: 'Maison Neue Extended';
-font-size: 1.3em;
+font-size: em;
 
 `;
 

@@ -14,6 +14,7 @@ import { CardPast } from 'components';
 import { Titulo } from 'components';
 import { ContenedorMain } from 'components';
 import { SelectFilter } from 'components';
+import { SelectFilterState } from 'components';
 import { FilterStyleContainer } from 'components';
 
 /*LEER ESTO IMPORANTEEE, al perecer el el componente select filter no funciona dentro del filter style container*/
@@ -28,9 +29,10 @@ export default function TorneosContainer() {
                                         <input type="text" name="name" placeholder="Busca por jugador, juego o torneo especifico" autoComplete="off" />
                                 </form>
 
+
                                 <Filtros>
                                         <SelectFilter></SelectFilter>
-
+                                        <SelectFilterState></SelectFilterState>
 
                                 </Filtros>
 

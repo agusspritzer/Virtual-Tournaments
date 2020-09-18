@@ -9,6 +9,7 @@ const DataCont = styled.div`
 
 h1{
     margin-bottom: 35px;
+    font-size: 1.8em;
 }
 p{
     font-size: 1em;
@@ -54,9 +55,7 @@ h4{
 
 `
 
-
 const IniciarSesion = styled.div`
-
 padding-top: 6%;
 `;
 

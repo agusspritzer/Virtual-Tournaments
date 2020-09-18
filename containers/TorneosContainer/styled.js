@@ -35,6 +35,22 @@ display: flex;
 justify-content: space-between;
 padding-top: 2%;
 
+input{
+  font-family: 'TTOctosquares';
+ background-color: #6418DC;
+padding: 6%;
+color: white; 
+width: 70%;
+cursor: pointer;
+ border-style:solid;
+ border: none;
+ 
+ :placeholder{
+  color: white; 
+}
+
+}
+
 select{
   outline: none;
   background-color: #6418DC;
@@ -43,15 +59,6 @@ select{
   font-size: 1.2em;
 }
 
-input{
-  font-family: 'TTOctosquares';
- background-color: #6418DC;
-padding: 6%;
-width: 70%;
-cursor: pointer;
- border-style:solid;
- border: none;
-}
 
 
 `

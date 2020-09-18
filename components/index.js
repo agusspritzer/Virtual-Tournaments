@@ -23,7 +23,12 @@ export { default as Ganadores } from './Ganadores';
 export { default as ProxPartida } from './ProxPartida';
 export { default as CardTorneos } from './CardTorneos';
 export { default as SelectFilter } from './SelectFilter';
+export { default as SelectFilterState } from './SelectFilterState';
 export { default as MetodoPago } from './MetodoPago';
 export { default as FilterStyleContainer } from './FilterStyleContainer';
 export { default as PerfilDatos } from './PerfilDatos';
+export { default as Inscriptos } from './Inscriptos';
+export { default as Participantes } from './Participantes';
+export { default as Reglas } from './Reglas';
+export { default as Navegador } from './Navegador';
 

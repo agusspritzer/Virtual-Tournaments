@@ -28,5 +28,5 @@ p{
 
 
 export {
-    PreguntaContainer,
+  PreguntaContainer,
 };

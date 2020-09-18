@@ -22,7 +22,7 @@ export default function CardActive({ Fase, IdTorneo, TorneoName, Jugador1, Jugad
             <Jugador><Titulo level={3}>{Jugador1}</Titulo><Titulo level={3}>{Resultado1}</Titulo></Jugador>
             <Jugador><Titulo level={3}>{Jugador2}</Titulo><Titulo level={3}>{Resultado2}</Titulo></Jugador>
 
-            <MatchInfo>
+            {/*<MatchInfo>
                 <Etiqueta>
                     <img src="../assets/card_icons/blanco/gamepad.png" />
                     <p>{Game}</p>
@@ -38,7 +38,9 @@ export default function CardActive({ Fase, IdTorneo, TorneoName, Jugador1, Jugad
                     <img src="../assets/card_icons/blanco/fecha.png" />
                     <p>{Horario}</p>
                 </Etiqueta>
-            </MatchInfo>
+            </MatchInfo> 
+*/}
+
 
         </Card>
 

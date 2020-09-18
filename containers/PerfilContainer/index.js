@@ -75,6 +75,7 @@ export default function AyudaContainer() {
                     </ul>
                 </nav>
             </Navegador>
+
             <Titulo level={0}>PROXIMA PARTIDA</Titulo>
             <ProxPartida
                 Fase="4tos de final"

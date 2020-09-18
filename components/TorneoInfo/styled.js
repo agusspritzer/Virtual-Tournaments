@@ -7,6 +7,14 @@ const ContenedorMayor = styled.div`
 display:flex;
 justify-content: space-between;
 align-items: flex-end;
+margin-bottom: 10%;
+
+a{
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  padding: 1.5% 3% 1.5% 3%;
+}
+
 `;
 
 const InfoTorneoContainer = styled.div`
@@ -14,6 +22,7 @@ const InfoTorneoContainer = styled.div`
 width: 80%;
 display:flex;
 justify-content: flex-start;
+
 
 
 `;
@@ -35,11 +44,11 @@ li{
 }
 p {
   color: #B4B4B4;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: 600;
   padding-bottom:0;
   color: #EEEEEE;
@@ -68,20 +77,20 @@ div img {
 
 p {
 color: #B4B4B4;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top:5px;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: 600;
   padding-bottom:0;
   color: #EEEEEE;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 0.9em;
   font-weight: 600;
   padding-bottom:0;
   color: #EEEEEE;
@@ -95,9 +104,9 @@ h2 {
 
 
 export {
-    ContenedorMayor,
-    InfoTorneoContainer,
-    InfoTorneo,
-    Prizes,
+  ContenedorMayor,
+  InfoTorneoContainer,
+  InfoTorneo,
+  Prizes,
 
 };
