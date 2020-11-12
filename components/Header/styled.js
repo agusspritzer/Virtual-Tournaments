@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
+
 {
   /* Aca traigo el styled para escribir el css*/
 }
@@ -72,6 +74,14 @@ a:hover:after{
     height:100%;
     width:100%
   }
+
+
+  @media (max-width: ${media.smallDevice}){
+    nav{
+      display:none;
+    }
+}
+
 
 `;
 

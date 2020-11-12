@@ -65,3 +65,10 @@ typings/
 
 # webstorm
 .idea
+
+# vercel
+.vercel
+
+# env
+.env
+.env.local

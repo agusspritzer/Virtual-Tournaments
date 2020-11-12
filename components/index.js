@@ -31,4 +31,5 @@ export { default as Inscriptos } from './Inscriptos';
 export { default as Participantes } from './Participantes';
 export { default as Reglas } from './Reglas';
 export { default as Navegador } from './Navegador';
+export { default as Loading } from './Loading';
 

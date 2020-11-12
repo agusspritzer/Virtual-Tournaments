@@ -1,9 +1,11 @@
 import React from 'react';
 
+
 import { PerfilContainer } from 'containers';
 
-function Login() {
-    return <PerfilContainer />;
+function Perfil({ user }) {
+    return <PerfilContainer user={user} />;
 }
 
-export default Login;
+export default Perfil;
+

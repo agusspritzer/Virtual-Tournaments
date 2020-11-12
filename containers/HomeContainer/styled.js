@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
+
 
 
 
 const Principal = styled.div`
-  width: 50%;
+  width: 65%;
   h3{
     font-weight: 400;
     font-size: 2em;
@@ -19,11 +21,35 @@ const Principal = styled.div`
     font-weight: 700;
     color: #EA33BC;
   }
+/*
+  @media (max-width: ${media.smallDevice}){
+    width: 85%;
+    background-color: red;
+}
+*/
 `;
 
 const Reel = styled.div`
   height: 100vh;
   overflow: hidden;
+ 
+    video{
+      width: auto !important;
+        height: 100% !important;
+        @media (min-width:1000px){      
+        transform: scale(1.5);
+    }
+
+    @media (min-width:1250px){      
+        transform: scale(1.8);
+    }
+
+    @media (min-width:1500px){      
+        transform: scale(2);
+    }
+
+    
+}
 `;
 
 const Overlay = styled.div`
@@ -34,6 +60,9 @@ top: 0;
 left: 0;
 overflow: hidden;
 opacity: 0.75;
+@media (max-width: ${media.smallDevice}){
+    height:100vh;
+}
 `;
 
 
@@ -79,6 +108,29 @@ const Stream = styled.div`
     font-size: 1em;
     margin-bottom:4%;
   }
+
+#twitch-embed{
+ 
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  padding-top: 56.25% !important;
+}
+
+#twitch-embed iframe{
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: ${media.smallDevice}){
+    width: 95%;
+}
+
 `;
 
 const Ganadores = styled.div`

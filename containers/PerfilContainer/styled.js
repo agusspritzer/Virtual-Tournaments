@@ -30,6 +30,10 @@ nav {
     align-items: center;
     font-family: 'TTOctosquares';
   }
+
+  nav ul li a span{
+    color: #FE3F53;
+  }
 `
 
 const PerfilSeccion = styled.div`
