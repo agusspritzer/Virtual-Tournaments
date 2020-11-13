@@ -1,46 +1,60 @@
 import React from 'react';
-import { db } from "lib/firebase";
+import { db } from 'lib/firebase';
 import { HomeContainer } from 'containers';
 
-function Home() {
+function Home({ data }) {
+  console.log(data);
   return <HomeContainer />;
 }
 
 export async function getServerSideProps() {
-
   const ref = db.collection('torneos');
-  const data = await ref.where('state', '==', true).limit(4).get()
-    .then(snapshot => {
+  const tournamentData = [];
+  const snapshotsRefs = [];
+  await ref
+    .where('state', '==', true)
+    .limit(4)
+    .get()
+    .then(async (snapshot) => {
       if (snapshot.empty) {
         return [];
       }
-      const dataToSend = [];
-      snapshot.forEach(async (doc) => {
-        const fase = await doc.ref.collection("fases").where("current", "==", true).get().then((snapshot) => {
-          const faseData = [];
-          snapshot.forEach(async doc => {
-            faseData.push(await doc.data());
-          })
-          return faseData[0];
-        }).catch((error) => {
-          console.log(error);
-          return
-          ([])
-        });
 
-        console.log("Fase", fase);
-
-        dataToSend.push({ data: await doc.data() });
+      await snapshot.forEach(async (doc) => {
+        tournamentData.push({ data: await doc.data() });
+        snapshotsRefs.push(doc.ref);
       });
-      console.log("dataToSend", dataToSend);
-      return dataToSend;
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
       return [];
-    })
-  console.log(data);
-  return { props: { data } }
+    });
+
+  const faseMap = snapshotsRefs.map(async (ref, i) => {
+    const fetching = await ref
+      .collection('fases')
+      .where('current', '==', true)
+      .get()
+      .then(async (snapshot) => {
+        const faseData = [];
+        await snapshot.forEach(async (doc) => {
+          faseData.push(await doc.data());
+        });
+
+        tournamentData[i] = { ...tournamentData[i], fase: faseData[0] };
+      })
+      .catch((error) => {
+        console.log(error);
+
+        tournamentData[i] = { ...tournamentData[i], fase: [] };
+      });
+
+    return await fetching;
+  });
+
+  await Promise.all(faseMap);
+
+  return { props: { data: tournamentData } };
 }
 
 export default Home;
