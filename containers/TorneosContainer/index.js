@@ -27,6 +27,7 @@ export default function TorneosContainer({ dataTorneo }) {
                         <Buscador>
 
                                 <Titulo level={0}> TORNEOS </Titulo>
+
                                 <form>
                                         <input type="text" name="name" placeholder="Busca por juego o torneo especifico" autoComplete="off" />
                                 </form>

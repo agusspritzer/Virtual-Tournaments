@@ -34,7 +34,7 @@ export default function InfoTorneoContainer({ dataTorneo }) {
 
             </FullWidthSection>
 
-            <ContenedorMain sintop="0">
+            <ContenedorMain sintop="chico">
 
                 <TorneoInfo dataTorneo={dataTorneo} />
 
