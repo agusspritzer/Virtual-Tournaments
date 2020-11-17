@@ -32,4 +32,5 @@ export { default as Participantes } from './Participantes';
 export { default as Reglas } from './Reglas';
 export { default as Navegador } from './Navegador';
 export { default as Loading } from './Loading';
-
+export { default as SliderBeneficios } from './SliderBeneficios';
+export { default as QuoteBeneficios } from './QuoteBeneficios';

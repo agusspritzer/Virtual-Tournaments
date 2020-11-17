@@ -15,20 +15,28 @@ import {
 import { ContenedorMain, TorneoImg, FullWidthSection, TorneoInfo, Inscriptos, Participantes, Reglas } from 'components';
 
 
-export default function InfoTorneoContainer() {
+export default function InfoTorneoContainer({ dataTorneo }) {
+
+
+
+    console.log("dataTorneo", dataTorneo)
     return (
         <>
             <FullWidthSection>
+
                 <TorneoImg
-                    idTorneo="#PP210"
-                    nameTorneo="TORNEO DE_TERRORIST"
-                    gameTorneo="Counter Strike: GO"
+                    fondoImg={dataTorneo[0].game.image}
+                    nameTorneo={dataTorneo[0].name}
+                    gameTorneo={dataTorneo[0].game.name}
                     disponible="INSCRIPCION DISPONIBLE"
                 />
+
+
             </FullWidthSection>
 
             <ContenedorMain sintop="0">
-                <TorneoInfo />
+
+                <TorneoInfo dataTorneo={dataTorneo} />
 
                 <Navegador>
                     <nav>

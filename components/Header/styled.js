@@ -75,11 +75,33 @@ a:hover:after{
     width:100%
   }
 
+  nav ul li div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  nav ul li div a{
+    font-family: 'Maison Neue Extended';
+   margin-left: 15px;
+   font-size: 1em;
+   font-weight: 400;
+
+
+  }
+
+  nav ul li div img{
+height:  40px;
+width: 40px;
+border-radius: 200px;
+object-fit: cover;
+  }
+
 
   @media (max-width: ${media.smallDevice}){
     nav{
       display:none;
     }
+    
 }
 
 
@@ -90,6 +112,10 @@ const Logo = styled.div`
     width: 10%;
     cursor: pointer;
 
+    @media (max-width: ${media.smallDevice}){
+      padding: 3%;
+      width: 35%;
+    }
 
 `;
 

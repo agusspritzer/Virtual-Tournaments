@@ -18,7 +18,9 @@ import { SelectFilterState } from 'components';
 import { FilterStyleContainer } from 'components';
 
 /*LEER ESTO IMPORANTEEE, al perecer el el componente select filter no funciona dentro del filter style container*/
-export default function TorneosContainer() {
+export default function TorneosContainer({ dataTorneo }) {
+
+        console.log("datatorneo", dataTorneo);
         return <>
 
                 <ContenedorMain >
@@ -26,17 +28,34 @@ export default function TorneosContainer() {
 
                                 <Titulo level={0}> TORNEOS </Titulo>
                                 <form>
-                                        <input type="text" name="name" placeholder="Busca por jugador, juego o torneo especifico" autoComplete="off" />
+                                        <input type="text" name="name" placeholder="Busca por juego o torneo especifico" autoComplete="off" />
                                 </form>
 
-
-                                <Filtros>
+                                {/*<Filtros>
                                         <SelectFilter></SelectFilter>
                                         <SelectFilterState></SelectFilterState>
 
                                 </Filtros>
+ */}
 
                         </Buscador>
+
+                        <Titulo level={3} style={{ paddingBottom: '0' }}>Activos</Titulo>
+                        <TorneosCardContainer>
+                                {dataTorneo.map(tournament => {
+                                        return (
+                                                <CardActive
+                                                        Destino={tournament.data.slug}
+                                                        GameImg={tournament.data.game.image}
+                                                        TorneoName={tournament.data.name}
+                                                        Game={tournament.data.game.name}
+                                                        Fase={tournament.fase.instance}
+                                                        ProxFecha={tournament.fase.day}>
+                                                </CardActive>)
+                                })}
+
+                        </TorneosCardContainer>
+
 
                         <Titulo level={3} style={{ paddingBottom: '0' }}>Proximos</Titulo>
                         <TorneosCardContainer>
@@ -91,45 +110,7 @@ export default function TorneosContainer() {
                         </TorneosCardContainer>
 
 
-                        <Titulo level={3} style={{ paddingBottom: '0' }}>Activos</Titulo>
-                        <TorneosCardContainer>
-                                <CardActive
-                                        GameImg="brawl"
-                                        TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-                                        TorneoId="#PP210"
-                                        Game="Pummel Party"
-                                        Fase="8vos de final"
-                                        ProxFecha="13 de Julio">
-                                </CardActive>
 
-                                <CardActive
-                                        GameImg="mortal"
-                                        TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-                                        TorneoId="#PP210"
-                                        Game="Pummel Party"
-                                        Fase="8vos de final"
-                                        ProxFecha="13 de Julio">
-                                </CardActive>
-
-                                <CardActive
-                                        GameImg="rainbow"
-                                        TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-                                        TorneoId="#PP210"
-                                        Game="Pummel Party"
-                                        Fase="8vos de final"
-                                        ProxFecha="13 de Julio">
-                                </CardActive>
-
-                                <CardActive
-                                        GameImg="counter"
-                                        TorneoName="TORNEO DE JULIO PUMMEL PARTY"
-                                        TorneoId="#PP210"
-                                        Game="Pummel Party"
-                                        Fase="8vos de final"
-                                        ProxFecha="13 de Julio">
-                                </CardActive>
-
-                        </TorneosCardContainer>
 
 
                         <Titulo level={3} style={{ paddingBottom: '0' }}>Pasados</Titulo>

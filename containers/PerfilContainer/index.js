@@ -19,46 +19,12 @@ import {
 export default function AyudaContainer() {
 
 
-    const [foto, setfoto] = useState();
+    const [foto, setFoto] = useState();
     const [fotoCargada, setFotoCargada] = useState();
-    const [fotoMiniatura, setMiniatura] = useState();
-
+    const [fotoMiniatura, setMiniatura] = useState(
+        "/assets/perfil.jpg"
+    );
     const Router = useRouter();
-
-    const HandleLogout = async () => {
-        await logout();
-        Router.push("/");
-    };
-
-    const HandleInputChange = (file) => {
-        const fileInstance = new File([file], file.name);
-        setMiniatura(URL.createObjectURL(fileInstance));
-        setfoto(fileInstance);
-    };
-
-    const HandleSubmitFile = async () => {
-        const storageRef = storage.ref();
-        const fileRef = storageRef.child(foto.name)
-        const fotoURL = await fileRef.put(foto)
-            .then(async (snapshot) => {
-                //console.log("Foto Cargada", snapshot);
-                return await snapshot.ref.getDownloadURL().then((url) => {
-                    console.log("Foto Cargada", url);
-                    setFotoCargada(url);
-                    return url;
-                })
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-
-        const dataUpdate = { fotoperfil: url };
-        db.collection("usuarios").doc(userAuth.id).update(dataUpdate);
-    };
-
-
-
-
     const { userAuth, userData, logout } = useAuthState();
     useEffect(() => {
         if (userData && userData.fotoperfil) {
@@ -66,7 +32,37 @@ export default function AyudaContainer() {
         }
     }, [userData]);
 
+    const HandleInputChange = (file) => {
+        const fileInstance = new File([file], file.name);
+        setMiniatura(URL.createObjectURL(fileInstance));
+        setFoto(fileInstance);
+    };
 
+    const HandleSubmitFile = async () => {
+        const storageRef = storage.ref();
+        const fileRef = storageRef.child(foto.name);
+        const fotoURL = await fileRef
+            .put(foto)
+            .then(async (snapshoot) => {
+                return await snapshoot.ref.getDownloadURL().then((url) => {
+                    console.log("foto cargada", url);
+                    setFotoCargada(url);
+                    return url;
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+        const dataUpdate = { fotoperfil: fotoURL };
+
+        db.collection("usuarios").doc(userAuth.id).update(dataUpdate);
+    };
+
+    const HandleLogout = async () => {
+        await logout();
+        Router.push("/");
+    };
 
     return (
         <ContenedorMain>
@@ -77,7 +73,7 @@ export default function AyudaContainer() {
                         <PerfilSeccion>
                             <Jugador>
                                 <figure>
-                                    <img src={fotoCargada ? fotoCargada : fotoMiniatura} /> {/*assets/players/prueba.jpg*/}
+                                    <img src={fotoCargada ? fotoCargada : fotoMiniatura} />  {/*assets/players/prueba.jpg*/}
                                 </figure>
                                 <PerfilDatos
                                     Nombre={userData && userData.nombre}
@@ -90,14 +86,10 @@ export default function AyudaContainer() {
                             </Jugador>
 
                             <Redes>
-                                <p>Redes sociales</p>
+                                <p>Cambiar Imagen</p>
+                                <input type="file" onChange={e => HandleInputChange(e.target.files[0])} />
+                                <button onClick={() => HandleSubmitFile()}>Guardar Foto</button>
                                 <IconosRedes>
-                                    <img src={`/assets/iconosRedes/steam.png`} />
-                                    <Link href="/api/logout" passHref >
-                                        <img src={`/assets/iconosRedes/twitch.png`} />
-                                    </Link>
-                                    <img src={`/assets/iconosRedes/twitter.png`} />
-                                    <img src={`/assets/iconosRedes/youtube.png`} />
                                 </IconosRedes>
                             </Redes>
                         </PerfilSeccion>
@@ -112,12 +104,12 @@ export default function AyudaContainer() {
                                         <Config>
                                             <a onClick={() => HandleLogout()} ><span>CERRAR SESION</span></a>
                                         </Config>
-                                        <input type="file" onChange={e => HandleInputChange(e.target.files[0])}></input>
+
                                     </li>
                                 </ul>
                             </nav>
                         </Navegador>
-                        <button onClick={() => HandleSubmitFile()}>Guardar Foto</button>
+
 
                         <Titulo level={0}>PROXIMA PARTIDA</Titulo>
                         <ProxPartida

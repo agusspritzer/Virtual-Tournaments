@@ -12,6 +12,15 @@ const Card = styled.div`
 
 }
 
+@media (max-width: ${media.smallDevice}){
+  width: 75%;
+  background-color: #eeeeee;
+  margin-bottom:3%;
+    
+}
+
+
+
 :hover {
   transform: scale(1.08);
   cursor: pointer;

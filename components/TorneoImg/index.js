@@ -1,27 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
-
+import styled from 'styled-components';
 import { Titulo } from 'components';
 
 import {
     Pe,
-    ImgTorneoContainer,
     ImgTorneo,
     Codigo,
     ExtraInfo,
     Game,
-    Available
+    Available,
+    ImgContainer,
+    Gradiente,
 
 } from './styled';
 
 
-export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible }) {
+
+export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible, fondoImg }) {
+
+
     return (
-        <ImgTorneoContainer>
+
+
+        <ImgContainer className="fondo" style={{ backgroundImage: `url(${fondoImg})` }}>
+
             <ImgTorneo>
-                <Link href="/torneos">
-                    <Pe>Volver</Pe>
-                </Link>
+                <Gradiente />
 
                 <Codigo>{idTorneo}</Codigo>
                 <Titulo level={1}>{nameTorneo}</Titulo>
@@ -30,7 +35,7 @@ export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible
                     <Available>{disponible}</Available>
                 </ExtraInfo>
             </ImgTorneo>
-        </ImgTorneoContainer>
+        </ImgContainer >
     )
 
 }

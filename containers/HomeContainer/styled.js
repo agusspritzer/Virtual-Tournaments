@@ -21,6 +21,17 @@ const Principal = styled.div`
     font-weight: 700;
     color: #EA33BC;
   }
+
+  @media (max-width: ${media.smallDevice}){
+    padding-top: 16%;
+    h3{
+      font-size: 2em;
+      line-height: 1.4em;
+      padding-bottom: 12%;
+    }
+
+ width: 90%;
+  }
 /*
   @media (max-width: ${media.smallDevice}){
     width: 85%;
@@ -32,7 +43,7 @@ const Principal = styled.div`
 const Reel = styled.div`
   height: 100vh;
   overflow: hidden;
- 
+ position: relative;
     video{
       width: auto !important;
         height: 100% !important;
@@ -50,6 +61,20 @@ const Reel = styled.div`
 
     
 }
+`;
+
+const Gradiente = styled.div`
+position: absolute;
+
+top:0;
+left:0;
+width: 100%;
+height:100%;
+z-index: 1;
+
+
+background: rgb(100,24,220);
+background: linear-gradient(0deg, rgba(100,24,220,0.65) 0%, rgba(39,39,39,0.65) 100%);
 `;
 
 const Overlay = styled.div`
@@ -74,6 +99,10 @@ const Foto = styled.div`
     width: 55%;
     height: 55%;
   }
+
+  @media (max-width: ${media.smallDevice}){
+ display: none;
+  }
 `;
 
 const Presentacion = styled.div`
@@ -87,11 +116,22 @@ const Presentacion = styled.div`
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  z-index:2;
 
 
   h4{
     font-size: 1em;
     letter-spacing: 0.2px;
+  }
+
+  @media (max-width: ${media.smallDevice}){
+    h4{
+      font-size: 1em;
+      line-height: 2.6em;
+      
+    }
+
+ width: 90%;
   }
 `;
 
@@ -129,6 +169,12 @@ const Stream = styled.div`
 
 @media (max-width: ${media.smallDevice}){
     width: 95%;
+
+    h3{
+  font-size: 1.4em;
+}
+
+    
 }
 
 `;
@@ -137,6 +183,10 @@ const Ganadores = styled.div`
   padding:4% 0 6% 0;
   width: 65%;
   margin:0 auto;
+
+  @media (max-width: ${media.smallDevice}){
+    display: none;
+}
 `;
 
 const GanadoresTitulo = styled.div`
@@ -179,7 +229,7 @@ const Beneficios = styled.div`
   text-align: center;
   background-color: #272727;
   padding-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
   display: flex;
   justify-content: space-around;
 
@@ -201,7 +251,33 @@ const Beneficios = styled.div`
     line-height: 25px;
     padding-top: 8%;
   }
+  @media (max-width: ${media.smallDevice}){
+    display:none;
+}
 `;
+
+const Testimonios = styled.div`
+
+
+  padding:4% 0 20% 0;
+  width: 90%;
+  margin:0 auto;
+  text-align:center;
+  display: none;
+
+  @media (max-width: ${media.smallDevice}){
+    display:block;
+    p{
+      font-size: 0.9em;
+    }
+    button{
+      display:none !important;
+    }
+
+}
+
+`
+
 
 
 const SeccionTorneos = styled.div`
@@ -215,10 +291,20 @@ const TorneosCardContainer = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 8%;
+
+  @media (max-width: ${media.smallDevice}){
+  justify-content: center;
+    }
+
 `;
+
+
+
 
 const Align = styled.div`
 text-align: center;
+
+
 
 a{
   text-decoration: none;
@@ -246,6 +332,15 @@ a:hover:after{
     background-color: #6418DC;
   }
 
+  @media (max-width: ${media.smallDevice}){
+
+    h3{
+      padding-top:20%;
+  font-size: 1.4em;
+}
+
+}
+
 
 `;
 
@@ -255,6 +350,7 @@ a:hover:after{
 export {
   Stream,
   Reel,
+  Gradiente,
   Overlay,
   Presentacion,
   Principal,
@@ -266,4 +362,5 @@ export {
   SeccionTorneos,
   TorneosCardContainer,
   Align,
+  Testimonios,
 };

@@ -50,9 +50,13 @@ width: 80%;
 
 figure{
   border: 7px solid #6418DC;
+  width: 225px;
+  height: 225px;
 }
 img{
+  object-fit:cover;
   height: 100%;
+  width: 100%;
   display:inline-block; 
 }
 `

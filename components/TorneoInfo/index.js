@@ -11,7 +11,7 @@ import {
 } from './styled';
 
 
-export default function TorneoInfo({ idTorneo, nameTorneo, gameTorneo, disponible }) {
+export default function TorneoInfo({ idTorneo, nameTorneo, gameTorneo, disponible, dataTorneo }) {
     return (
         <ContenedorMayor>
 
@@ -19,18 +19,17 @@ export default function TorneoInfo({ idTorneo, nameTorneo, gameTorneo, disponibl
                 <InfoTorneo>
                     <ul>
                         <li>
-                            <Titulo level={3}>INFORMACION</Titulo>
-                            <p>Modalidad <span> PROPS </span></p>
-                            <p>Formato de torneo <span> PROPS </span></p>
+                            <Titulo level={3}>FORMATO</Titulo>
+                            <p>{dataTorneo[0].modality}</p>
                         </li>
                         <li>
                             <Titulo level={3}>COSTO DE INSCRIPCION</Titulo>
-                            <p>PROPS $ 300</p>
+                            <p>{dataTorneo[0].cost}</p>
                         </li>
 
                         <li>
                             <Titulo level={3}>PLAZO DE INSCRIPCION</Titulo>
-                            <p>PROPS Del 1-06 al 9-06</p>
+                            <p>{dataTorneo[0].inscriptionDay}</p>
                         </li>
 
                     </ul>
@@ -40,13 +39,13 @@ export default function TorneoInfo({ idTorneo, nameTorneo, gameTorneo, disponibl
                         <img src="/assets/oro.png" />
                         <Titulo level={2}>1ER PUESTO</Titulo>
                     </div>
-                    <p>Del 1-06 al 9-06</p>
+                    <p>Todavia nada :O</p>
 
                     <div>
                         <img src="/assets/plata.png" />
                         <Titulo level={3}>2DO PUESTO</Titulo>
                     </div>
-                    <p>Del 1-06 al 9-06</p>
+                    <p>Todavia nada :O</p>
                 </Prizes>
             </InfoTorneoContainer>
 

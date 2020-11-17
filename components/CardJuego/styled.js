@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
+
 
 const Card_Img = styled.div`
   width: 32%;
@@ -15,6 +17,14 @@ const Card_Img = styled.div`
     filter: none;
     cursor: pointer;
 
+}
+
+@media (max-width: ${media.smallDevice}){
+    width: 100%;
+    height: 65px;
+    margin-bottom: 4%;
+
+    
 }
 
   

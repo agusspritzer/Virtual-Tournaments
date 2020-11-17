@@ -4,7 +4,7 @@ import { HomeContainer } from 'containers';
 
 function Home({ data }) {
   console.log(data);
-  return <HomeContainer />;
+  return <HomeContainer dataTorneo={data} />;
 }
 
 export async function getServerSideProps() {
@@ -20,8 +20,12 @@ export async function getServerSideProps() {
         return [];
       }
 
+
+
       await snapshot.forEach(async (doc) => {
-        tournamentData.push({ data: await doc.data() });
+        let data = await doc.data();
+
+        tournamentData.push({ data });
         snapshotsRefs.push(doc.ref);
       });
     })
@@ -29,6 +33,25 @@ export async function getServerSideProps() {
       console.log(error);
       return [];
     });
+
+  const gameMap = tournamentData.map(async (ref, i) => {
+    const game = ref.data.game;
+
+    await db.collection('juegos').doc(game).get()
+      .then(async doc => {
+
+        if (!doc.exists) {
+          return null
+        }
+
+        tournamentData[i].data.game = await doc.data();
+      })
+      .catch(() => null);
+
+  })
+
+  await Promise.all(gameMap);
+
 
   const faseMap = snapshotsRefs.map(async (ref, i) => {
     const fetching = await ref
@@ -52,8 +75,10 @@ export async function getServerSideProps() {
     return await fetching;
   });
 
-  await Promise.all(faseMap);
 
+
+  await Promise.all(faseMap);
+  console.log("tour data", tournamentData);
   return { props: { data: tournamentData } };
 }
 

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-
+import media from 'lib/constants/media'
 
 
 const ContenedorFooter = styled.div`
@@ -61,7 +61,17 @@ nav {
       margin-bottom: 2%;
       font-size: 0.7em;
   }
-
+  @media (max-width: ${media.smallDevice}){
+width:90%;
+nav{
+  width: 85%;
+}
+  nav ul li a{
+    width:8%;
+    padding-bottom: 4%;
+  }
+  
+  }
 `
 
 const Logo = styled.div`
@@ -69,6 +79,10 @@ const Logo = styled.div`
     width: 30%;
     margin: 0 auto;
     padding: 4%;
+
+    @media (max-width: ${media.smallDevice}){
+width:45%;
+}
 `
 
 

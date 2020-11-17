@@ -29,8 +29,8 @@ export default class SimpleSlider extends Component {
 
         <Quote
           Frase="'Hi Ken, Awesome plugin. Any chance for dots color setting? Tried to change it in the slick-active class with no luck'"
-          Autor="Ricardo Barreda"
-          Descripcion="Exterminador profesional"
+          Autor="Jose Sand"
+          Descripcion="Inigualable"
         ></Quote>
 
         <Quote
