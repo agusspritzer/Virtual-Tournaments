@@ -29,9 +29,6 @@ import { ContenedorMain } from 'components';
 import { FullWidthSection } from 'components';
 import { Campeones_Slider } from 'components';
 import { SliderBeneficios } from 'components';
-import { Footer } from 'components';
-
-import { useAuthState, useAuthDispatch, setUser } from "contexts/AuthContext";
 
 
 const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
@@ -40,9 +37,6 @@ const TwitchEmbedVideo = dynamic(import('react-twitch-embed-video'), {
 
 
 export default function HomeContainer({ dataTorneo }) {
-
-  const { userAuth, userData } = useAuthState();
-
 
 
   return (
@@ -182,7 +176,7 @@ export default function HomeContainer({ dataTorneo }) {
         <SeccionTorneos>
           <Titulo level={3}>Torneos activos</Titulo>
           <TorneosCardContainer>
-            {dataTorneo.map(tournament => {
+            {dataTorneo && dataTorneo.map(tournament => {
               return (
                 <CardActive
                   Destino={tournament.data.slug}

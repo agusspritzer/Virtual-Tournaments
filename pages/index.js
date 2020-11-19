@@ -7,6 +7,8 @@ function Home({ data }) {
   return <HomeContainer dataTorneo={data} />;
 }
 
+export default Home;
+
 export async function getServerSideProps() {
   const ref = db.collection('torneos');
   const tournamentData = [];
@@ -80,4 +82,4 @@ export async function getServerSideProps() {
   return { props: { data: tournamentData } };
 }
 
-export default Home;
+
