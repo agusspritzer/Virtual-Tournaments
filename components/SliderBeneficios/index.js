@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { nominalTypeHack } from 'prop-types';
-import { QuoteBeneficios } from '../QuoteBeneficios';
+
+import QuoteBeneficios from '../QuoteBeneficios';
 
 export default class SimpleSlider extends Component {
     render() {
