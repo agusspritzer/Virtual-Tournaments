@@ -20,7 +20,7 @@ export default function CardActive({ GameImg, TorneoName, TorneoId, Game, Fase, 
           <ul>
             <li>
               <div>
-                <img src="../assets/card_icons/gamepad.png" />
+                <img src="/assets/card_icons/gamepad.png" />
                 <Titulo level={4}>Juego</Titulo>
               </div>
 
@@ -29,7 +29,7 @@ export default function CardActive({ GameImg, TorneoName, TorneoId, Game, Fase, 
 
             <li>
               <div>
-                <img src="../assets/card_icons/fase.png" />
+                <img src="/assets/card_icons/fase.png" />
                 <Titulo level={4}>Fase</Titulo>
               </div>
               <Titulo level={5}>{Fase}</Titulo>
@@ -37,7 +37,7 @@ export default function CardActive({ GameImg, TorneoName, TorneoId, Game, Fase, 
 
             <li>
               <div>
-                <img src="../assets/card_icons/fecha.png" />
+                <img src="/assets/card_icons/fecha.png" />
                 <Titulo level={4} >Proxima Fecha</Titulo>
               </div>
               <Titulo level={5}>{ProxFecha}</Titulo>

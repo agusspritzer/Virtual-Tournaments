@@ -47,7 +47,7 @@ export default function HomeContainer({ dataTorneo }) {
       <FullWidthSection color="#6418DC">
         <Reel>
           <Gradiente></Gradiente>
-          <video width="100%" src="assets/reel2.mp4" autoplay="true" loop="true" muted="true"></video>
+          <video width="100%" src="/assets/reel2.mp4" autoplay="true" loop="true" muted="true"></video>
         </Reel>
         {/*        <Overlay>
           <img src="../assets/fondo2.png" />
@@ -70,7 +70,7 @@ export default function HomeContainer({ dataTorneo }) {
           </Principal>
 
           <Foto>
-            <img src="../assets/presentacion.png" />
+            <img src="/assets/presentacion.png" />
           </Foto>
 
         </Presentacion>
@@ -89,21 +89,21 @@ export default function HomeContainer({ dataTorneo }) {
         <Beneficios>
 
           <div>
-            <img src="../assets/beneficios/trofeo.png" />
+            <img src="/assets/beneficios/trofeo.png" />
             <p>
               Podrás acceder a grandes premios monetarios por ganar torneos de
               tus juegos favoritos
             </p>
           </div>
           <div>
-            <img src="../assets/beneficios/twitch.png" />
+            <img src="/assets/beneficios/twitch.png" />
             <p>
               Contar con la posibilidad de que tus partidas sean vistas por
               miles de jugadores a través de Twitch
             </p>
           </div>
           <div>
-            <img src="../assets/beneficios/personas.png" />
+            <img src="/assets/beneficios/personas.png" />
             <p>
               Formar parte de una comunidad que apoya la escena local de
               jugadores no profesionales en E-Sports
