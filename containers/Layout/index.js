@@ -15,7 +15,6 @@ export default function Layout({ children }) {
   const { data, update, error } = useDocument(userAuth ? `usuarios/${userAuth.id}` : null, {
     listen: true,
   })
-  console.log("DATA", data)
 
 
   useEffect(() => {
@@ -25,9 +24,6 @@ export default function Layout({ children }) {
       }))
     }
   }, [data]);
-
-
-  console.log("User data", userData);
 
   return (
     <>

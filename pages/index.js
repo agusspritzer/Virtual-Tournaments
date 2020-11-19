@@ -3,7 +3,7 @@ import { db } from 'lib/firebase';
 import { HomeContainer } from 'containers';
 
 function Home({ data }) {
-  console.log(data);
+
   return <HomeContainer dataTorneo={data} />;
 }
 
@@ -77,7 +77,6 @@ export async function getServerSideProps() {
 
 
   await Promise.all(faseMap);
-  console.log("tour data", tournamentData);
   return { props: { data: tournamentData } };
 }
 
