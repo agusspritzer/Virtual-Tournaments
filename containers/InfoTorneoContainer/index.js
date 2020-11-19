@@ -19,75 +19,86 @@ export default function InfoTorneoContainer({ dataTorneo }) {
 
 
 
-    console.log("dataTorneo", dataTorneo)
+
+
     return (
         <>
-            <FullWidthSection>
+            {
+                dataTorneo ? (
+                    <>
+                        <FullWidthSection>
 
-                <TorneoImg
-                    fondoImg={dataTorneo[0].game.image}
-                    nameTorneo={dataTorneo[0].name}
-                    gameTorneo={dataTorneo[0].game.name}
-                    disponible="INSCRIPCION DISPONIBLE"
-                />
-
-
-            </FullWidthSection>
-
-            <ContenedorMain sintop="chico">
-
-                <TorneoInfo dataTorneo={dataTorneo} />
-
-                <Navegador>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a>RESULTADOS</a>
-                                <a>PARTICIPANTES</a>
-                                <a>REGLAS</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </Navegador>
-
-                <ParticipantesContainer>
-                    <Inscriptos
-                        Registrados="12"
-                        TotalTorneo="32">
-                    </Inscriptos>
-
-                    <UsuariosContainer>
-                        <Participantes UserName="Rodolfo"></Participantes>
-                        <Participantes UserName="Rodolfo"></Participantes>
-                        <Participantes UserName="Rodolfo"></Participantes>
-                        <Participantes UserName="Rodolfo"></Participantes>
-                        <Participantes UserName="Rodolfo"></Participantes>
-
-                    </UsuariosContainer>
-                </ParticipantesContainer>
+                            <TorneoImg
+                                fondoImg={dataTorneo[0].game.image}
+                                nameTorneo={dataTorneo[0].name}
+                                gameTorneo={dataTorneo[0].game.name}
+                                disponible="INSCRIPCION DISPONIBLE"
+                            />
 
 
-                <ReglasContainer>
-                    <Reglas
-                        Numero="1."
-                        Texto="Al ser un torneo tematico con un mapa especifico, solo se podrán utiilzar ciertos personajes. Los que podrán ser elegidos serán:
+                        </FullWidthSection>
+
+                        <ContenedorMain sintop="chico">
+
+                            <TorneoInfo dataTorneo={dataTorneo} />
+
+                            <Navegador>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a>RESULTADOS</a>
+                                            <a>PARTICIPANTES</a>
+                                            <a>REGLAS</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </Navegador>
+
+                            <ParticipantesContainer>
+                                <Inscriptos
+                                    Registrados="12"
+                                    TotalTorneo="32">
+                                </Inscriptos>
+
+                                <UsuariosContainer>
+                                    <Participantes UserName="Rodolfo"></Participantes>
+                                    <Participantes UserName="Rodolfo"></Participantes>
+                                    <Participantes UserName="Rodolfo"></Participantes>
+                                    <Participantes UserName="Rodolfo"></Participantes>
+                                    <Participantes UserName="Rodolfo"></Participantes>
+
+                                </UsuariosContainer>
+                            </ParticipantesContainer>
+
+
+                            <ReglasContainer>
+                                <Reglas
+                                    Numero="1."
+                                    Texto="Al ser un torneo tematico con un mapa especifico, solo se podrán utiilzar ciertos personajes. Los que podrán ser elegidos serán:
                     Sub Zero, Goro, John Cage, Scorpion, Kun Lao, Raiden y Shao Khan"
-                    ></Reglas>
-                    <Reglas
-                        Numero="2."
-                        Texto="Las partidas tendrán como limite 2 minutos, saliendo vencedor al mejor de 5 peleas. Cualquier jugador que 
+                                ></Reglas>
+                                <Reglas
+                                    Numero="2."
+                                    Texto="Las partidas tendrán como limite 2 minutos, saliendo vencedor al mejor de 5 peleas. Cualquier jugador que 
                         ponga en pausa el combate, automáticamente pierde el duelo."
-                    ></Reglas>
-                    <Reglas
-                        Numero="3."
-                        Texto="Se espera que los participantes demuestren un espíritu competitivo sano y respeten a sus rivales asi como también a Virtual Tournaments, organizadores del torneo staff del evento"
-                    ></Reglas>
-                </ReglasContainer>
+                                ></Reglas>
+                                <Reglas
+                                    Numero="3."
+                                    Texto="Se espera que los participantes demuestren un espíritu competitivo sano y respeten a sus rivales asi como también a Virtual Tournaments, organizadores del torneo staff del evento"
+                                ></Reglas>
+                            </ReglasContainer>
 
-            </ContenedorMain>
+                        </ContenedorMain>
 
 
 
+                    </>
+                ) : (
+
+                        <p>dale dale boca</p>
+                    )
+            }
         </>
+
     );
 }
