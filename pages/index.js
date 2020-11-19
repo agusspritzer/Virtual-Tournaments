@@ -21,7 +21,6 @@ export async function getServerSideProps() {
       }
 
 
-
       await snapshot.forEach(async (doc) => {
         let data = await doc.data();
 

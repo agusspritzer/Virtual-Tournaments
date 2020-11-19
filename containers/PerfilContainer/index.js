@@ -76,9 +76,9 @@ export default function AyudaContainer() {
                                     <img src={fotoCargada ? fotoCargada : fotoMiniatura} />  {/*assets/players/prueba.jpg*/}
                                 </figure>
                                 <PerfilDatos
-                                    Nombre={userData && userData.nombre}
-                                    NombreApellido="Roy Stevenson"
-                                    Ganados="21"
+                                    Nombre={userData && userData.username}
+                                    NombreApellido={userData && userData.nombre}
+                                    Ganados="11"
                                     Perdidos="7"
                                     Fecha="04-01-2020"
                                     Victoria="G">
