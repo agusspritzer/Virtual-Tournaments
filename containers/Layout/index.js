@@ -3,11 +3,15 @@ import { Header, Footer } from 'components';
 import { useAuthState, useAuthDispatch, setUser } from "contexts/AuthContext";
 import { useDocument } from '@nandorojo/swr-firestore';
 //import { setUser } from '../../contexts/AuthContext';
-
+import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
 
+  const router = useRouter();
+
+
   const dispatch = useAuthDispatch();
+
 
   const { userAuth, userData } = useAuthState();
   console.log(userAuth);
@@ -27,7 +31,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Header />
+      { router && router.pathname !== "/" && <Header />}
       {children}
       <Footer formato="0" />
     </>

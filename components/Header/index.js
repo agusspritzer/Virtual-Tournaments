@@ -16,9 +16,11 @@ function Header() {
         <ContenedorHeader>
 
             <Logo>
-                <a href="./index">
-                    <img src="../assets/logo.png" />
-                </a>
+                <Link href="/home">
+                    <a>
+                        <img src="../assets/logo.png" />
+                    </a>
+                </Link>
             </Logo>
 
 
