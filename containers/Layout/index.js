@@ -33,7 +33,8 @@ export default function Layout({ children }) {
     <>
       { router && router.pathname !== "/" && <Header />}
       {children}
-      <Footer formato="0" />
+      { router && router.pathname !== "/" && <Footer formato="0" />}
+
     </>
   );
 }

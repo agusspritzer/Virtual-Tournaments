@@ -1,12 +1,8 @@
 import React from 'react';
+import { DisclaimerContainer } from 'containers';
 
-
-function Index() {
-    return (
-        <div>Buenas
-        Algo mas decenteeeee
-        </div>
-    );
+function Disclaimer() {
+    return <DisclaimerContainer />;
 }
 
-export default Index;
+export default Disclaimer;

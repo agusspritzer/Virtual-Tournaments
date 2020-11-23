@@ -15,7 +15,7 @@ const Card_Img = styled.div`
   
   :hover{
     filter: none;
-    cursor: pointer;
+
 
 }
 

@@ -165,7 +165,7 @@ export default function HomeContainer({ dataTorneo }) {
 
 
         <Align>
-          <Link href="/perfil">
+          <Link href="/torneos">
             TODOS LOS JUEGOS
             </Link>
         </Align>

@@ -61,7 +61,7 @@ export default function AyudaContainer() {
 
     const HandleLogout = async () => {
         await logout();
-        Router.push("/");
+        Router.push("/home");
     };
 
     return (
