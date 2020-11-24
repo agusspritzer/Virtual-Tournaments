@@ -1,40 +1,19 @@
 import styled from 'styled-components';
-import { media } from "constants";
+import media from 'lib/constants/media'
 
 
 const Reel = styled.div`
-  height: 100vh;
-  overflow: hidden;
- position: relative;
-    video{
-      width: auto !important;
-        height: 100% !important;
-        @media (min-width:1000px){      
-        transform: scale(1.5);
-    }
-
-    @media (min-width:1250px){      
-        transform: scale(1.8);
-    }
-
-    @media (min-width:1500px){      
-        transform: scale(2);
-    }
-
-    
-}
-`;
-
-const Gradiente = styled.div`
-position: absolute;
-
-top:0;
-left:0;
 width: 100%;
-height:100%;
-z-index: -1;
-background-image: url("assets/lineas.png");
+
+    background-image: url("assets/lineas.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  background-attachment: fixed;
+
 `;
+
+
 
 const Align = styled.div`
 padding-top: 8%;
@@ -43,7 +22,12 @@ text-align: center;
 figure{
     display:flex;
     justify-content: center;
+    
 }
+
+
+
+
 h1{
     font-size: 3em;
 }
@@ -56,13 +40,16 @@ a{
     font-weight: 700;
     font-size: 1em;
 transition: 0.2s all;
-    
+
+
 }
 
 a:hover{
     color: #EEEEEE;
 
 }
+
+
 
 
 `
@@ -93,11 +80,18 @@ font-family: 'Maison Neue Extended';
   color:#B4B4B4;
   line-height: 2.2em;
   letter-spacing: 0.8px;
+
+
+  @media (max-width: ${media.mediumDevice}){
+    font-size: 0.8em;
+    line-height: 1.8em;
+    letter-spacing: 0.6em;
+    width: 55%;
+}
 `
 
 
 export {
-    Gradiente,
     Reel,
     Align,
     Disclaimer,

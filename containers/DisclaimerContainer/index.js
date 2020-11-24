@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Link from 'next/link';
 import { Titulo } from 'components';
 import { ContenedorMain } from 'components';
@@ -7,7 +6,6 @@ import { FullWidthSection } from 'components';
 
 import {
     Reel,
-    Gradiente,
     Align,
     Disclaimer,
     Texto
@@ -18,16 +16,13 @@ export default function DisclaimerContainer() {
     return <>
         <FullWidthSection>
             <Reel>
-                <Gradiente></Gradiente>
                 <Align>
                     <figure>
                         <img src="/assets/alternative.png" />
                     </figure>
-                    <Titulo level={1}>¡ATENCION GAMER!</Titulo>
+                    <Titulo level={1}>¡ATENCIÓN GAMER!</Titulo>
                     <Disclaimer>
-                        <figure>
-                            <img src="/assets/disclaimer2.png" />
-                        </figure>
+                        <img src="/assets/disclaimer2.png" />
                         <p>POR FAVOR, LEER ANTES DE INGRESAR AL SITIO</p>
                     </Disclaimer>
 
