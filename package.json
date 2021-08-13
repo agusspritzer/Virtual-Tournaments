@@ -45,7 +45,7 @@
     "husky": "^4.2.5",
     "js-cookie": "^2.2.1",
     "lint-staged": "^10.2.9",
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "next-fonts": "^1.1.0",
     "postcss-custom-media": "^7.0.8",
     "postcss-nested": "^4.2.1",
