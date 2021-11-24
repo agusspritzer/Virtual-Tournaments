@@ -27,7 +27,6 @@ export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible
 
             <ImgTorneo>
                 <Gradiente />
-
                 <Codigo>{idTorneo}</Codigo>
                 <Titulo level={1}>{nameTorneo}</Titulo>
                 <ExtraInfo>

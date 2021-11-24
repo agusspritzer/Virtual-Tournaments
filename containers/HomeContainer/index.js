@@ -46,6 +46,19 @@ export default function HomeContainer({ dataTorneo }) {
 
       <FullWidthSection color="#6418DC">
         <Reel>
+          <Presentacion>
+            <Principal>
+
+              <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
+              <Titulo level={4}>
+                Virtual Tournaments es la plataforma amateur definitiva que te
+                ofrece la posibilidad de inscribirte a torneos de tus juegos
+                preferidos para demostrar que sos el mejor en ellos!
+              </Titulo>
+            </Principal>
+
+
+          </Presentacion>
           <Gradiente></Gradiente>
           <video width="100%" src="/assets/reel2.mp4" autoplay="true" loop="true" muted="true"></video>
         </Reel>
@@ -57,33 +70,13 @@ export default function HomeContainer({ dataTorneo }) {
       </FullWidthSection>
 
       <ContenedorMain>
-        <Presentacion>
-          <Principal>
 
-
-            <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
-            <Titulo level={4}>
-              Virtual Tournaments es la plataforma amateur definitiva que te
-              ofrece la posibilidad de inscribirte a torneos de tus juegos
-              preferidos para demostrar que sos el mejor en ellos!
-            </Titulo>
-          </Principal>
-
-          <Foto>
-            <img src="/assets/presentacion.png" />
-          </Foto>
-
-        </Presentacion>
 
 
         <Align>
-
-
-
-
           <Titulo level={3} style={{ textAlign: "center" }} className="competir">
             ¡Competir desde casa nunca tuvo tantas ventajas!
-           </Titulo>
+          </Titulo>
         </Align>
 
         <Beneficios>
@@ -143,7 +136,7 @@ export default function HomeContainer({ dataTorneo }) {
           <GanadoresTitulo>
             <Titulo level={1}>CON ANSIAS DE COMPETIR Y GANAR EN LAS VENAS</Titulo>
             <Titulo level={5}>Usuarios de todo el país ya están haciendo su nombre en Virtual Tournaments
-            ganando grandes premios</Titulo>
+              ganando grandes premios</Titulo>
           </GanadoresTitulo>
 
           <Campeones_Slider></Campeones_Slider>
@@ -167,7 +160,7 @@ export default function HomeContainer({ dataTorneo }) {
         <Align>
           <Link href="/torneos">
             TODOS LOS JUEGOS
-            </Link>
+          </Link>
         </Align>
 
 

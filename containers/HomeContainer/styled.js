@@ -5,15 +5,26 @@ import media from 'lib/constants/media'
 
 
 const Principal = styled.div`
-  width: 65%;
+padding-top:10%;
+width: 65%;
+display: flex;
+justify-content: center;
+align-items:center;
+align-content: center;
+flex-wrap: wrap;
+flex-direction:row;
+margin: 0 auto;
+  text-align: center;
   h3{
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1.2em;
     padding-bottom:4%;
+    width: 100%;
   }
 
   h4{
+    width: 100%;
     letter-spacing: 0.8px;
   }
  
@@ -22,15 +33,15 @@ const Principal = styled.div`
     color: #EA33BC;
   }
 
-  @media (max-width: ${media.smallDevice}){
-    padding-top: 16%;
+  @media (max-width: ${media.mobile651}){
+    width: 95%;
+    padding-top: 12%;
     h3{
       font-size: 2em;
       line-height: 1.4em;
       padding-bottom: 12%;
     }
 
- width: 90%;
   }
 /*
   @media (max-width: ${media.smallDevice}){
@@ -38,6 +49,36 @@ const Principal = styled.div`
     background-color: red;
 }
 */
+`;
+
+const Presentacion = styled.div`
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+    transform: translate(-50%, 0);
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  z-index:2;
+
+
+  h4{
+    font-size: 1em;
+    letter-spacing: 0.2px;
+  }
+
+  @media (max-width: ${media.mobile651}){
+    h4{
+      font-size: 1em;
+      line-height: 2.6em;
+      
+    }
+
+ width: 95%;
+  }
 `;
 
 const Reel = styled.div`
@@ -105,35 +146,7 @@ const Foto = styled.div`
   }
 `;
 
-const Presentacion = styled.div`
-  width: 65%;
-  margin: 0 auto;
-  display: flex;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-    transform: translate(-50%, 0);
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  z-index:2;
 
-
-  h4{
-    font-size: 1em;
-    letter-spacing: 0.2px;
-  }
-
-  @media (max-width: ${media.smallDevice}){
-    h4{
-      font-size: 1em;
-      line-height: 2.6em;
-      
-    }
-
- width: 90%;
-  }
-`;
 
 
 const Stream = styled.div`

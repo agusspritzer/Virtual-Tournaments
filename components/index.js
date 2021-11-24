@@ -34,3 +34,4 @@ export { default as Navegador } from './Navegador';
 export { default as Loading } from './Loading';
 export { default as SliderBeneficios } from './SliderBeneficios';
 export { default as QuoteBeneficios } from './QuoteBeneficios';
+export { default as NewCard } from './NewCard';

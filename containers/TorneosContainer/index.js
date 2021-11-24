@@ -16,6 +16,7 @@ import { ContenedorMain } from 'components';
 import { SelectFilter } from 'components';
 import { SelectFilterState } from 'components';
 import { FilterStyleContainer } from 'components';
+import { NewCard } from '../../components';
 
 /*LEER ESTO IMPORANTEEE, al perecer el el componente select filter no funciona dentro del filter style container*/
 export default function TorneosContainer({ dataTorneo }) {
@@ -142,6 +143,9 @@ export default function TorneosContainer({ dataTorneo }) {
                                         Player="Tanorior08"
                                         Prize="$5600">
                                 </CardPast>
+                        </TorneosCardContainer>
+
+                        <TorneosCardContainer>
                         </TorneosCardContainer>
                 </ContenedorMain>
         </>;
