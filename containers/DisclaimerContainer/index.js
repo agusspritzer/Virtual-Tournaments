@@ -22,7 +22,6 @@ export default function DisclaimerContainer() {
                     </figure>
                     <Titulo level={1}>¡ATENCIÓN GAMER!</Titulo>
                     <Disclaimer>
-                        <img src="/assets/disclaimer2.png" />
                         <p>POR FAVOR, LEER ANTES DE INGRESAR AL SITIO</p>
                     </Disclaimer>
 

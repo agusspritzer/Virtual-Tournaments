@@ -9,7 +9,6 @@ export default function Navegador() {
         { label: 'TORNEOS', content_id: 'torneos' },
         { label: 'INSCRIPCIONES', content_id: 'inscripciones' },
         { label: 'OTROS', content_id: 'otros' },
-        { label: 'OTROS', content_id: 'otros' },
 
         ];
 
