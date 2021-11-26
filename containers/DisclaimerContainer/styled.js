@@ -82,7 +82,7 @@ const Align = styled.div`
   }
 
   @media (max-width: ${media.mobile375}) {
-    padding-top: 25%;
+    padding-top: 15%;
     width: 90%;
   }
 
