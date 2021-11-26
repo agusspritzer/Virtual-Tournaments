@@ -61,7 +61,35 @@ nav {
       margin-bottom: 2%;
       font-size: 0.7em;
   }
-  @media (max-width: ${media.smallDevice}){
+
+
+
+
+  @media (max-width: ${media.desktop1680}) {
+    width:50%;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width:60%;
+    nav ul li a{
+    width:6%;
+  }
+  
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    width: 85%;
+
+    p{
+      font-size: 0.8em;
+      
+  }
+
+  p:nth-child(even){
+      font-size: 0.6em;
+  }
+  }
+
+  @media (max-width: ${media.mobile651}){
 width:90%;
 nav{
   width: 85%;
@@ -72,6 +100,12 @@ nav{
   }
   
   }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+
+  }
+
 `
 
 const Logo = styled.div`
@@ -80,7 +114,7 @@ const Logo = styled.div`
     margin: 0 auto;
     padding: 4%;
 
-    @media (max-width: ${media.smallDevice}){
+@media (max-width: ${media.mobile651}){
 width:45%;
 }
 `

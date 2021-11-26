@@ -24,6 +24,19 @@ const CardsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: ${media.desktop1680}) {
+
+  }
+
+  @media (max-width: ${media.desktop1366}) {
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    justify-content: center;
+  }
+
+  
 `;
 
 

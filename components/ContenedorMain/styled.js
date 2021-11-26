@@ -14,9 +14,24 @@ ${props => props.modo === "chico" ? css`
  ` }
 
 
- @media (max-width: ${media.smallDevice}){
+@media (max-width: ${media.desktop1680}) {
+    width: 75%;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width: 80%;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    width: 85%;
+  }
+
+  @media (max-width: ${media.mobile651}) {
     width: 90%;
-}
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+  }
 
 
 `;

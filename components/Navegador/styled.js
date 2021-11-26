@@ -8,6 +8,10 @@ margin-bottom: 1%;
 border-bottom: 1px solid #707070;
 text-align: center;
 
+
+
+display: none;
+
 nav {
     width: 80%;
     margin: 0 auto;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
 
 const Card= styled.div`
   width: 45%;
@@ -9,6 +10,30 @@ background-color: #EEEEEE;
 
 display: flex;
   justify-content: flex-start;
+
+
+  @media (max-width: ${media.desktop1680}) {
+    width: 48%;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width: 48%;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    width: 75%;
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+
+  }
+
+
+
 `;
 
 

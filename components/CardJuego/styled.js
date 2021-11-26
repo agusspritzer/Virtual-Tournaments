@@ -15,17 +15,30 @@ const Card_Img = styled.div`
   
   :hover{
     filter: none;
-
-
 }
 
-@media (max-width: ${media.smallDevice}){
-    width: 100%;
-    height: 65px;
-    margin-bottom: 4%;
 
+  @media (max-width: ${media.desktop1366}) {
+    width: 46%;
+    background-size: 600px;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
     
+  }
+
+  @media (max-width: ${media.mobile651}){
+    width: 100%;
+    height: 85px;
+    margin-bottom: 4%;
 }
+
+  @media (max-width: ${media.mobile375}) {
+    height: 65px;
+  }
+
+
+
 
   
 `

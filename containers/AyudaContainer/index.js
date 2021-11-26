@@ -22,9 +22,6 @@ export default function AyudaContainer() {
       </SeccionAyuda>
 
       <Navegador>
-        <a>HOLAS</a>
-        <a>EY</a>
-        <a>GAAA</a>
       </Navegador>
 
       <FaqContainer>
@@ -32,8 +29,7 @@ export default function AyudaContainer() {
           Pregunta="¿Hay otros métodos aparte de pago con VT Points o Mercado Pago?"
           Respuesta="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo,
                      tortor eget congue consectetur, mauris mi tincidunt nunc, vel posuere ex velit quis eros.
-                    Vivamus eros leo, finibus a rutrum sit amet, pretium a lectus. Cras laoreet porttitor libero
-                   sed tincidunt. Sed dignissim ex eget justo scelerisque, a suscipit tellus cursus."
+                    Vivamus eros leo, finibus a rutrum sit amet, pretium a lectus."
         >
         </Faq>
 

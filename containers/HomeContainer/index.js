@@ -48,16 +48,13 @@ export default function HomeContainer({ dataTorneo }) {
         <Reel>
           <Presentacion>
             <Principal>
-
-              <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <span>VIRTUAL TOURNAMENTS</span></Titulo>
+              <Titulo level={3}>ACTIVA TU MODO TRYHARD EN <br></br> <span>VIRTUAL TOURNAMENTS</span></Titulo>
               <Titulo level={4}>
                 Virtual Tournaments es la plataforma amateur definitiva que te
                 ofrece la posibilidad de inscribirte a torneos de tus juegos
                 preferidos para demostrar que sos el mejor en ellos!
               </Titulo>
             </Principal>
-
-
           </Presentacion>
           <Gradiente></Gradiente>
           <video width="100%" src="/assets/reel2.mp4" autoplay="true" loop="true" muted="true"></video>

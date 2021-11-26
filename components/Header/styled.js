@@ -15,6 +15,8 @@ const ContenedorHeader = styled.div`
     margin: 0;
   }
 
+
+
   z-index: 99;
   background-color: #272727;
   padding: 1% 3% 1% 3%;
@@ -96,7 +98,8 @@ const ContenedorHeader = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: ${media.smallDevice}) {
+
+  @media (max-width: ${media.mobile651}) {
     nav {
       display: none;
     }
@@ -107,7 +110,7 @@ const Logo = styled.div`
   width: 10%;
   cursor: pointer;
 
-  @media (max-width: ${media.smallDevice}) {
+  @media (max-width: ${media.mobile651}) {
     padding: 3%;
     width: 35%;
   }

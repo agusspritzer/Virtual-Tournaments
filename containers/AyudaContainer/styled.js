@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media';
 
 const SeccionAyuda = styled.div`
 width: 70%;
 margin: 0 auto;
-padding-bottom: 6%;
+padding-bottom: 3%;
 text-align: center;
 
 h5{
@@ -15,7 +16,7 @@ h5{
 text-align: center;
 }
 
-h1{
+h3{
     font-size: 2em;
   font-weight: 700;
   margin-bottom: 1%;
@@ -28,6 +29,52 @@ h1{
   font-weight: 400;
   font-size: 0.8em;
 }
+
+@media (max-width: ${media.desktop1366}) {
+  padding-top: 4%;
+  h3{
+    font-size: 1.7em
+  }
+    width: 85%;
+    p{
+      width: 65%;
+    }
+  }
+
+@media (max-width: ${media.tablet1024}) {
+  padding-top: 5%;
+  h3{
+    font-size: 1.6em
+  }
+    width: 85%;
+    p{
+      width: 65%;
+    }
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 90%;
+    padding-top: 6%;
+    h3{
+    font-size: 1.5em
+  }
+    p{
+      width: 85%;
+    }
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width:95;
+    h3{
+    font-size: 1.4em;
+  }
+    p{
+      width: 90%;
+    }
+  }
+
+
+
 `
 
 const FaqContainer = styled.div`
@@ -37,6 +84,13 @@ const FaqContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+
+  @media (max-width: ${media.mobile651}) {
+    text-align: center;
+    justify-content: center;
+  }
+
 `;
 
 const MensajeContainer = styled.div`
@@ -89,6 +143,22 @@ a{
     text-align: right;
     padding: 2.5% 6% 2.5% 6%;
 }
+
+@media (max-width: ${media.desktop1366}) {
+    width: 75%;
+  }
+
+@media (max-width: ${media.tablet1024}) {
+    width: 85%;
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+  }
 
 `
 
