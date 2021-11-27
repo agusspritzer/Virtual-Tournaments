@@ -12,12 +12,14 @@ import {
   VTpoints,
   VT_Info,
   VT_Img,
+  SliderContainer,
 } from './styled';
 
 import { ContenedorMain } from 'components';
 import { FullWidthSection } from 'components';
 import { Titulo } from 'components';
 import { Slider } from 'components';
+import { SliderLogos } from 'components';
 
 export default function ProyectoContainer() {
   return (
@@ -53,6 +55,14 @@ export default function ProyectoContainer() {
       </FullWidthSection>
 
       <ContenedorMain>
+        <SliderContainer>
+        <Titulo level={4}>
+            {' '}
+            Las empresas mas reconocidas del gaming ya colaboraron con nosotros{' '}
+          </Titulo>
+          <SliderLogos></SliderLogos>
+        </SliderContainer>
+
         <LogosContainer>
           <Titulo level={4}>
             {' '}
@@ -87,8 +97,6 @@ export default function ProyectoContainer() {
         </LogosContainer>
 
         <VTpoints>
-
-
           <VT_Img>
             <img src="/assets/vtpoints.png" />
             <p>VT Points</p>

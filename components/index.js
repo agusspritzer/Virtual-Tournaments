@@ -35,3 +35,4 @@ export { default as Loading } from './Loading';
 export { default as SliderBeneficios } from './SliderBeneficios';
 export { default as QuoteBeneficios } from './QuoteBeneficios';
 export { default as NewCard } from './NewCard';
+export { default as SliderLogos } from './SliderLogos';

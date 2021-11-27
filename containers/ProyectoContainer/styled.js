@@ -152,7 +152,6 @@ const Principal = styled.div`
     margin: 0 auto;
   }
 
-
   @media (max-width: ${media.mobile651}) {
     width: 90%;
     h1 {
@@ -175,7 +174,6 @@ const Principal = styled.div`
     }
     margin: 0 auto;
   }
-
 `;
 
 const Testimonios = styled.div`
@@ -215,6 +213,26 @@ const LogosContainer = styled.div`
     margin: 0% 0% 8% 0;
     font-weight: 500;
   }
+
+  @media (max-width: ${media.desktop1680}) {
+    width: 85%;
+    margin: 0 auto;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    display: none;
+    width: 95%;
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${media.mobile375}) {
+  }
 `;
 
 const Logos = styled.div`
@@ -229,6 +247,91 @@ const Logos = styled.div`
   img {
     width: 70%;
     margin: 0 auto;
+  }
+
+  @media (max-width: ${media.desktop1680}) {
+    figure {
+      margin: 0 1% 8% 1%;
+    }
+    img {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: ${media.desktop1366}) {
+    figure {
+      margin: 0 1% 8% 1%;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  @media (max-width: ${media.tablet1024}) {
+    figure {
+      width: auto;
+      margin: 0 1% 8% 1%;
+    }
+    img {
+      width: 40%;
+    }
+  }
+`;
+
+const SliderContainer = styled.div`
+  padding: 30% 0 1% 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+
+  @media (max-width: ${media.tablet1024}) {
+    display: block;
+
+    p {
+      font-size: 0.9em;
+    }
+    button {
+      display: none !important;
+    }
+    h4 {
+    font-size: 1em;
+      color: #eeeeee;
+      letter-spacing: 0.2px;
+      margin: 0% 0% 8% 0;
+      font-weight: 500;
+    }
+
+    figure {
+      margin: 0 1% 4% 1%;
+    }
+    img {
+      margin: 0 auto;
+      height: auto;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 95%;
+    img {
+      width: 80%;
+    }
+
+    h4{
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 100%;
+
+    img {
+      width: 80%;
+    }
+
+    h4{
+      font-size: 0.8em;
+    }
   }
 `;
 
@@ -338,9 +441,7 @@ const VT_Img = styled.div`
       font-size: 0.8em;
     }
   }
-
 `;
-
 
 const VT_Info = styled.div`
   width: 60%;
@@ -382,7 +483,6 @@ const VT_Info = styled.div`
     margin: 0 auto;
   }
 
-
   @media (max-width: ${media.mobile651}) {
     width: 90%;
     h1 {
@@ -417,4 +517,5 @@ export {
   VTpoints,
   VT_Info,
   VT_Img,
+  SliderContainer,
 };
