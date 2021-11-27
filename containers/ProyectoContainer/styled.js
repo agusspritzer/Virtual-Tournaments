@@ -215,10 +215,14 @@ const LogosContainer = styled.div`
   }
 
   @media (max-width: ${media.desktop1680}) {
+    padding-top: 12%;
+    padding-bottom: 12%;
     width: 85%;
     margin: 0 auto;
   }
   @media (max-width: ${media.desktop1366}) {
+    padding-top: 10%;
+    padding-bottom: 10%;
     width: 90%;
   }
 
@@ -287,6 +291,8 @@ const SliderContainer = styled.div`
   @media (max-width: ${media.tablet1024}) {
     display: block;
 
+    padding-top: 10%;
+    padding-bottom: 8%;
     p {
       font-size: 0.9em;
     }
@@ -294,7 +300,7 @@ const SliderContainer = styled.div`
       display: none !important;
     }
     h4 {
-    font-size: 1em;
+      font-size: 1em;
       color: #eeeeee;
       letter-spacing: 0.2px;
       margin: 0% 0% 8% 0;
@@ -313,11 +319,13 @@ const SliderContainer = styled.div`
 
   @media (max-width: ${media.mobile651}) {
     width: 95%;
+    padding-top: 25%;
+    padding-bottom: 8%;
     img {
-      width: 80%;
+      width: 50%;
     }
 
-    h4{
+    h4 {
       line-height: 20px;
     }
   }
@@ -326,10 +334,10 @@ const SliderContainer = styled.div`
     width: 100%;
 
     img {
-      width: 80%;
+      width: 60%;
     }
 
-    h4{
+    h4 {
       font-size: 0.8em;
     }
   }
