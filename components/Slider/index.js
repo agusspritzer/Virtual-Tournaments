@@ -35,8 +35,7 @@ export default class SimpleSlider extends Component {
 
         <Quote
           Frase="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo, tortor eget congue consectetur,
-    mauris mi tincidunt nunc, vel posuere ex velit quis eros. Vivamus eros leo, finibus a rutrum sit amet, pretium a lectus.
-     Cras laoreet porttitor libero sed tincidunt. Sed dignissim ex eget justo scelerisque, a suscipit tellus cursus'"
+    mauris mi tincidunt nunc, vel posuere ex velit quis eros."
           Autor="Lionel Messi"
           Descripcion="Jugador profesional de Barcelona"
         ></Quote>

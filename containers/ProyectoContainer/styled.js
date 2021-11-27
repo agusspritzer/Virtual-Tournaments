@@ -191,6 +191,18 @@ const Testimonios = styled.div`
     margin: 0% 0% 4% 0;
     font-weight: 600;
   }
+
+  @media (max-width: ${media.desktop1366}) {
+    padding: 6% 0 6% 0;
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    padding: 8% 0 12% 0;
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    padding: 10% 0 14% 0;
+  }
 `;
 
 const LogosContainer = styled.div`
