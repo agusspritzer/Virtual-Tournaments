@@ -87,6 +87,12 @@ export default function ProyectoContainer() {
         </LogosContainer>
 
         <VTpoints>
+
+
+          <VT_Img>
+            <img src="/assets/vtpoints.png" />
+            <p>VT Points</p>
+          </VT_Img>
           <VT_Info>
             <Titulo level={1}>QUE TODAS TUS VICTORIAS VALGAN LA PENA</Titulo>
             <p>
@@ -96,11 +102,6 @@ export default function ProyectoContainer() {
               torneos abiertos donde pueda mejorar su nivel de habilidad
             </p>
           </VT_Info>
-
-          <VT_Img>
-            <img src="/assets/vtpoints.png" />
-            <p>VT Points</p>
-          </VT_Img>
         </VTpoints>
       </ContenedorMain>
     </>
