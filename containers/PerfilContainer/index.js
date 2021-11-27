@@ -114,12 +114,12 @@ export default function AyudaContainer() {
                         <Titulo level={0}>PROXIMA PARTIDA</Titulo>
                         <ProxPartida
                             Fase="4tos de final"
-                            IdTorneo="#PP210"
+                            IdTorneo="17 de Julio"
                             TorneoName="TORNEO DE JULIO PUMMEL PARTY"
                             Jugador1="Tú"
                             Jugador2="Tanorior08"
-                            Resultado1="1"
-                            Resultado2="2"
+                            Resultado1=" "
+                            Resultado2=" "
                             Game="Pummel Party"
                             ProxFecha="13/07"
                             Horario="16:00hs"

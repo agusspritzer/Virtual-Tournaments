@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import media from 'lib/constants/media'
 
 const Card = styled.div`
-@media ${media.mediumDevice} {
 width: 30%;
 background-color: #eeeeee;
 padding: 3%;
@@ -16,7 +15,8 @@ font-size: 1.2em;
 font-family: 'TTOctosquares';
 margin-bottom: 15%;
 }
-}
+
+
 `
 
 
