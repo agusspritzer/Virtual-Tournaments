@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import media from 'lib/constants/media'
 
 const GanadoresContainer = styled.div`
 text-align: center;
@@ -9,7 +9,7 @@ outline:none;
 
 const Usuario_Img = styled.div`
 figure{
-    width: 20%;
+    width: 80px;
     margin: 0 auto;
     overflow: hidden;
     height: 80px;
@@ -21,6 +21,13 @@ figure img{
     width: 100%;
     height: 100%;
 }
+
+@media (max-width: ${media.tablet1024}) {
+    figure{
+        width: 55px;
+        height: 55px;
+    }
+  }
 `
 
 const Usuario = styled.p`
@@ -33,6 +40,10 @@ span{
     font-weight: 500;
     color: #6418DC;
 } 
+
+@media (max-width: ${media.tablet1024}) {
+    font-size: 1em;
+  }
 `
 
 const Dinero = styled.h4`
@@ -43,9 +54,11 @@ font-weight: 600;
 font-family: 'TTOctosquares';
 
 span{
-    
     color: #AE9100;
 }
+@media (max-width: ${media.tablet1024}) {
+    font-size: 1.2em;
+  }
 `
 
 const Torneo = styled.p`
@@ -54,6 +67,12 @@ width: 45%;
 margin:0 auto;
 font-size: 0.9em;
 text-align: center;
+
+@media (max-width: ${media.tablet1024}) {
+    font-size: 0.75em;
+  }
+
+
 `
 
 export {

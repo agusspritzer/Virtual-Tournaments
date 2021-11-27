@@ -14,19 +14,18 @@ const Presentacion = styled.div`
   align-items: center;
   z-index: 2;
 
-
   @media (max-width: ${media.desktop1680}) {
     width: 75%;
-    top:18%;
+    top: 18%;
   }
   @media (max-width: ${media.desktop1366}) {
     width: 80%;
-    top:20%
+    top: 20%;
   }
 
   @media (max-width: ${media.tablet1024}) {
     width: 85%;
-    top:22%;
+    top: 22%;
   }
 
   @media (max-width: ${media.mobile651}) {
@@ -54,7 +53,7 @@ const Principal = styled.div`
     font-weight: 700;
     color: #ea33bc;
   }
-  
+
   h3 {
     font-weight: 400;
     font-size: 2.5em;
@@ -82,18 +81,14 @@ const Principal = styled.div`
 
   @media (max-width: ${media.mobile651}) {
     width: 90%;
-    h3{
+    h3 {
       font-size: 2em;
     }
-
   }
 
   @media (max-width: ${media.mobile375}) {
     width: 95%;
-
   }
-
-
 `;
 
 const Reel = styled.div`
@@ -202,7 +197,6 @@ const Stream = styled.div`
     width: 95%;
   }
 
-
   @media (max-width: ${media.mobile651}) {
     width: 100%;
 
@@ -217,6 +211,16 @@ const Ganadores = styled.div`
   width: 65%;
   margin: 0 auto;
 
+  @media (max-width: ${media.desktop1680}) {
+    width: 75%;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    width: 90%;
+  }
   @media (max-width: ${media.mobile651}) {
     display: none;
   }
@@ -245,6 +249,38 @@ const GanadoresTitulo = styled.div`
     width: 36%;
     color: #272727;
   }
+
+  @media (max-width: ${media.desktop1680}) {
+    h1{
+      font-size: 1.6em;
+      width: 48%;
+    }
+    h5{
+      font-size: 0.95em;
+      width: 40%;
+    }
+  }
+  @media (max-width: ${media.desktop1366}) {
+    h1{
+      font-size: 1.5em;
+      width: 48%;
+    }
+    h5{
+      font-size: 0.90em;
+      width: 40%;
+    }
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    h1{
+      font-size: 1.4em;
+      width: 48%;
+    }
+    h5{
+      font-size: 0.8em;
+      width: 40%;
+    }
+  }
 `;
 
 const Juegos = styled.div`
@@ -256,7 +292,6 @@ const Juegos = styled.div`
 
   @media (max-width: ${media.desktop1366}) {
     justify-content: space-evenly;
-  
   }
 `;
 
@@ -287,32 +322,27 @@ const Beneficios = styled.div`
     padding-top: 8%;
   }
 
-
   @media (max-width: ${media.desktop1680}) {
-    
   }
   @media (max-width: ${media.desktop1366}) {
     p {
-    font-size: 0.7em;
-    line-height: 18px;
-  }
+      font-size: 0.7em;
+      line-height: 18px;
+    }
   }
 
   @media (max-width: ${media.tablet1024}) {
-    img{
+    img {
       height: 30%;
     }
     div {
-    width: 25%;
-  }
+      width: 25%;
+    }
   }
 
   @media (max-width: ${media.mobile651}) {
     display: none;
   }
-
-
-  
 `;
 
 const Testimonios = styled.div`
