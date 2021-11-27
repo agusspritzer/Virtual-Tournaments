@@ -87,7 +87,7 @@ export default function AyudaContainer() {
 
                             <Redes>
                                 <p>Cambiar Imagen</p>
-                                <input type="file" onChange={e => HandleInputChange(e.target.files[0])} />
+                                <input type="file" name="uploadfile" onChange={e => HandleInputChange(e.target.files[0])} />
                                 <button onClick={() => HandleSubmitFile()}>Guardar Foto</button>
                                 <IconosRedes>
                                 </IconosRedes>
@@ -133,10 +133,21 @@ export default function AyudaContainer() {
                             Posicion="3er Puesto"
                             Jugador1="Tú"
                             Jugador2="k00ldan16"
+                            Jugador3="Coquito"
+                            Jugador4="bAsil0n"
+                            Jugador5="Focdpo21"
+                            Fase1="16avos de final"
+                            Fase2="8vos de final"
+                            Fase3="4tos de final"
+                            Fase4="Semifinal"
                             Resultado1="3"
                             Resultado2="0"
-                            Fase="16avos de final"
-
+                            Resultado3="2"
+                            Resultado4="1"
+                            Resultado5="4"
+                            Resultado6="2"
+                            Resultado7="1"
+                            Resultado8="3"
                         >
                         </CardTorneos>
                     </div>

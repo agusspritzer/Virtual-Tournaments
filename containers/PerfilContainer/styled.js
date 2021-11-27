@@ -41,6 +41,9 @@ margin-bottom: 8%;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
+
+
+display: none;
 `
 
 const Jugador = styled.div`
@@ -70,6 +73,10 @@ img{
 
 
 const Redes = styled.div`
+
+display: none;
+
+
 width: 15%;
 
 p{
