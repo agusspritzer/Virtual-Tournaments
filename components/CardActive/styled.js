@@ -2,24 +2,27 @@ import styled from 'styled-components';
 import media from 'lib/constants/media'
 
 const Card = styled.div`
-
-  @media ${media.mediumDevice} {
     width: 23%;
   background-color: #eeeeee;
   margin-bottom:3%;
   margin-right: 2%;
   transition: ease 0s, transform 0.4s ease 0s;
 
-}
+  @media (max-width: ${media.tablet1024}) {
+  width: 30%;
+  }
 
-@media (max-width: ${media.smallDevice}){
-  width: 75%;
-  background-color: #eeeeee;
-  margin-bottom:3%;
+@media (max-width: ${media.mobile651}){
+  width: 45%;
+  margin-bottom:6%;
     
 }
 
-
+@media (max-width: ${media.mobile375}){
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8%;
+}
 
 :hover {
   transform: scale(1.08);
@@ -96,6 +99,18 @@ h5 {
   font-family: 'Maison Neue Extended';
 }
 
+@media (max-width: ${media.mobile651}){
+ h3{
+   font-size: 0.8em;
+ }
+ h4{
+   font-size: 0.75em
+ }
+ h5{
+   font-size: 0.75em
+ }
+    
+}
 
 `;
 

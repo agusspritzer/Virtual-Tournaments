@@ -192,11 +192,9 @@ const Stream = styled.div`
   @media (max-width: ${media.desktop1366}) {
     width: 85%;
   }
-
   @media (max-width: ${media.tablet1024}) {
     width: 95%;
   }
-
   @media (max-width: ${media.mobile651}) {
     width: 100%;
 
@@ -217,7 +215,6 @@ const Ganadores = styled.div`
   @media (max-width: ${media.desktop1366}) {
     width: 90%;
   }
-
   @media (max-width: ${media.tablet1024}) {
     width: 90%;
   }
@@ -251,32 +248,32 @@ const GanadoresTitulo = styled.div`
   }
 
   @media (max-width: ${media.desktop1680}) {
-    h1{
+    h1 {
       font-size: 1.6em;
       width: 48%;
     }
-    h5{
+    h5 {
       font-size: 0.95em;
       width: 40%;
     }
   }
   @media (max-width: ${media.desktop1366}) {
-    h1{
+    h1 {
       font-size: 1.5em;
       width: 48%;
     }
-    h5{
-      font-size: 0.90em;
+    h5 {
+      font-size: 0.9em;
       width: 40%;
     }
   }
 
   @media (max-width: ${media.tablet1024}) {
-    h1{
+    h1 {
       font-size: 1.4em;
       width: 48%;
     }
-    h5{
+    h5 {
       font-size: 0.8em;
       width: 40%;
     }
@@ -375,8 +372,14 @@ const TorneosCardContainer = styled.div`
   padding-bottom: 8%;
 
   @media (max-width: ${media.mobile651}) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: ${media.mobile651}) {
     justify-content: center;
   }
+
+
 `;
 
 const Align = styled.div`

@@ -36,3 +36,4 @@ export { default as SliderBeneficios } from './SliderBeneficios';
 export { default as QuoteBeneficios } from './QuoteBeneficios';
 export { default as NewCard } from './NewCard';
 export { default as SliderLogos } from './SliderLogos';
+export { default as SliderCards } from './SliderCards';

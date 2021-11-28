@@ -17,10 +17,6 @@ import { ContenedorMain, TorneoImg, FullWidthSection, TorneoInfo, Inscriptos, Pa
 
 export default function InfoTorneoContainer({ dataTorneo }) {
 
-
-
-
-
     return (
         <>
             {
