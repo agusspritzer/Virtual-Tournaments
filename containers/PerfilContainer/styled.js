@@ -13,7 +13,9 @@ nav {
     width: 80%;
     margin: 0 auto;
   }
-  
+  nav ul{
+    padding: 0%;
+  }
   nav ul li{
     display: flex;
     justify-content: space-evenly;
@@ -34,6 +36,39 @@ nav {
   nav ul li a span{
     color: #FE3F53;
   }
+
+@media (max-width: ${media.tablet1024}) {
+  nav {
+    padding-top: 6%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav ul li a {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: ${media.mobile651}) {
+  nav ul li a {
+    font-size: 0.75em;
+  }
+
+  nav ul li{
+
+    justify-content: space-between;
+
+  }
+}
+@media (max-width: ${media.mobile375}) {
+  nav {
+  
+    width: 95%;
+   
+  }
+  nav ul li a {
+    font-size: 0.7em;
+  }
+
+}
 `
 
 const PerfilSeccion = styled.div`
@@ -105,14 +140,50 @@ margin-bottom:4%;
     width: 95%;
     margin: 0 auto;
   }
-
-
 `
+
+
 const Config = styled.div`
 
 img{
   display: inline-block;
   margin-right: 12px;
+}
+`
+
+
+const ContenedorPartidas = styled.div`
+@media (max-width: ${media.desktop1680}) {
+h3{
+  font-size: 1.5em;
+}
+
+}
+
+@media (max-width: ${media.desktop1366}) {
+h3{
+  font-size: 1.3em;
+}
+
+}
+
+@media (max-width: ${media.tablet1024}) {
+h3{
+  font-size: 1.2em;
+}
+}
+
+@media (max-width: ${media.mobile651}) {
+padding-top: 6%;
+}
+
+@media (max-width: ${media.mobile375}) {
+  padding-top: 8%;
+h3{
+  width: 95%;
+  margin:0 auto;
+
+}
 }
 `
 
@@ -149,4 +220,5 @@ export {
   Config,
   IconosRedes,
   Redes,
+  ContenedorPartidas,
 };
