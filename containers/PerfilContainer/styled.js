@@ -140,39 +140,41 @@ const Config = styled.div`
 `;
 
 const ContenedorPartidas = styled.div`
-h6{
+
+`;
+
+
+const TituloPartidas = styled.h1`
+
   font-family: 'TTOctosquares';
   font-weight: 700;
-}
+  font-size: 1.6em;
+margin-bottom: 2%;
   @media (max-width: ${media.desktop1680}) {
-    h6 {
+    
       font-size: 1.5em;
-    }
   }
 
   @media (max-width: ${media.desktop1366}) {
-    h6 {
       font-size: 1.3em;
-    }
   }
 
   @media (max-width: ${media.tablet1024}) {
-    h6 {
+
       font-size: 1.2em;
-    }
   }
 
   @media (max-width: ${media.mobile651}) {
     padding-top: 6%;
   }
-
   @media (max-width: ${media.mobile375}) {
     padding-top: 8%;
-    h6 {
+    padding-bottom:4% ;
       width: 95%;
       margin: 0 auto;
-    }
+
   }
+
 `;
 
 const Redes = styled.div`
@@ -204,4 +206,5 @@ export {
   IconosRedes,
   Redes,
   ContenedorPartidas,
+  TituloPartidas
 };

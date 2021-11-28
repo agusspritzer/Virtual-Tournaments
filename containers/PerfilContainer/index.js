@@ -12,7 +12,8 @@ import {
     Redes,
     Config,
     IconosRedes,
-    ContenedorPartidas
+    ContenedorPartidas,
+    TituloPartidas,
 } from './styled';
 
 
@@ -112,7 +113,9 @@ export default function AyudaContainer() {
                         </Navegador>
 
                         <ContenedorPartidas>
-                        <Titulo level={6} id='proxPartida'>PROXIMA PARTIDA</Titulo>
+                            <TituloPartidas>PROXIMA PARTIDA</TituloPartidas>
+
+                        
                         <ProxPartida
                             Fase="4tos de final"
                             IdTorneo="17 de Julio"
