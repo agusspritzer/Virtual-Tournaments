@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import media from 'lib/constants/media'
 
 
 
@@ -25,7 +25,38 @@ p{
     line-height: 2em;
 }
 
+@media (max-width: ${media.tablet1024}) {
+
+h2{
+    font-size: 1.6em;
+}
+
+  }
+
+@media (max-width: ${media.mobile651}) {
+    width: 100%;
+    margin-bottom: 8%;
+h2{
+    font-size: 1.4em;
+}
+    p{
+    width: 100%;
+}
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+    margin-left: 3%;
+   
+
+  }
+
+
+
 `;
+
+
+
 
 
 

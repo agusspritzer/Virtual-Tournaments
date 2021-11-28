@@ -11,7 +11,7 @@ export default function Participantes({ Registrados, TotalTorneo }) {
     return (
         <InscriptosContainer>
             <Inscriptos>
-                <img src={`/assets/inscriptos.png`} />
+                
                 <Titulo level={4}>Inscriptos:</Titulo>
             </Inscriptos>
             <p>{Registrados} /<span> {TotalTorneo}</span></p>

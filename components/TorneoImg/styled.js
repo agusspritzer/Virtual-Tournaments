@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import media from 'lib/constants/media'
 
 
 
@@ -10,6 +10,7 @@ width: 65%;
 margin: 0 auto;
 height:490px;
 padding-top: 130px;
+background-position-x: center;
 
 
 h1{
@@ -19,6 +20,36 @@ h1{
     margin-bottom: 12px;
 }
 
+@media (max-width: ${media.desktop1680}) {
+    width: 75%;
+  }
+  @media (max-width: ${media.desktop1366}) {
+    width: 80%;
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    width: 85%;
+    h1{
+        width: 60%;
+        font-size:1.8em
+    }
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 90%;
+    h1{
+        width: 85%;
+        font-size:1.5em
+    }
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 90%;
+    h1{
+        width: 95%;
+        font-size:1.2em
+    }
+  }
 
 
 `;
@@ -38,6 +69,7 @@ const ExtraInfo = styled.div`
 
 display:flex;
 justify-content: space-between;
+flex-wrap:wrap
 `;
 
 const Game = styled.p`
@@ -46,7 +78,12 @@ color: #EA33BC;
 font-weight: 400;
 letter-spacing: 0.2px;
  font-family: 'Maison Neue Extended';
-font-size: em;
+font-size: 1em;
+
+@media (max-width: ${media.tablet1024}) {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 
 `;
 
@@ -57,7 +94,13 @@ font-weight: 400;
 letter-spacing: 0.4px;
  font-family: 'Maison Neue Extended';
 font-size: 1em;
+@media (max-width: ${media.tablet1024}) {
+    font-size: 0.9em;
+  }
 
+  @media (max-width: ${media.mobile651}) {
+    font-size: 0.8em;
+  }
 `;
 
 

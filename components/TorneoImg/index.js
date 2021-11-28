@@ -23,7 +23,7 @@ export default function TorneoImg({ idTorneo, nameTorneo, gameTorneo, disponible
     return (
 
 
-        <ImgContainer className="fondo" style={{ backgroundImage: `url(${fondoImg})` }}>
+        <ImgContainer className="fondo" style={{ backgroundImage: `url(${fondoImg})`, backgroundPosition:'center' }}>
 
             <ImgTorneo>
                 <Gradiente />

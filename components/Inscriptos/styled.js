@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'lib/constants/media'
 
 
 
@@ -14,6 +15,18 @@ span{
     font-weight: 700;
 }
 
+@media (max-width: ${media.desktop1366}) {
+    p{
+    font-size: 0.9em;
+    }
+}
+
+@media (max-width: ${media.mobile375}) {
+    p{
+    margin-left: 6%;
+    }
+}
+
 `;
 
 const Inscriptos = styled.div`
@@ -23,8 +36,29 @@ align-items: center;
 h4{
     color:#EEEEEE;
     font-size: 1em;
-    margin-left: 8%;
+    
 }
+
+
+@media (max-width: ${media.desktop1366}) {
+    h4{
+    font-size: 0.9em;
+    }
+}
+
+@media (max-width: ${media.mobile651}) {
+    h4{
+    margin-right: 4%;
+    }
+}
+
+@media (max-width: ${media.mobile375}) {
+    h4{
+    margin-left: 10%;
+    }
+}
+
+
 `;
 
 

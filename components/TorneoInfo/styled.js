@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import media from 'lib/constants/media'
 
 
 const ContenedorMayor = styled.div`
@@ -8,6 +8,7 @@ display:flex;
 justify-content: space-between;
 align-items: flex-end;
 margin-bottom: 10%;
+flex-wrap: wrap;
 
 a{
   margin-bottom: 30px;
@@ -15,6 +16,9 @@ a{
   padding: 1.5% 3% 1.5% 3%;
 }
 
+@media (max-width: ${media.mobile375}) {
+    margin-left:3%;
+  }
 `;
 
 const InfoTorneoContainer = styled.div`
@@ -24,12 +28,25 @@ display:flex;
 justify-content: flex-start;
 
 
+  @media (max-width: ${media.tablet1024}) {
+    width: 95%;
+    margin-bottom: 6%;
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    width: 95%;
+    
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 90%;
+  }
 
 `;
 
 const InfoTorneo = styled.div`
 width:40%;
-margin-right:25px;
+margin-right:5%;
 
 ul {
   text-decoration: none;
@@ -55,11 +72,14 @@ h3 {
 
   margin-bottom: 5px;
 }
-
+@media (max-width: ${media.mobile651}) {
+    width: 45%;
+    margin-right: 10%;
+  }
 `;
 
 const Prizes = styled.div`
-width: 30%;
+width: 40%;
 
 
 div {
@@ -95,6 +115,10 @@ h2 {
   padding-bottom:0;
   color: #EEEEEE;
 }
+
+@media (max-width: ${media.mobile651}) {
+    width: 45%;
+  }
 
 `;
 
