@@ -115,14 +115,12 @@ export default function AyudaContainer() {
                         <ProxPartida
                             Fase="4tos de final"
                             IdTorneo="17 de Julio"
-                            TorneoName="TORNEO DE JULIO PUMMEL PARTY"
+                            TorneoName="MORTAL KO.MBAT WINTER TOURNAMENT"
                             Jugador1="Tú"
                             Jugador2="Tanorior08"
                             Resultado1=" "
                             Resultado2=" "
-                            Game="Pummel Party"
-                            ProxFecha="13/07"
-                            Horario="16:00hs"
+                            Game="Mortal Kombat"
                         >
                         </ProxPartida>
 

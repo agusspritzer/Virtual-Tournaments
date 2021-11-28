@@ -1,164 +1,180 @@
 import styled from 'styled-components';
-import media from 'lib/constants/media'
+import media from 'lib/constants/media';
 
 const Card = styled.div`
-background-color: #eeeeee;
-padding: 3% 3% 0 3%;
-width: 100%;
-h5{
-font-size: 0.8em;
-color:#9A9A9A;
-margin: 0;
-font-weight: 500;
-}
-h3{
-   
+  background-color: #eeeeee;
+  padding: 5% 3% 0 3%;
+  width: 100%;
+  h5 {
+    font-size: 0.8em;
+    color: #9a9a9a;
+    margin: 0;
+    font-weight: 500;
+  }
+  h3 {
     font-size: 1em;
     color: #272727;
-margin: 0;
-font-weight: 500;
+    margin: 0;
+    font-weight: 500;
     font-family: 'Maison Neue Extended';
-    
-}
+  }
+  
 
-@media (max-width: ${media.mobile375}) {
-width: 95%;
-margin: 0 auto;
-}
 
-`
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+    margin: 0 auto;
+    h5 {
+      margin-left: 2%;
+    }
+  }
+`;
 
 const InfoPrincipal = styled.div`
-display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-wrap: wrap;
-padding-bottom: 3%;
-border-bottom: 1.5px solid #D6D6D6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
+  border-bottom: 1.5px solid #d6d6d6;
 
-h2{
-color: #272727;
-font-size: 1.2em;
-font-family: 'TTOctosquares';
-margin-right: 10%;
-}
+  h2 {
+    color: #272727;
+    font-size: 1.2em;
+    font-family: 'TTOctosquares';
+    margin-right: 10%;
+  }
 
-h3{
+  h3 {
     font-size: 1em;
     color: #707070;
     margin-right: 10px;
-}
-span{
+  }
+  span {
     color: #272727;
     font-weight: 700;
-}
+  }
 
-@media (max-width: ${media.desktop1680}) {
-    h2{
-        font-size: 1.1em;
+  @media (max-width: ${media.desktop1680}) {
+    h2 {
+      font-size: 1.1em;
     }
-    h3{
-        font-size: 0.9em;
+    h3 {
+      font-size: 0.9em;
     }
-}
+  }
   @media (max-width: ${media.desktop1366}) {
-    h2{
-        font-size: 1em;
+    h2 {
+      font-size: 1em;
     }
-    h3{
-        font-size: 0.8em;
+    h3 {
+      font-size: 0.8em;
     }
   }
 
   @media (max-width: ${media.tablet1024}) {
-    h2{
-        width: 100%;
-        font-size: 1.1em;
-        padding-bottom: 4%;
+    h2 {
+      width: 100%;
+      font-size: 1.1em;
+      padding-bottom: 4%;
     }
-    h3{
-        font-size: 0.9em;
+    h3 {
+      font-size: 0.9em;
     }
   }
 
   @media (max-width: ${media.mobile651}) {
-    h2{
-        font-size: 1em;
+    h2 {
+      font-size: 1em;
     }
-    h3{
-        font-size: 0.8em;
+    h3 {
+      font-size: 0.8em;
     }
   }
 
   @media (max-width: ${media.mobile375}) {
-width: 95%;
-margin: 0 auto;
+    width: 95%;
+    margin: 0 auto;
   }
-
-`
+`;
 
 const Resultado = styled.div`
-display: flex;
-justify-content: flex-start;
-align-items: center;
-margin-right: 5%;
-
-`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 5%;
+`;
 
 const JuegoContainer = styled.div`
-display: flex;
-justify-content: flex-start;
-align-items: center;
-margin-right: 5%;
-
-`
-
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 5%;
+`;
 
 const Jugador = styled.div`
-display: flex;
-justify-content: space-between;
-margin-bottom: 2%;
-h3{
-font-family: 'Maison Neue Extended';
-font-size: 1.2em;
-color: #707070;
-font-weight: 450;
-}
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  h3 {
+    font-family: 'Maison Neue Extended';
+    font-size: 1.2em;
+    color: #707070;
+    font-weight: 450;
+  }
 
-h3:nth-child(2){
-
+  h3:nth-child(2) {
     font-weight: 600;
     padding-right: 15%;
-}
+  }
 
+  @media (max-width: ${media.desktop1366}) {
+    h3 {
+      font-size: 1.1em;
+    }
+  }
 
-`
+  @media (max-width: ${media.tablet1024}) {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: ${media.mobile651}) {
+    h3 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    h3 {
+      font-size: 0.8em;
+    }
+  }
+`;
 
 const InfoResultados = styled.div`
-margin-top: 3%;
-display: flex;
-justify-content:space-between;
-flex-wrap: wrap;
-
-`
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
 
 const InfoFase = styled.div`
-width: 26%;
-margin-bottom: 4%;
-h4{
+  width: 26%;
+  margin-bottom: 4%;
+  h4 {
     margin-bottom: 4%;
-font-family: 'Maison Neue Extended';
-font-size: 1em;
-color: #6418DC;
-font-weight: 700;
-}
+    font-family: 'Maison Neue Extended';
+    font-size: 1em;
+    color: #6418dc;
+    font-weight: 600;
+  }
 
-
-@media (max-width: ${media.desktop1680}) {
+  @media (max-width: ${media.desktop1680}) {
     width: 30%;
-
-}
+  }
   @media (max-width: ${media.desktop1366}) {
     width: 40%;
   }
@@ -170,27 +186,31 @@ font-weight: 700;
   @media (max-width: ${media.mobile651}) {
     width: 80%;
     margin: 0 auto;
-    padding:4% 0 4% 0;
+    padding: 4% 0 4% 0;
 
-    h3:nth-child(2){
-padding-right: 8%;
-}
+    h3:nth-child(2) {
+      padding-right: 8%;
+    }
+
+    h4 {
+      font-size: 0.9em;
+    }
   }
 
   @media (max-width: ${media.mobile375}) {
     width: 95%;
+    h4 {
+      font-size: 0.8em;
+    }
   }
-
-`
-
-
+`;
 
 export {
-    InfoPrincipal,
-    Resultado,
-    JuegoContainer,
-    Card,
-    Jugador,
-    InfoResultados,
-    InfoFase,
+  InfoPrincipal,
+  Resultado,
+  JuegoContainer,
+  Card,
+  Jugador,
+  InfoResultados,
+  InfoFase,
 };
