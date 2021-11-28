@@ -76,6 +76,11 @@ const ReglasContainer = styled.div`
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
+@media (max-width: ${media.mobile375}) {
+
+ padding-bottom: 20%;
+
+  }
 `;
 
 
@@ -88,6 +93,8 @@ margin-top: 2%;
 margin-bottom: 6%;
 @media (max-width: ${media.mobile375}) {
  margin: 2%;
+ padding-bottom: 12%;
+
   }
 `;
 
