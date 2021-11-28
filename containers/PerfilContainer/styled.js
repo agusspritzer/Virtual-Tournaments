@@ -140,24 +140,24 @@ const Config = styled.div`
 `;
 
 const ContenedorPartidas = styled.div`
-h5{
+h6{
   font-family: 'TTOctosquares';
   font-weight: 700;
 }
   @media (max-width: ${media.desktop1680}) {
-    h5 {
+    h6 {
       font-size: 1.5em;
     }
   }
 
   @media (max-width: ${media.desktop1366}) {
-    h5 {
+    h6 {
       font-size: 1.3em;
     }
   }
 
   @media (max-width: ${media.tablet1024}) {
-    h5 {
+    h6 {
       font-size: 1.2em;
     }
   }
@@ -168,7 +168,7 @@ h5{
 
   @media (max-width: ${media.mobile375}) {
     padding-top: 8%;
-    h5 {
+    h6 {
       width: 95%;
       margin: 0 auto;
     }
