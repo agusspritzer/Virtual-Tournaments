@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import media from 'lib/constants/media'
 
 
 const Navegador = styled.div`
@@ -41,15 +41,24 @@ margin-bottom: 8%;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
-
-
-display: none;
+flex-wrap: wrap;
+@media (max-width: ${media.desktop1366}) {
+margin-top:3% ;
+}
+@media (max-width: ${media.tablet1024}) {
+margin-top:5% ;
+}
+@media (max-width: ${media.mobile651}) {
+margin-top:15% ;
+}
+  
 `
 
 const Jugador = styled.div`
 display: flex;
 justify-content: flex-start;
-width: 80%;
+align-items: center;
+width: 100%;
 
 figure{
   border: 7px solid #6418DC;
@@ -62,6 +71,42 @@ img{
   width: 100%;
   display:inline-block; 
 }
+
+@media (max-width: ${media.desktop1680}) {
+
+  }
+  @media (max-width: ${media.desktop1366}) {
+    figure{
+  
+  width: 215px;
+  height: 215px;
+}
+  }
+
+  @media (max-width: ${media.tablet1024}) {
+    figure{
+  
+  width: 205px;
+  height: 205px;
+}
+  }
+
+  @media (max-width: ${media.mobile651}) {
+justify-content: center;
+flex-wrap: wrap;
+    figure{
+margin-bottom:4%;
+  width: 100%;
+  height: 205px;
+}
+  }
+
+  @media (max-width: ${media.mobile375}) {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
 `
 const Config = styled.div`
 
@@ -74,10 +119,9 @@ img{
 
 const Redes = styled.div`
 
+
 display: none;
-
-
-width: 15%;
+width: 21%;
 
 p{
   margin-bottom: 8%;
