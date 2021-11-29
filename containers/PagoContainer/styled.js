@@ -59,7 +59,7 @@ h2{
 
   @media (max-width: ${media.mobile375}) {
     width: 95%;
-    padding-top: 20%;
+    padding-top: 18%;
     h1{
     font-size: 1.3em;
 }
@@ -72,6 +72,10 @@ p{
     font-size: 1em;
 color: #B4B4B4;
 }
+
+@media (max-width: ${media.mobile375}) {
+padding-bottom: 2%;
+  }
 `
 
 const TorneoContainer = styled.div`
