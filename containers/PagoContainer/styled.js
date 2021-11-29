@@ -70,7 +70,7 @@ const Pe = styled.div`
 cursor: pointer;
 p{
     font-size: 1em;
-color: #EEEEEE;
+color: #B4B4B4;
 }
 `
 
@@ -105,8 +105,7 @@ h4{
   }
 
   @media (max-width: ${media.mobile375}) {
-    padding-top: 8%;
-    padding-bottom: 4%;
+    padding-top: 2%;
     h2{
         font-size: 1em ;
     }

@@ -22,8 +22,8 @@ p{
 
 padding-bottom: 4%;
 }
-padding-top: 8%;
-padding-bottom: 16%;
+padding-top: 4%;
+padding-bottom: 20%;
   }
 `;
 
