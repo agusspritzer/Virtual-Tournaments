@@ -14,7 +14,7 @@ export default function MetodoPago() {
 
             <Opciones>
 
-
+                
                 <a mp-mode="dftl" href={"http://mpago.la/1PZTNdP"} name="MP-payButton">
                     <img src={`/assets/mpago.png`} />
                     <Titulo level={4}>Mercado Pago</Titulo>

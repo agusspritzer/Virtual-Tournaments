@@ -22,7 +22,7 @@ export default function LoginContainer() {
                         <Pe><p>Volver</p></Pe>
                     </Link>
 
-                    <Titulo level={1}>PAGO TITULO TEMPORAL</Titulo>
+                    <Titulo level={1}>A UN PASO DE SER UN ESPORT GAMER</Titulo>
 
                     <TorneoContainer>
                         <p>Torneo</p>
